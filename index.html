@@ -1,215 +1,698 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090909">
-  <meta name="description" content="Leather Cover R — حذاء جلدي كلاسيكي بمظهر متجدد. غيّر الإطلالة مع الحفاظ على الحذاء الأساسي.">
-  <title>Leather Cover R | A New Way of Classic</title>
+  <title>Leather Cover R | Official Website</title>
+  <meta name="description" content="Leather Cover R - حذاء جلدي كلاسيكي بكفرات جلدية قابلة للتبديل. حذاء واحد، اختيارات متعددة.">
+
   <style>
-    :root{--bg:#090909;--panel:#111;--panel2:#151515;--gold:#c5a477;--gold2:#e0c49a;--text:#f3eee6;--muted:#aaa39a;--line:rgba(197,164,119,.2);--max:1160px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
-    a{color:inherit;text-decoration:none}button{font:inherit}
-    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-    header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-size:18px;font-weight:700;letter-spacing:2px;direction:ltr;color:var(--text);white-space:nowrap}.brand span{color:var(--gold)}
-    nav{display:flex;align-items:center;gap:26px}nav a{font-size:13px;color:#d4cec5;transition:.2s}nav a:hover{color:var(--gold)}
-    .nav-actions{display:flex;align-items:center;gap:12px}
-    .lang{border:1px solid var(--line);background:transparent;color:var(--gold2);padding:8px 13px;cursor:pointer;font-size:12px}
-    .menu{display:none;border:1px solid var(--line);background:transparent;color:var(--gold);padding:7px 11px}
-    .hero{min-height:510px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 48%,rgba(126,91,49,.19),transparent 52%),linear-gradient(180deg,#0b0b0b,#090909)}
-    .hero:after{content:"";position:absolute;inset:20px;border:1px solid rgba(197,164,119,.07);pointer-events:none}
-    .hero-content{position:relative;z-index:1;padding:90px 0}
-    .eyebrow{color:var(--gold);font-size:11px;letter-spacing:4px;text-transform:uppercase;margin:0 0 20px;direction:ltr}
-    h1{font-family:Arial,sans-serif;font-size:clamp(38px,7vw,76px);line-height:1.1;letter-spacing:2px;margin:0;direction:ltr;color:#f6f1e9}
-    h1 span{color:var(--gold)}
-    .rule{width:58px;height:2px;background:var(--gold);margin:26px auto}
-    .hero p{color:#c9c0b4;font-size:16px;margin:0 auto 30px;max-width:620px}
-    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 23px;border:1px solid var(--gold);color:var(--gold2);font-size:13px;transition:.2s}
-    .btn.primary{background:var(--gold);color:#100e0b;font-weight:700}.btn:hover{transform:translateY(-2px);background:var(--gold2);color:#090909}
-    section{padding:88px 0}
-    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
-    .kicker{color:var(--gold);font-size:11px;letter-spacing:3px;text-transform:uppercase;direction:ltr}
-    h2{font-size:clamp(25px,3vw,34px);color:var(--gold2);margin:8px 0 12px}
-    .section-head p,.muted{color:var(--muted);font-size:14px}
-    .intro{background:#111}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .feature{background:linear-gradient(145deg,#171717,#101010);border:1px solid rgba(197,164,119,.14);padding:30px 24px;text-align:center;min-height:190px}
-    .number{font-family:Georgia,serif;font-size:34px;color:var(--gold);direction:ltr}
-    .feature h3{font-size:17px;margin:8px 0;color:#eee7dd}.feature p{font-size:13px;color:#aaa39a;margin:0}
-    .concept{background:#0b0b0b}
-    .concept-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-    .concept-copy h2{text-align:right}.concept-copy p{color:#bcb4aa;font-size:15px}
-    .principles{display:grid;gap:12px;margin-top:25px}
-    .principle{border-right:2px solid var(--gold);padding:10px 17px;background:#111}
-    .principle strong{display:block;color:var(--gold2);font-size:14px}.principle span{font-size:12px;color:var(--muted)}
-    .concept-note{min-height:250px;border:1px solid var(--line);background:radial-gradient(circle at center,rgba(197,164,119,.12),transparent 65%),#101010;display:grid;place-items:center;text-align:center;padding:30px}
-    .concept-note .monogram{font:700 78px Georgia,serif;color:var(--gold);direction:ltr}.concept-note p{color:#b9afa2;font-size:13px;max-width:260px}
-    .colors{background:#111}
-    .swatches{display:grid;grid-template-columns:repeat(6,1fr);gap:22px 14px;max-width:820px;margin:auto}
-    .swatch{display:flex;flex-direction:column;align-items:center;gap:9px;color:#c9c1b7;font-size:12px}
-    .dot{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);box-shadow:0 0 0 5px rgba(255,255,255,.025)}
-    .black{background:#090909}.gray{background:#777}.brown{background:#96613b}.green{background:#315d49}.burgundy{background:#791d32}.navy{background:#20395f}.blue{background:#245ca8}.olive{background:#777342}.orange{background:#c46c28}.petrol{background:#17636a}.sky{background:#83b9d6}.red{background:#b32632}
-    .how{background:#0b0b0b}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:step}
-    .step{padding:26px;background:#121212;border:1px solid var(--line);counter-increment:step}
-    .step:before{content:"0" counter(step);font:30px Georgia,serif;color:var(--gold)}
-    .step h3{font-size:16px;color:var(--gold2);margin:8px 0}.step p{font-size:13px;color:var(--muted);margin:0}
-    .cta{background:linear-gradient(120deg,#17130e,#0d0d0d);text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .cta p{color:#bdb4a8;max-width:600px;margin:0 auto 25px;font-size:14px}
-    footer{padding:30px 0;background:#080808;color:#8e877e;font-size:12px}
-    .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
-    .footer-brand{font:700 17px Arial,sans-serif;letter-spacing:1.5px;color:var(--gold);direction:ltr}
-    [dir="ltr"] body{text-align:left}[dir="ltr"] .concept-copy h2{text-align:left}[dir="ltr"] .principle{border-right:0;border-left:2px solid var(--gold)}[dir="ltr"] .concept-copy{text-align:left}
-    @media(max-width:760px){
-      .wrap{width:min(100% - 30px,var(--max))}.nav{min-height:66px}.menu{display:block}
-      nav{display:none;position:absolute;top:66px;right:0;left:0;background:#0d0d0d;border-bottom:1px solid var(--line);padding:18px 22px;flex-direction:column;align-items:stretch;gap:15px}
-      nav.open{display:flex}nav a{font-size:14px}.brand{font-size:15px}
-      .hero{min-height:430px}.hero-content{padding:75px 0}.hero p{font-size:14px}
-      section{padding:65px 0}.features,.steps{grid-template-columns:1fr}.feature{min-height:auto;padding:24px}
-      .concept-grid{grid-template-columns:1fr;gap:25px}.concept-note{min-height:190px}
-      .swatches{grid-template-columns:repeat(4,1fr);gap:22px 8px}.dot{width:43px;height:43px}
-      .footer-inner{justify-content:center;text-align:center;flex-direction:column}
+    :root {
+      --bg: #090909;
+      --panel: #121212;
+      --panel2: #191919;
+      --gold: #c5a477;
+      --gold-light: #e1c69c;
+      --white: #f5f2ec;
+      --muted: #aaa39a;
+      --border: rgba(197,164,119,.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.8;
+    }
+
+    button, input, select { font: inherit; }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      background: #090909;
+    }
+
+    .topbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-family: Georgia, serif;
+      font-size: 29px;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: var(--gold);
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .menu-btn {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: transparent;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-btn span {
+      display: block;
+      width: 19px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .site-name {
+      text-align: center;
+      padding: 5px 0 22px;
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(25px, 4vw, 38px);
+      font-weight: bold;
+      letter-spacing: 3px;
+      line-height: 1.4;
+    }
+
+    nav {
+      display: none;
+      border-top: 1px solid var(--border);
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav.open { display: block; }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 13px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    /* Hero */
+    .hero {
+      padding: 100px 0 90px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 50% 35%, rgba(197,164,119,.10), transparent 58%),
+        var(--bg);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      color: var(--white);
+      font-size: clamp(32px, 6vw, 57px);
+      line-height: 1.45;
+      font-weight: 700;
+    }
+
+    h1 span { color: var(--gold); }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 12px 32px;
+      border: 1px solid var(--gold);
+      border-radius: 3px;
+      background: var(--gold);
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--gold);
+      margin-inline-start: 10px;
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #111;
+    }
+
+    /* Sections */
+    section { padding: 75px 0; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-title h2 {
+      margin: 0 0 10px;
+      font-size: clamp(25px, 4vw, 35px);
+      color: var(--gold);
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 28px 23px;
+      text-align: center;
+    }
+
+    .card-symbol {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 17px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold);
+      font-size: 23px;
+    }
+
+    .card h3 {
+      color: var(--gold-light);
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .dark-section {
+      background: #101010;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .message {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .message h2 {
+      color: var(--gold);
+      font-size: clamp(27px, 5vw, 42px);
+      margin: 0 0 18px;
+    }
+
+    .message p {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0 auto 15px;
+    }
+
+    .highlight {
+      color: var(--gold-light);
+      font-weight: bold;
+    }
+
+    /* Colors */
+    .color-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .color-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .swatch {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      border: 2px solid #777;
+      box-shadow: 0 0 0 3px #171717;
+    }
+
+    /* Order */
+    .order-box {
+      max-width: 680px;
+      margin: auto;
+      padding: 30px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 19px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    .field label {
+      color: var(--gold-light);
+      font-size: 14px;
+    }
+
+    .field input, .field select {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid #38332c;
+      border-radius: 3px;
+      background: #0c0c0c;
+      color: var(--white);
+      padding: 10px 12px;
+      outline: none;
+    }
+
+    .field input:focus, .field select:focus {
+      border-color: var(--gold);
+    }
+
+    .order-box .btn {
+      width: 100%;
+      margin-top: 24px;
+      font-size: 17px;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      margin: 15px 0 0;
+    }
+
+    #orderResult {
+      display: none;
+      margin-top: 20px;
+      padding: 18px;
+      border: 1px solid var(--gold);
+      color: var(--white);
+      background: #17140f;
+      white-space: pre-line;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer .footer-name {
+      color: var(--gold);
+      font-family: Georgia, serif;
+      letter-spacing: 2px;
+      font-size: 19px;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 700px) {
+      .wrap { width: min(100% - 30px, 540px); }
+      .hero { padding: 75px 0 65px; }
+      section { padding: 58px 0; }
+      .cards { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .order-box { padding: 22px 17px; }
+      .btn-outline { margin: 12px 0 0; }
+      .hero .btn { width: min(100%, 270px); }
     }
   </style>
 </head>
+
 <body>
+
 <header>
-  <div class="wrap nav">
-    <a class="brand" href="#home"><img src="logo.png" alt="Leather Cover R" style="height:44px;width:auto;display:block;">
-    <nav id="nav">
-      <a href="#about" data-ar="عن المشروع" data-en="About">عن المشروع</a>
-      <a href="#concept" data-ar="الفكرة" data-en="The Concept">الفكرة</a>
-      <a href="#colors" data-ar="الألوان" data-en="Colors">الألوان</a>
-      <a href="#how" data-ar="طريقة الاستخدام" data-en="How It Works">طريقة الاستخدام</a>
-      <a href="#contact" data-ar="التواصل" data-en="Contact">التواصل</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="lang" id="langBtn" type="button">English</button>
-      <button class="menu" id="menuBtn" type="button" aria-label="فتح القائمة">☰</button>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand-mark" aria-label="Leather Cover R">R</div>
+
+      <div class="top-actions">
+        <button class="lang-btn" id="langBtn" type="button">EN</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
+
+    <div class="site-name">LEATHER COVER R</div>
   </div>
+
+  <nav id="mainNav">
+    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+    <a href="#idea" data-ar="فكرة المنتج" data-en="The Concept">فكرة المنتج</a>
+    <a href="#colors" data-ar="الألوان" data-en="Colors">الألوان</a>
+    <a href="#benefits" data-ar="المميزات" data-en="Benefits">المميزات</a>
+    <a href="#order" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
+  </nav>
 </header>
 
 <main>
   <section class="hero" id="home">
-    <div class="wrap hero-content">
-      <p class="eyebrow" data-ar="طريقة جديدة للكلاسيكية" data-en="A NEW WAY OF CLASSIC">طريقة جديدة للكلاسيكية</p>
-      <h1>LEATHER COVER <span>R</span></h1>
-      <div class="rule"></div>
-      <p data-ar="مظهر جديد.. والحذاء نفسه." data-en="A new look. The same classic shoe.">مظهر جديد.. والحذاء نفسه.</p>
-      <div class="actions">
-        <a class="btn primary" href="#concept" data-ar="اكتشف الفكرة" data-en="Discover the concept">اكتشف الفكرة</a>
-        <a class="btn" href="#colors" data-ar="استكشف الألوان" data-en="Explore colors">استكشف الألوان</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="intro" id="about">
     <div class="wrap">
-      <div class="section-head">
-        <span class="kicker" data-ar="رؤية مختلفة للأناقة" data-en="A DIFFERENT VISION OF STYLE">رؤية مختلفة للأناقة</span>
-        <h2 data-ar="أناقة كلاسيكية.. بإطلالات متجددة" data-en="Classic elegance. Fresh looks.">أناقة كلاسيكية.. بإطلالات متجددة</h2>
-        <p data-ar="Leather Cover R تقدم مفهومًا مبتكرًا في عالم الأحذية الجلدية الكلاسيكية، حيث تلتقي الأناقة مع حرية تجديد المظهر." data-en="Leather Cover R introduces a fresh concept in classic leather footwear, bringing timeless elegance together with the freedom to refresh your look.">Leather Cover R تقدم مفهومًا مبتكرًا في عالم الأحذية الجلدية الكلاسيكية، حيث تلتقي الأناقة مع حرية تجديد المظهر.</p>
+      <div class="eyebrow" data-ar="أسلوب جديد في اختيار حذائك" data-en="A NEW WAY TO STYLE YOUR SHOES">
+        أسلوب جديد في اختيار حذائك
       </div>
-      <div class="features">
-        <article class="feature"><div class="number">01</div><h3 data-ar="أناقة كلاسيكية" data-en="Classic Elegance">أناقة كلاسيكية</h3><p data-ar="تصميم يحافظ على روح الحذاء الكلاسيكي." data-en="A design that preserves the character of classic footwear.">تصميم يحافظ على روح الحذاء الكلاسيكي.</p></article>
-        <article class="feature"><div class="number">02</div><h3 data-ar="مظهر متجدد" data-en="A Refreshable Look">مظهر متجدد</h3><p data-ar="فكرة تمنحك فرصة لتجديد مظهر حذائك." data-en="A concept that gives your shoe a refreshed appearance.">فكرة تمنحك فرصة لتجديد مظهر حذائك.</p></article>
-        <article class="feature"><div class="number">03</div><h3 data-ar="فكرة مبتكرة" data-en="An Innovative Idea">فكرة مبتكرة</h3><p data-ar="رؤية جديدة لتجربة الأحذية الجلدية." data-en="A new perspective on the leather shoe experience.">رؤية جديدة لتجربة الأحذية الجلدية.</p></article>
-      </div>
+
+      <h1 data-ar="حذاء واحد... <span>اختيارات لا تنتهي</span>" data-en="One Shoe... <span>Endless Choices</span>">
+        حذاء واحد... <span>اختيارات لا تنتهي</span>
+      </h1>
+
+      <p data-ar="غيّر لون حذائك ومظهرك وقتما تشاء، مع نظام الكفرات الجلدية القابلة للتبديل من Leather Cover R."
+         data-en="Change your shoe color and look whenever you want with interchangeable leather covers from Leather Cover R.">
+        غيّر لون حذائك ومظهرك وقتما تشاء، مع نظام الكفرات الجلدية القابلة للتبديل من Leather Cover R.
+      </p>
+
+      <a href="#order" class="btn" data-ar="اطلب الآن" data-en="ORDER NOW">اطلب الآن</a>
+      <a href="#idea" class="btn btn-outline" data-ar="اكتشف الفكرة" data-en="DISCOVER THE IDEA">اكتشف الفكرة</a>
     </div>
   </section>
 
-  <section class="concept" id="concept">
-    <div class="wrap concept-grid">
-      <div class="concept-copy">
-        <span class="kicker" data-ar="الفكرة ببساطة" data-en="THE IDEA">الفكرة ببساطة</span>
-        <h2 data-ar="حذاء واحد.. إطلالات متعددة" data-en="One shoe. Multiple looks.">حذاء واحد.. إطلالات متعددة</h2>
-        <p data-ar="تعتمد الفكرة على أغطية جلدية خارجية قابلة للاستبدال، لتغيير مظهر الحذاء مع الحفاظ على الحذاء الأساسي ونَعله." data-en="The concept uses replaceable external leather covers to refresh the shoe's appearance while keeping the original shoe and sole.">تعتمد الفكرة على أغطية جلدية خارجية قابلة للاستبدال، لتغيير مظهر الحذاء مع الحفاظ على الحذاء الأساسي ونَعله.</p>
-        <div class="principles">
-          <div class="principle"><strong data-ar="الحذاء الأساسي" data-en="The original shoe">الحذاء الأساسي</strong><span data-ar="يحافظ على تصميمه ونَعله." data-en="Its original design and sole remain.">يحافظ على تصميمه ونَعله.</span></div>
-          <div class="principle"><strong data-ar="غطاء قابل للتغيير" data-en="Interchangeable cover">غطاء قابل للتغيير</strong><span data-ar="لتجديد اللون والمظهر الخارجي." data-en="Refresh the exterior color and look.">لتجديد اللون والمظهر الخارجي.</span></div>
-        </div>
-      </div>
-      <div class="concept-note">
-        <div><div class="monogram">R</div><p data-ar="تصميم كلاسيكي.. وحرية أكبر في اختيار إطلالتك." data-en="Classic design. More freedom to choose your look.">تصميم كلاسيكي.. وحرية أكبر في اختيار إطلالتك.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="colors" id="colors">
+  <section id="idea">
     <div class="wrap">
-      <div class="section-head">
-        <span class="kicker" data-ar="اختياراتك" data-en="YOUR PALETTE">اختياراتك</span>
-        <h2 data-ar="عالم من الألوان" data-en="A World of Colors">عالم من الألوان</h2>
-        <p data-ar="مجموعة من الألوان المقترحة لتجديد المظهر." data-en="A selection of suggested colors to refresh your look.">مجموعة من الألوان المقترحة لتجديد المظهر.</p>
+      <div class="section-title">
+        <h2 data-ar="فكرة Leather Cover R" data-en="The Leather Cover R Concept">فكرة Leather Cover R</h2>
+        <p data-ar="حذاء كلاسيكي بتجربة مختلفة" data-en="A classic shoe with a different experience">حذاء كلاسيكي بتجربة مختلفة</p>
       </div>
-      <div class="swatches">
-        <div class="swatch"><span class="dot black"></span><span data-ar="أسود" data-en="Black">أسود</span></div>
-        <div class="swatch"><span class="dot gray"></span><span data-ar="رمادي" data-en="Gray">رمادي</span></div>
-        <div class="swatch"><span class="dot brown"></span><span data-ar="بني" data-en="Brown">بني</span></div>
-        <div class="swatch"><span class="dot green"></span><span data-ar="أخضر" data-en="Green">أخضر</span></div>
-        <div class="swatch"><span class="dot burgundy"></span><span data-ar="نبيتي" data-en="Burgundy">نبيتي</span></div>
-        <div class="swatch"><span class="dot navy"></span><span data-ar="كحلي" data-en="Navy">كحلي</span></div>
-        <div class="swatch"><span class="dot blue"></span><span data-ar="أزرق" data-en="Blue">أزرق</span></div>
-        <div class="swatch"><span class="dot olive"></span><span data-ar="زيتي" data-en="Olive">زيتي</span></div>
-        <div class="swatch"><span class="dot orange"></span><span data-ar="برتقالي" data-en="Orange">برتقالي</span></div>
-        <div class="swatch"><span class="dot petrol"></span><span data-ar="بترولي" data-en="Petrol">بترولي</span></div>
-        <div class="swatch"><span class="dot sky"></span><span data-ar="سماوي" data-en="Sky Blue">سماوي</span></div>
-        <div class="swatch"><span class="dot red"></span><span data-ar="أحمر" data-en="Red">أحمر</span></div>
+
+      <div class="message">
+        <h2 data-ar="غيّر مظهرك، واحتفظ بحذائك." data-en="Change Your Look. Keep Your Shoe.">
+          غيّر مظهرك، واحتفظ بحذائك.
+        </h2>
+        <p data-ar="بدلاً من شراء حذاء جديد مع كل لون، تمنحك فكرتنا إمكانية تغيير الكفر الجلدي الخارجي للحذاء للحصول على مظهر مختلف."
+           data-en="Instead of buying a new pair for every color, our concept lets you change the outer leather cover for a different look.">
+          بدلاً من شراء حذاء جديد مع كل لون، تمنحك فكرتنا إمكانية تغيير الكفر الجلدي الخارجي للحذاء للحصول على مظهر مختلف.
+        </p>
+        <p class="highlight" data-ar="جزمة واحدة، وكفرات متعددة تناسب اختياراتك." data-en="One shoe, multiple covers to match your style.">
+          جزمة واحدة، وكفرات متعددة تناسب اختياراتك.
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="how" id="how">
+  <section class="dark-section" id="benefits">
     <div class="wrap">
-      <div class="section-head">
-        <span class="kicker" data-ar="تجربة الاستخدام" data-en="THE EXPERIENCE">تجربة الاستخدام</span>
-        <h2 data-ar="حرية تجديد المظهر" data-en="The Freedom to Refresh">حرية تجديد المظهر</h2>
-        <p data-ar="الفكرة مصممة لتمنحك اختيارًا متجددًا لمظهر حذائك." data-en="Designed to give you more choice over your shoe's appearance.">الفكرة مصممة لتمنحك اختيارًا متجددًا لمظهر حذائك.</p>
+      <div class="section-title">
+        <h2 data-ar="أكثر من مجرد حذاء" data-en="More Than Just a Shoe">أكثر من مجرد حذاء</h2>
+        <p data-ar="ثلاث مزايا تجعل اختياراتك أوسع" data-en="Three benefits that give you more choices">ثلاث مزايا تجعل اختياراتك أوسع</p>
       </div>
-      <div class="steps">
-        <article class="step"><h3 data-ar="اختر اللون" data-en="Choose a color">اختر اللون</h3><p data-ar="اختر الغطاء الذي يناسب ذوقك وإطلالتك." data-en="Select the cover color that suits your style.">اختر الغطاء الذي يناسب ذوقك وإطلالتك.</p></article>
-        <article class="step"><h3 data-ar="غيّر المظهر" data-en="Refresh the look">غيّر المظهر</h3><p data-ar="استبدل الغطاء الخارجي وفق آلية التركيب المعتمدة للمنتج." data-en="Change the exterior cover using the product's intended fitting system.">استبدل الغطاء الخارجي وفق آلية التركيب المعتمدة للمنتج.</p></article>
-        <article class="step"><h3 data-ar="احتفظ بحذائك" data-en="Keep your shoe">احتفظ بحذائك</h3><p data-ar="استمتع بإطلالة مختلفة مع الحفاظ على الحذاء الأساسي." data-en="Enjoy a different look while keeping the original shoe.">استمتع بإطلالة مختلفة مع الحفاظ على الحذاء الأساسي.</p></article>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-symbol">₤</div>
+          <h3 data-ar="التوفير" data-en="Save More">التوفير</h3>
+          <p data-ar="مش محتاج تشتري كل الجزم بكل الألوان. حذاء واحد مع كفرات متعددة يمنحك اختيارات أكثر."
+             data-en="No need to buy shoes in every color. One shoe with multiple covers gives you more options.">
+            مش محتاج تشتري كل الجزم بكل الألوان. حذاء واحد مع كفرات متعددة يمنحك اختيارات أكثر.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-symbol">✦</div>
+          <h3 data-ar="الأناقة" data-en="Style">الأناقة</h3>
+          <p data-ar="اختار المظهر واللون المناسب لك، وغيّر شكل حذائك حسب المناسبة."
+             data-en="Choose the look and color you like, and change your shoe style to suit the occasion.">
+            اختار المظهر واللون المناسب لك، وغيّر شكل حذائك حسب المناسبة.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-symbol">◈</div>
+          <h3 data-ar="التناسق" data-en="Matching">التناسق</h3>
+          <p data-ar="خلي لون حذائك مناسب للون قميصك وملابسك، من غير ما تحتاج حذاء جديد كل مرة."
+             data-en="Match your shoe color with your shirt and outfit without needing a new pair every time.">
+            خلي لون حذائك مناسب للون قميصك وملابسك، من غير ما تحتاج حذاء جديد كل مرة.
+          </p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="cta" id="contact">
+  <section id="colors">
     <div class="wrap">
-      <span class="kicker" data-ar="قريبًا" data-en="COMING SOON">قريبًا</span>
-      <h2 data-ar="Leather Cover R" data-en="Leather Cover R">Leather Cover R</h2>
-      <p data-ar="نحو مفهوم جديد للأحذية الجلدية الكلاسيكية. تابعونا للتعرّف على الإطلاق وتفاصيل المنتج." data-en="A new concept for classic leather footwear. Follow along for launch news and product details.">نحو مفهوم جديد للأحذية الجلدية الكلاسيكية. تابعونا للتعرّف على الإطلاق وتفاصيل المنتج.</p>
-      <a class="btn" href="#home" data-ar="العودة إلى الأعلى" data-en="Back to top">العودة إلى الأعلى</a>
+      <div class="section-title">
+        <h2 data-ar="ألوان تناسب أسلوبك" data-en="Colors That Match Your Style">ألوان تناسب أسلوبك</h2>
+        <p data-ar="اختيارات لونية متعددة لتجديد مظهرك" data-en="Multiple color choices to refresh your look">اختيارات لونية متعددة لتجديد مظهرك</p>
+      </div>
+
+      <div class="color-list">
+        <div class="color-item"><span class="swatch" style="background:#b3262d"></span><span data-ar="أحمر" data-en="Red">أحمر</span></div>
+        <div class="color-item"><span class="swatch" style="background:#173c2b"></span><span data-ar="أخضر" data-en="Green">أخضر</span></div>
+        <div class="color-item"><span class="swatch" style="background:#777044"></span><span data-ar="زيتوني" data-en="Olive">زيتوني</span></div>
+        <div class="color-item"><span class="swatch" style="background:#d87925"></span><span data-ar="برتقالي" data-en="Orange">برتقالي</span></div>
+        <div class="color-item"><span class="swatch" style="background:#172b50"></span><span data-ar="كحلي" data-en="Navy">كحلي</span></div>
+        <div class="color-item"><span class="swatch" style="background:#2872b9"></span><span data-ar="أزرق" data-en="Blue">أزرق</span></div>
+        <div class="color-item"><span class="swatch" style="background:#702c43"></span><span data-ar="نبيتي" data-en="Burgundy">نبيتي</span></div>
+        <div class="color-item"><span class="swatch" style="background:#17616a"></span><span data-ar="بترولي" data-en="Petrol">بترولي</span></div>
+        <div class="color-item"><span class="swatch" style="background:#75472e"></span><span data-ar="بني" data-en="Brown">بني</span></div>
+        <div class="color-item"><span class="swatch" style="background:#999999"></span><span data-ar="رمادي" data-en="Grey">رمادي</span></div>
+        <div class="color-item"><span class="swatch" style="background:#424242"></span><span data-ar="رمادي غامق" data-en="Dark Grey">رمادي غامق</span></div>
+        <div class="color-item"><span class="swatch" style="background:#83c6df"></span><span data-ar="سماوي" data-en="Sky Blue">سماوي</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="order">
+    <div class="wrap">
+      <div class="section-title">
+        <h2 data-ar="ابدأ اختيارك" data-en="Make Your Choice">ابدأ اختيارك</h2>
+        <p data-ar="اختر تفاصيل طلبك" data-en="Choose your order details">اختر تفاصيل طلبك</p>
+      </div>
+
+      <div class="order-box">
+        <form id="orderForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="shoeSize" data-ar="مقاس الحذاء" data-en="Shoe Size">مقاس الحذاء</label>
+              <select id="shoeSize" required>
+                <option value="" data-ar="اختر المقاس" data-en="Select size">اختر المقاس</option>
+                <option>39</option><option>40</option><option>41</option>
+                <option>42</option><option>43</option><option>44</option>
+                <option>45</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="coverColor" data-ar="لون الكافر" data-en="Cover Color">لون الكافر</label>
+              <select id="coverColor" required>
+                <option value="" data-ar="اختر اللون" data-en="Select color">اختر اللون</option>
+                <option data-ar="أحمر" data-en="Red" value="أحمر">أحمر</option>
+                <option data-ar="أخضر" data-en="Green" value="أخضر">أخضر</option>
+                <option data-ar="زيتوني" data-en="Olive" value="زيتوني">زيتوني</option>
+                <option data-ar="برتقالي" data-en="Orange" value="برتقالي">برتقالي</option>
+                <option data-ar="كحلي" data-en="Navy" value="كحلي">كحلي</option>
+                <option data-ar="أزرق" data-en="Blue" value="أزرق">أزرق</option>
+                <option data-ar="نبيتي" data-en="Burgundy" value="نبيتي">نبيتي</option>
+                <option data-ar="بترولي" data-en="Petrol" value="بترولي">بترولي</option>
+                <option data-ar="بني" data-en="Brown" value="بني">بني</option>
+                <option data-ar="رمادي" data-en="Grey" value="رمادي">رمادي</option>
+                <option data-ar="رمادي غامق" data-en="Dark Grey" value="رمادي غامق">رمادي غامق</option>
+                <option data-ar="سماوي" data-en="Sky Blue" value="سماوي">سماوي</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="quantity" data-ar="الكمية" data-en="Quantity">الكمية</label>
+              <input id="quantity" type="number" min="1" value="1" required>
+            </div>
+
+            <div class="field">
+              <label for="payment" data-ar="طريقة الدفع المفضلة" data-en="Preferred Payment">طريقة الدفع المفضلة</label>
+              <select id="payment" required>
+                <option value="الدفع عند الاستلام" data-ar="الدفع عند الاستلام" data-en="Cash on Delivery">الدفع عند الاستلام</option>
+                <option value="الدفع الإلكتروني" data-ar="الدفع الإلكتروني" data-en="Electronic Payment">الدفع الإلكتروني</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn" type="submit" data-ar="جهّز طلبك الآن" data-en="PREPARE YOUR ORDER">
+            جهّز طلبك الآن
+          </button>
+
+          <p class="form-note"
+             data-ar="هذه معاينة لتفاصيل الطلب فقط. استقبال الطلبات والدفع الإلكتروني يحتاجان إلى ربط نظام الطلبات وبوابة الدفع."
+             data-en="This is an order preview only. Receiving orders and electronic payments requires an order system and payment gateway integration.">
+            هذه معاينة لتفاصيل الطلب فقط. استقبال الطلبات والدفع الإلكتروني يحتاجان إلى ربط نظام الطلبات وبوابة الدفع.
+          </p>
+
+          <div id="orderResult" aria-live="polite"></div>
+        </form>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap footer-inner">
-    <div class="footer-brand">LEATHER COVER R</div>
-    <div data-ar="© Leather Cover R — جميع الحقوق محفوظة" data-en="© Leather Cover R — All rights reserved">© Leather Cover R — جميع الحقوق محفوظة</div>
-    <div data-ar="A NEW WAY OF CLASSIC" data-en="A NEW WAY OF CLASSIC">A NEW WAY OF CLASSIC</div>
+  <div class="wrap">
+    <div class="footer-name">LEATHER COVER R</div>
+    <div data-ar="حذاء واحد... اختيارات لا تنتهي." data-en="One Shoe... Endless Choices.">
+      حذاء واحد... اختيارات لا تنتهي.
+    </div>
+    <div>© <span id="year"></span> Leather Cover R. All Rights Reserved.</div>
   </div>
 </footer>
+
 <script>
-  const langBtn=document.getElementById('langBtn');
-  const menuBtn=document.getElementById('menuBtn');
-  const nav=document.getElementById('nav');
-  let lang='ar';
-  langBtn.addEventListener('click',()=>{
-    lang=lang==='ar'?'en':'ar';
-    document.documentElement.lang=lang;
-    document.documentElement.dir=lang==='ar'?'rtl':'ltr';
-    document.querySelectorAll('[data-ar][data-en]').forEach(el=>{el.textContent=el.dataset[lang]});
-    langBtn.textContent=lang==='ar'?'English':'العربية';
+  let currentLang = "ar";
+
+  const langBtn = document.getElementById("langBtn");
+  const menuBtn = document.getElementById("menuBtn");
+  const mainNav = document.getElementById("mainNav");
+
+  menuBtn.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
   });
-  menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
-  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => mainNav.classList.remove("open"));
+  });
+
+  langBtn.addEventListener("click", () => {
+    currentLang = currentLang === "ar" ? "en" : "ar";
+
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+    langBtn.textContent = currentLang === "ar" ? "EN" : "AR";
+
+    document.querySelectorAll("[data-ar][data-en]").forEach(element => {
+      const value = element.getAttribute("data-" + currentLang);
+      if (element.tagName === "OPTION") {
+        element.textContent = value;
+      } else {
+        element.innerHTML = value;
+      }
+    });
+
+    document.getElementById("shoeSize").options[0].textContent =
+      currentLang === "ar" ? "اختر المقاس" : "Select size";
+
+    document.getElementById("coverColor").options[0].textContent =
+      currentLang === "ar" ? "اختر اللون" : "Select color";
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.getElementById("orderForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const size = document.getElementById("shoeSize").value;
+    const color = document.getElementById("coverColor").value;
+    const quantity = document.getElementById("quantity").value;
+    const payment = document.getElementById("payment").value;
+
+    const result = document.getElementById("orderResult");
+
+    if (!size || !color || Number(quantity) < 1) return;
+
+    if (currentLang === "ar") {
+      result.textContent =
+        "تم تجهيز معاينة طلبك:\n" +
+        "مقاس الحذاء: " + size + "\n" +
+        "لون الكافر: " + color + "\n" +
+        "الكمية: " + quantity + "\n" +
+        "طريقة الدفع: " + payment + "\n\n" +
+        "هذه البيانات لم تُرسل بعد. سيتم تفعيل استقبال الطلبات بعد ربط نظام الطلبات.";
+    } else {
+      result.textContent =
+        "Your order preview:\n" +
+        "Shoe size: " + size + "\n" +
+        "Cover color: " + color + "\n" +
+        "Quantity: " + quantity + "\n" +
+        "Payment: " + payment + "\n\n" +
+        "This information has not been submitted. Order submission will be enabled after connecting an order system.";
+    }
+
+    result.style.display = "block";
+    result.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
 </script>
+
 </body>
 </html>
