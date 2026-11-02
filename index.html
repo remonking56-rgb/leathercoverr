@@ -82,57 +82,6 @@ h1 span{color:var(--gold)}
   max-width:680px;margin:0 auto 25px;
   color:var(--muted);font-size:17px
 }
-
-/* INTERACTIVE INTERCHANGEABLE SHOWCASE */
-.product-showcase {
-  text-align:center;
-  max-width:550px;
-  margin:0 auto 35px;
-  padding:20px;
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:8px;
-}
-.shoe-display img {
-  width:100%;
-  max-width:380px;
-  height:auto;
-  border-radius:8px;
-  transition:opacity 0.2s ease, transform 0.2s ease;
-}
-.color-name {
-  color:var(--gold);
-  margin-top:12px;
-  font-size:19px;
-  font-weight:bold;
-}
-.color-selection p {
-  color:var(--white);
-  font-size:15px;
-  margin:15px 0 12px;
-}
-.colors-grid {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:12px;
-  max-width:360px;
-  margin:0 auto;
-}
-.color-dot {
-  width:32px;
-  height:32px;
-  border-radius:50%;
-  cursor:pointer;
-  border:2px solid #333;
-  transition:all 0.2s ease;
-}
-.color-dot:hover, .color-dot.active {
-  transform:scale(1.25);
-  border-color:var(--gold-light);
-  box-shadow:0 0 10px rgba(197, 164, 119, 0.8);
-}
-
 .gift-offer{
   max-width:650px;margin:28px auto 30px;padding:23px 18px;
   border:1px solid var(--gold);border-radius:5px;
@@ -308,11 +257,253 @@ footer p{margin:4px 0}
       حذاء جلد طبيعي أبيض كلاسيكي، مع كفرات جلدية ملونة قابلة للتبديل بسهوله لتجديد مظهرك في أي وقت.
     </p>
 
-    <!-- قسم تفاعلي لاستعراض تبديل الألوان فوراً للعميل -->
-    <div class="product-showcase">
-        <div class="shoe-display">
-            <img id="main-shoe" src="images/shoe-white.png" alt="Leather Cover R Base">
-            <h3 id="color-title" class="color-name" data-ar="اللون: الحذاء الأساسي (أبيض)" data-en="Color: Base Shoe (White)">اللون: الحذاء الأساسي (أبيض)</h3>
+    <div class="gift-offer">
+      <span class="gift-label" data-ar="هدية مجانية مع الحذاء" data-en="FREE GIFT WITH YOUR SHOE">هدية مجانية مع الحذاء</span>
+      <h2 data-ar="حذاء أبيض + 5 كفرات ملونة هدية"
+          data-en="1 WHITE SHOE + 5 FREE COLOR COVERS">
+        حذاء أبيض + 5 كفرات ملونة هدية
+      </h2>
+      <p data-ar="احصل على الحذاء الأبيض الأساسي + 5 كفرات جلدية ملونة (هدية مجانية) لتستمتع بـ 6 إطلالات كاملة تناسب جميع ملابسك ومناسباتك بطلب واحد.""
+         data-en="Five different colored covers included with your white shoe to change your look and match your outfits.">
+         احصل على الحذاء الأبيض الأساسي + 5 كفرات جلدية ملونة (هدية مجانية) لتستمتع بـ 6 إطلالات كاملة تناسب جميع ملابسك ومناسباتك بطلب واحد.
+      </p>
+    </div>
+
+    <a href="#order" class="btn" data-ar="اطلب الآن" data-en="ORDER NOW">اطلب الآن</a>
+    <a href="#idea" class="btn btn-outline" data-ar="اكتشف الفكرة" data-en="DISCOVER THE IDEA">اكتشف الفكرة</a>
+  </div>
+</section>
+
+<section id="idea">
+  <div class="wrap">
+    <div class="section-title">
+      <h2 data-ar="فكرة Leather Cover R" data-en="The Leather Cover R Concept">فكرة Leather Cover R</h2>
+      <p data-ar="حذاء كلاسيكي بتجربة مختلفة" data-en="A classic shoe with a different experience">حذاء كلاسيكي بتجربة مختلفة</p>
+    </div>
+
+    <div class="message">
+      <h2 data-ar="غيّر مظهرك، واحتفظ بحذائك."
+          data-en="Change Your Look. Keep Your Shoe.">
+        غيّر مظهرك، واحتفظ بحذائك.
+      </h2>
+      <p data-ar="بدلاً من شراء حذاء جديد مع كل لون، يمكنك تغيير الكفر الجلدي الخارجي بكل سهوله والاستمتاع بمظهر مختلف مع الحفاظ على الحذاء الأساسي."
+         data-en="Instead of buying a new shoe for every color, change the outer leather cover and enjoy a different look while keeping your original shoe.">
+        بدلاً من شراء حذاء جديد مع كل لون، يمكنك تغيير الكفر الجلدي الخارجي بكل سهوله والاستمتاع بمظهر مختلف مع الحفاظ على الحذاء الأساسي.
+      </p>
+      <p class="highlight" data-ar="الحذاء أبيض، وخمسة ألوان إضافية هدية معاه."
+         data-en="A white shoe, with five additional colors included as a gift.">
+        الحذاء أبيض، وخمسة ألوان إضافية هدية معاه.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="benefits">
+  <div class="wrap">
+    <div class="section-title">
+      <h2 data-ar="أكثر من مجرد حذاء" data-en="More Than Just a Shoe">أكثر من مجرد حذاء</h2>
+      <p data-ar="ثلاث مزايا تجعل اختياراتك أوسع" data-en="Three benefits that give you more choices">ثلاث مزايا تجعل اختياراتك أوسع</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-symbol">₤</div>
+        <h3 data-ar="التوفير" data-en="Save More">التوفير</h3>
+        <p data-ar="مش محتاج تشتري كل الجزم بكل الألوان. حذاء واحد وخمسة كفرات هدية يمنحوك اختيارات أكثر."
+           data-en="No need to buy shoes in every color. One shoe and five free covers give you more choices.">
+          مش محتاج تشتري كل الجزم بكل الألوان. حذاء واحد وخمسة كفرات هدية يمنحوك اختيارات أكثر.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-symbol">✦</div>
+        <h3 data-ar="الأناقة" data-en="Style">الأناقة</h3>
+        <p data-ar="غيّر شكل حذائك حسب المناسبة والمظهر الذي تختاره."
+           data-en="Change your shoe's look to suit the occasion and your personal style.">
+          غيّر شكل حذائك حسب المناسبة والمظهر الذي تختاره.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-symbol">◈</div>
+        <h3 data-ar="التناسق" data-en="Matching">التناسق</h3>
+        <p data-ar="اختار لون الكافر المناسب لقميصك وملابسك، وجدّد إطلالتك بسهولة."
+           data-en="Choose a cover color that matches your shirt and outfit, and refresh your look easily.">
+          اختار لون الكافر المناسب لقميصك وملابسك، وجدّد إطلالتك بسهولة.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="colors">
+  <div class="wrap">
+    <div class="section-title">
+      <h2 data-ar="ألوان تناسب أسلوبك" data-en="Colors That Match Your Style">ألوان تناسب أسلوبك</h2>
+      <p data-ar="مجموعة من الألوان لتجديد مظهرك" data-en="A range of colors to refresh your look">مجموعة من الألوان لتجديد مظهرك</p>
+    </div>
+
+    <div class="color-list">
+      <div class="color-item"><span class="swatch" style="background:#b3262d"></span><span data-ar="أحمر" data-en="Red">أحمر</span></div>
+      <div class="color-item"><span class="swatch" style="background:#173c2b"></span><span data-ar="أخضر" data-en="Green">أخضر</span></div>
+      <div class="color-item"><span class="swatch" style="background:#777044"></span><span data-ar="زيتوني" data-en="Olive">زيتوني</span></div>
+      <div class="color-item"><span class="swatch" style="background:#d87925"></span><span data-ar="برتقالي" data-en="Orange">برتقالي</span></div>
+      <div class="color-item"><span class="swatch" style="background:#172b50"></span><span data-ar="كحلي" data-en="Navy">كحلي</span></div>
+      <div class="color-item"><span class="swatch" style="background:#2872b9"></span><span data-ar="أزرق" data-en="Blue">أزرق</span></div>
+      <div class="color-item"><span class="swatch" style="background:#702c43"></span><span data-ar="نبيتي" data-en="Burgundy">نبيتي</span></div>
+      <div class="color-item"><span class="swatch" style="background:#17616a"></span><span data-ar="بترولي" data-en="Petrol">بترولي</span></div>
+      <div class="color-item"><span class="swatch" style="background:#75472e"></span><span data-ar="بني" data-en="Brown">بني</span></div>
+      <div class="color-item"><span class="swatch" style="background:#999999"></span><span data-ar="رمادي" data-en="Grey">رمادي</span></div>
+      <div class="color-item"><span class="swatch" style="background:#424242"></span><span data-ar="رمادي غامق" data-en="Dark Grey">رمادي غامق</span></div>
+      <div class="color-item"><span class="swatch" style="background:#83c6df"></span><span data-ar="سماوي" data-en="Sky Blue">سماوي</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="order">
+  <div class="wrap">
+    <div class="section-title">
+      <h2 data-ar="اطلب حذاءك الآن" data-en="Order Your Shoe Now">اطلب حذاءك الآن</h2>
+      <p data-ar="حذاء أبيض وخمسة كفرات ملونة هدية" data-en="One white shoe and five free colored covers">حذاء أبيض وخمسة كفرات ملونة هدية</p>
+    </div>
+
+    <div class="order-box">
+      <div class="order-gift">
+        <strong data-ar="حذاء أبيض + 5 كفرات هدية"
+                data-en="White Shoe + 5 Free Covers">
+          حذاء أبيض + 5 كفرات هدية
+        </strong>
+        <span data-ar="الهدية تشمل خمسة كفرات بألوان مختلفة"
+              data-en="The gift includes five covers in different colors">
+          الهدية تشمل خمسة كفرات بألوان مختلفة
+        </span>
+      </div>
+
+      <form id="orderForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="shoeSize" data-ar="مقاس الحذاء" data-en="Shoe Size">مقاس الحذاء</label>
+            <select id="shoeSize" required>
+              <option value="" data-ar="اختر المقاس" data-en="Select size">اختر المقاس</option>
+              <option>40</option><option>41</option>
+              <option>42</option><option>43</option><option>44</option><option>45</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="quantity" data-ar="الكمية" data-en="Quantity">الكمية</label>
+            <input id="quantity" type="number" min="1" value="1" required>
+          </div>
+
+          <div class="field">
+            <label for="payment" data-ar="طريقة الدفع المفضلة" data-en="Preferred Payment">طريقة الدفع المفضلة</label>
+            <select id="payment" required>
+              <option value="الدفع عند الاستلام" data-ar="الدفع عند الاستلام" data-en="Cash on Delivery">الدفع عند الاستلام</option>
+              <option value="الدفع الإلكتروني" data-ar="الدفع الإلكتروني" data-en="Electronic Payment">الدفع الإلكتروني</option>
+            </select>
+          </div>
         </div>
-        <div class="color-selection">
-            <p data-ar="اضغط لتغيير لون الكفر الجلدي:" data-en="Click to swap the leather cover color:">اضغط لتغيير لون الكفر الجلدي:</p>
+
+        <button class="btn" type="submit"
+          data-ar="جهّز طلبك الآن"
+          data-en="PREPARE YOUR ORDER">جهّز طلبك الآن</button>
+
+        <p class="form-note"
+          data-ar="هذه معاينة للطلب فقط. استقبال الطلبات والدفع الإلكتروني يحتاجان إلى ربط نظام طلبات وبوابة دفع."
+          data-en="This is an order preview only. Receiving orders and electronic payments requires an order system and payment gateway.">
+          هذه معاينة للطلب فقط. استقبال الطلبات والدفع الإلكتروني يحتاجان إلى ربط نظام طلبات وبوابة دفع.
+        </p>
+
+        <div id="orderResult" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-ar="حذاء واحد... اختيارات لا تنتهي."
+       data-en="One Shoe... Endless Choices.">
+      حذاء واحد... اختيارات لا تنتهي.
+    </p>
+    <p>© <span id="year"></span> Leather Cover R. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+let currentLang = "ar";
+
+const langBtn = document.getElementById("langBtn");
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", () => {
+  mainNav.classList.toggle("open");
+});
+
+mainNav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => mainNav.classList.remove("open"));
+});
+
+function changeLanguage(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  langBtn.textContent = lang === "ar" ? "EN" : "AR";
+
+  document.querySelectorAll("[data-ar][data-en]").forEach(element => {
+    const translated = element.getAttribute("data-" + lang);
+
+    if (element.tagName === "OPTION") {
+      element.textContent = translated;
+    } else {
+      element.innerHTML = translated;
+    }
+  });
+}
+
+langBtn.addEventListener("click", () => {
+  changeLanguage(currentLang === "ar" ? "en" : "ar");
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const size = document.getElementById("shoeSize").value;
+  const quantity = document.getElementById("quantity").value;
+  const payment = document.getElementById("payment").value;
+  const result = document.getElementById("orderResult");
+
+  if (!size || Number(quantity) < 1) return;
+
+  if (currentLang === "ar") {
+    result.textContent =
+      "معاينة طلبك:\n" +
+      "الحذاء: أبيض كلاسيكي\n" +
+      "المقاس: " + size + "\n" +
+      "الكمية: " + quantity + "\n" +
+      "الهدية: خمسة كفرات بألوان مختلفة مع كل حذاء\n" +
+      "طريقة الدفع المفضلة: " + payment + "\n\n" +
+      "لم يتم إرسال الطلب بعد. سيتم تفعيل استقبال الطلبات بعد ربط نظام الطلبات.";
+  } else {
+    result.textContent =
+      "Your order preview:\n" +
+      "Shoe: Classic white shoe\n" +
+      "Size: " + size + "\n" +
+      "Quantity: " + quantity + "\n" +
+      "Gift: Five covers in different colors with each shoe\n" +
+      "Preferred payment: " + payment + "\n\n" +
+      "Your order has not been submitted. Order submission will be enabled after connecting an order system.";
+  }
+
+  result.style.display = "block";
+  result.scrollIntoView({behavior:"smooth",block:"nearest"});
+});
+</script>
+
+</body>
+</html>
