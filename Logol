@@ -79,7 +79,7 @@
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#home">LEATHER COVER <span>R</span></a>
+    <a class="brand" href="#home"><img src="logo.png" alt="Leather Cover R" style="height:44px;width:auto;display:block;">
     <nav id="nav">
       <a href="#about" data-ar="عن المشروع" data-en="About">عن المشروع</a>
       <a href="#concept" data-ar="الفكرة" data-en="The Concept">الفكرة</a>
@@ -211,5 +211,5 @@
   menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
   nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 </script>
-</body><img src="logo.png" alt="Leather Cover R Logo" style="width:160px; height:auto; display:block; margin:20px auto;">
+</body>
 </html>
