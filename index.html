@@ -601,13 +601,15 @@ body.english nav {
 
 /* ترتيب الفيديوهات وصورة الحذاء */
 
+/* ترتيب الفيديوهات وصورة الحذاء */
+
 .hero-media-layout {
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr) !important;
+  grid-template-columns: 280px minmax(300px, 1fr) 280px !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 15px !important;
   width: 100% !important;
-  max-width: 950px !important;
+  max-width: 1200px !important;
   margin: 25px auto !important;
   direction: ltr !important;
 }
@@ -619,10 +621,10 @@ body.english nav {
 
 .hero-media-layout .hero-video {
   display: block !important;
-  width: 100% !important;
-  max-width: 240px !important;
+  width: 280px !important;
+  max-width: 280px !important;
   height: auto !important;
-  max-height: 220px !important;
+  max-height: 280px !important;
   object-fit: contain !important;
   justify-self: center !important;
   border-radius: 8px;
@@ -635,34 +637,10 @@ body.english nav {
   }
 
   .hero-media-layout .hero-video {
-    max-width: 100% !important;
-    max-height: 110px !important;
-  }
-}
-
- @media (min-width: 701px) {
-  .hero-media-layout .hero-video {
-    width: 240px !important;
-    max-width: 240px !important;
-    height: auto !important;
-    max-height: 240px !important;
-  }
-}
- @media (min-width: 701px) {
-  .hero-media-layout {
-    display: grid !important;
-    grid-template-columns: 260px minmax(300px, 1fr) 260px !important;
-    max-width: 1150px !important;
     width: 100% !important;
-    gap: 15px !important;
-  }
-
-  .hero-media-layout .hero-video {
-    width: 260px !important;
-    max-width: 260px !important;
+    max-width: 100% !important;
     height: auto !important;
-    max-height: 260px !important;
-    object-fit: contain !important;
+    max-height: 110px !important;
   }
 }
 </style>  </head>  <body>  <header>  
