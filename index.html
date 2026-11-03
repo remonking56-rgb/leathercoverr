@@ -646,6 +646,28 @@ body.english nav {
     margin: 12px auto !important;
   }
 }
+ /* Video size - all devices */
+.hero-media-layout .hero-video,
+.hero-video {
+  display: block !important;
+  width: 100% !important;
+  max-width: 190px !important;
+  height: auto !important;
+  max-height: 150px !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  margin: 12px auto !important;
+  justify-self: center !important;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .hero-media-layout .hero-video,
+  .hero-video {
+    max-width: 150px !important;
+    max-height: 120px !important;
+  }
+}
 </style>  </head>  <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
@@ -668,17 +690,7 @@ body.english nav {
 <p data-t="heroText">  
   غيّر لون الكفر الخارجي بسهولة واستمتع بمظهر جديد،  
   مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.  
-</p>  
 
-.hero-media-layout .hero-video {
-  width: 100% !important;
-  max-width: 230px !important;
-  height: auto !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  justify-self: center;
-  clip-path: inset(3% 0 0 0);
-}
  
   <video class="hero-video" autoplay muted loop playsinline preload="metadata">
   <source src="images/ad-1.mp4" type="video/mp4">
