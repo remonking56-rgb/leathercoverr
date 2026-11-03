@@ -1,1377 +1,1025 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<link rel="icon" type="image/png" href="./logo.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Leather Cover R | Official</title>
-<meta name="description" content="Leather Cover R - حذاء جلد طبيعي كلاسيكي بكفرات خارجية قابلة للتغيير بكل سهولة. حذاء واحد وألوان متعددة.">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://remonking56-rgb.github.io/leathercoverr/">
-
-<style>
-:root {
-  --bg:#090909;
-  --panel:#151515;
-  --gold:#c5a477;
-  --green:#168b55;
-  --green-hover:#20a568;
-  --white:#f5f3ef;
-  --muted:#aaa;
-}
-
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-
-body {
-  margin:0;
-  background:var(--bg);
-  color:var(--white);
-  font-family:Tahoma,Arial,sans-serif;
-  line-height:1.8;
-}
-
-a { color:inherit;text-decoration:none; }
-button,input,select,textarea { font:inherit; }
-
-.wrap {
-  width:min(1150px,calc(100% - 36px));
-  margin:auto;
-}
-
-header {
-  position:sticky;
-  top:0;
-  z-index:20;
-  background:rgba(9,9,9,.97);
-  border-bottom:1px solid #29231c;
-}
-
-.header-inner {
-  min-height:72px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
-}
-
-.logo-img {
-  display:block;
-  width:190px;
-  max-height:65px;
-  object-fit:contain;
-}
-
-.footer-logo {
-  width:170px;
-  margin:0 auto;
-}
-
-nav {
-  display:flex;
-  align-items:center;
-  gap:20px;
-  font-size:14px;
-}
-
-nav a:hover { color:var(--gold); }
-
-.lang-btn {
-  border:1px solid var(--gold);
-  color:var(--gold);
-  background:transparent;
-  padding:5px 13px;
-  cursor:pointer;
-  border-radius:5px;
-}
-
-.hero {
-  padding:48px 0 65px;
-  text-align:center;
-}
-
-.eyebrow {
-  color:var(--gold);
-  letter-spacing:3px;
-  font-size:12px;
-  margin-bottom:12px;
-}
-
-h1 {
-  font-size:clamp(30px,5vw,52px);
-  line-height:1.4;
-  margin:0 0 12px;
-}
-
-.hero p {
-  color:#c0c0c0;
-  max-width:650px;
-  margin:0 auto 24px;
-}
-
-.btn {
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  border:0;
-  cursor:pointer;
-  border-radius:7px;
-  padding:13px 25px;
-  font-weight:bold;
-}
-
-.btn-primary {
-  background:var(--gold);
-  color:#090909;
-}
-
-.btn-primary:hover { background:#e0c39a; }
-
-/* الزران الأساسيان باللون الأخضر */
-.product-buy,
-.form-submit {
-  background:var(--green);
-  color:#fff;
-}
-
-.product-buy:hover,
-.form-submit:hover {
-  background:var(--green-hover);
-}
-
-.product-area {
-  width:min(560px,100%);
-  margin:38px auto 0;
-}
-
-.product-stage {
-  width:100%;
-  height:460px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;
-  border-radius:12px;
-  background:#111;
-  line-height:0;
-}
-
-.product-stage img {
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  object-position:center;
-  transition:opacity .25s ease;
-
- .color-grid {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
-  max-width: 550px;
-  margin: 10px auto 0;
-}
-
-.color-btn {
-  width: 100%;
-}
-
-.color-choice {
-  width: 100%;
-  min-height: 65px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  background: #151515;
-  border: 1px solid #333;
-  color: white;
-  border-radius: 7px;
-  padding: 7px;
-  cursor: pointer;
-  font-size: 13px;
-  text-align: center;
-  transition: .2s;
-}
-
-.color-choice:hover,
-.color-choice.active {
-  border-color: var(--gold);
-  background: #211d17;
-}
-
-.color-dot {
-  width: 27px;
-  height: 27px;
-  flex: 0 0 27px;
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #aaa;
-}
-
-.custom-color-button {
-  width:100%;
-  background:#211d17;
-  color:var(--gold);
-  border:1px solid var(--gold);
-  border-radius:7px;
-  padding:9px 13px;
-  cursor:pointer;
-  font-size:13px;
-  font-weight:bold;
-  text-align:center;
-  transition:.2s;
-}
-
-.custom-color-button:hover {
-  background:var(--gold);
-  color:#090909;
-}
-
-.custom-color-note {
-  color:#aaa;
-  text-align:center;
-  font-size:13px;
-  margin:12px auto 0;
-}
-
-.selected-info {
-  text-align:center;
-  color:var(--gold);
-  margin-top:8px;
-  font-size:14px;
-}
-
-.product-caption {
-  color:#aaa;
-  margin-top:8px;
-  font-size:13px;
-}
-
-.product-buy {
-  width:220px;
-  min-height:58px;
-  font-size:20px;
-  margin:22px auto 0;
-}
-
-.auto-note {
-  color:#999;
-  text-align:center;
-  font-size:12px;
-  margin-top:8px;
-}
-
-.section {
-  padding:65px 0;
-  border-top:1px solid #211e19;
-}
-
-.section-title {
-  text-align:center;
-  margin-bottom:30px;
-}
-
-.section-title h2 {
-  font-size:29px;
-  margin:0 0 8px;
-}
-
-.section-title p { color:var(--muted); }
-
-.selection-box {
-  text-align:center;
-  margin-top:25px;
-  color:#ddd;
-}
-
-.order-color-button {
-  background:#151515;
-  color:var(--gold);
-  border:1px solid #4b3c28;
-  padding:9px 14px;
-  border-radius:6px;
-  cursor:pointer;
-  margin:4px;
-}
-
-.order-color-button.selected {
-  background:var(--gold);
-  color:#090909;
-}
-
-.selection-counter {
-  color:var(--gold);
-  margin-bottom:10px;
-}
-
-.features {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.feature {
-  background:var(--panel);
-  padding:24px;
-  border:1px solid #29241e;
-  border-radius:10px;
-  text-align:center;
-}
-
-.feature h3 { color:var(--gold); }
-
-.feature p {
-  color:#aaa;
-  font-size:14px;
-}
-
-.offer {
-  text-align:center;
-  background:linear-gradient(135deg,#19150f,#101010);
-  border:1px solid #4b3c28;
-  border-radius:12px;
-  padding:35px 20px;
-}
-
-.offer h2 { color:var(--gold); }
-.offer p { color:#ccc; }
-
-.style-section {
-  padding:65px 0;
-  border-top:1px solid #211e19;
-  text-align:center;
-}
-
-.style-section h2 {
-  font-size:29px;
-  margin:0 0 18px;
-}
-
-.style-section p {
-  color:#ccc;
-  max-width:760px;
-  margin:12px auto;
-}
-
-.style-section h3 {
-  color:var(--gold);
-  margin-top:25px;
-}
-
-.style-offer {
-  color:var(--gold);
-  font-size:20px;
-  font-weight:bold;
-  margin:18px 0;
-}
-
-#order { scroll-margin-top:95px; }
-
-.order-layout {
-  display:grid;
-  grid-template-columns:.8fr 1.4fr;
-  gap:25px;
-  align-items:start;
-}
-
-.order-note,.order-form {
-  background:var(--panel);
-  border:1px solid #30291f;
-  border-radius:10px;
-  padding:24px;
-}
-
-.order-note h3,.order-form h3 { color:var(--gold); }
-.order-note li { margin-bottom:10px; }
-
-.notice {
-  color:var(--gold);
-  font-size:13px;
-  border-top:1px solid #383027;
-  padding-top:15px;
-}
-
-.form-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
-
-.field {
-  display:flex;
-  flex-direction:column;
-  gap:7px;
-}
-
-.field.full { grid-column:1/-1; }
-
-.field label {
-  font-size:14px;
-  color:#ddd;
-}
-
-.field input,.field select,.field textarea {
-  background:#0b0b0b;
-  color:white;
-  border:1px solid #484038;
-  border-radius:6px;
-  padding:11px;
-  width:100%;
-}
-
-.field textarea {
-  min-height:85px;
-  resize:vertical;
-}
-
-.payment-list {
-  display:grid;
-  gap:10px;
-}
-
-.payment {
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:12px;
-  background:#0c0c0c;
-  border:1px solid #39332b;
-  border-radius:7px;
-  cursor:pointer;
-}
-
-.payment input { accent-color:var(--gold); }
-
-.payment small {
-  display:block;
-  color:#999;
-  font-size:12px;
-}
-
-.payment.disabled { opacity:.45; }
-
-.form-submit {
-  width:100%;
-  margin-top:20px;
-  font-size:16px;
-}
-
-.fineprint {
-  color:#999;
-  font-size:12px;
-  text-align:center;
-}
-
-.contact-row {
-  display:flex;
-  justify-content:center;
-  gap:18px;
-  flex-wrap:wrap;
-}
-
-.contact-card {
-  width:220px;
-  padding:22px;
-  background:var(--panel);
-  border:1px solid #393027;
-  border-radius:9px;
-  text-align:center;
-}
-
-.contact-card strong {
-  display:block;
-  color:var(--gold);
-}
-
-.contact-card small { color:#999; }
-
-.footer {
-  padding:35px 0;
-  border-top:1px solid #29231c;
-  text-align:center;
-  color:#999;
-}
-
-.whatsapp-float {
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  z-index:30;
-  width:52px;
-  height:52px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  background:#168b55;
-  color:white;
-  font-size:26px;
-}
-
-@media(max-width:700px) {
-  .header-inner {
-    flex-wrap:wrap;
-    padding:10px 0;
-  }
-
-  nav {
-    order:3;
-    width:100%;
-    justify-content:center;
-    gap:13px;
-    font-size:12px;
-  }
-
-  .logo-img { width:150px; }
-
-  .product-stage { height:360px; }
-
-  .features { grid-template-columns:1fr; }
-
-  .order-layout { grid-template-columns:1fr; }
-
-  .form-grid { grid-template-columns:1fr; }
-
-  .field.full { grid-column:auto; }
-}
-
-/* ضبط اتجاه الصفحة الإنجليزية */
-html[dir="ltr"] body {
-  direction:ltr;
-  text-align:left;
-}
-
-html[dir="ltr"] .color-choice {
-  text-align:left;
-}
-
-html[dir="ltr"] .color-dot {
-  margin-left:0;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="wrap header-inner">
-    <a href="#home" aria-label="Leather Cover R">
-      <img class="logo-img" src="./logo.png" alt="Leather Cover R">
-    </a>
-
-    <nav>
-      <a href="#home" data-i18n="navHome">الرئيسية</a>
-      <a href="#colors" data-i18n="navColors">الألوان</a>
-      <a href="#idea" data-i18n="navIdea">الفكرة</a>
-      <a href="#order" data-i18n="navOrder">اطلب الآن</a>
-    </nav>
-
-    <button class="lang-btn" id="languageButton" type="button">EN</button>
-  </div>
-</header>
-
-<main>
-
-<section class="hero" id="home">
-  <div class="wrap">
-
-    <div class="eyebrow">A NEW WAY TO WEAR LEATHER</div>
-
-    <h1 data-i18n="heroTitle">حذاء واحد.. وألوان متعددة</h1>
-
-    <p data-i18n="heroDescription">
-      غيّر لون الكفر الخارجي بسهولة واستمتع بمظهر جديد،
-      مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.
-    </p>
-
-    <div class="product-area">
-
-      <div class="product-stage">
-        <img
-          src="images/white-shoe.png"
-          alt="Leather Cover R"
-          id="productImage"
-        >
-      </div>
-
-      <div class="color-grid" id="colorGrid"></div>
-
-      <div class="custom-color-note" data-i18n="customColorNote">
-        لم تجد اللون الذي تبحث عنه؟ اختر لونك الخاص!
-      </div>
-
-      <div class="selected-info">
-        <span data-i18n="currentColorLabel">اللون الحالي:</span>
-        <strong id="currentColor">الأبيض الأصلي</strong>
-      </div>
-
-      <div class="product-caption" data-i18n="productCaption">
-        اضغط على أي لون لمشاهدة مظهر جديد لحذائك
-      </div>
-
-      <a href="#order" class="btn btn-primary product-buy" data-i18n="buyNow">
-        اشتري الآن ←
-      </a>
-
-    </div>
-  </div>
-</section>
-<section class="section" id="colors">
-  <div class="wrap">
-
-    <div class="section-title">
-      <div class="eyebrow">YOUR STYLE YOUR COLOR</div>
-      <h2 data-i18n="colorsTitle">اختار ألوان الكفرات</h2>
-      <p data-i18n="colorsDescription">اختار خمسة ألوان لتحصل عليها مع الحذاء.</p>
-    </div>
-
-    <div class="selection-box">
-      <div class="selection-counter">
-        <span data-i18n="chooseFive">اختار 5 ألوان للطلب:</span>
-        <strong id="selectionCount">0</strong> / 5
-      </div>
-
-      <div id="orderColorButtons"></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="style-section">
-  <div class="wrap">
-
-    <div class="eyebrow">COMPLETE YOUR STYLE</div>
-
-    <h2 data-i18n="styleTitle">حذاء واحد… يليق بكل إطلالاتك!</h2>
-
-    <p data-i18n="styleP1">
-      كام مرة احتجت حذاء بلون مختلف عشان يناسب
-      البنطلون أو القميص اللي لابسه؟
-    </p>
-
-    <p data-i18n="styleP2">
-      مع Leather Cover R مش محتاج تشتري حذاء جديد
-      مع كل إطلالة.
-    </p>
-
-    <p data-i18n="styleP3">
-      جلد طبيعي بقري في حذائك الأساسي،
-      وكفرات بألوان متعددة تختار منها اللون
-      اللي يناسب لبسك، سواء بنطلون أو قميص
-      أو طقم كامل.
-    </p>
-
-    <h3 data-i18n="styleSubtitle">كمّل أناقتك… وغيّر لون حذائك!</h3>
-
-    <div class="style-offer" data-i18n="styleOffer">
-      حذاء واحد + خمسة كفرات هدية
-    </div>
-
-    <a href="#colors" class="btn btn-primary" data-i18n="discoverColors">
-      اكتشف الألوان
-    </a>
-
-  </div>
-</section>
-
-<section class="section" id="idea">
-  <div class="wrap">
-
-    <div class="section-title">
-      <div class="eyebrow">THE IDEA</div>
-      <h2 data-i18n="ideaTitle">غيّر اللون وليس الحذاء</h2>
-      <p data-i18n="ideaDescription">فكرة مختلفة تمنحك حرية تغيير مظهر حذائك.</p>
-    </div>
-
-    <div class="features">
-
-      <div class="feature">
-        <h3 data-i18n="feature1Title">حذاء واحد</h3>
-        <p data-i18n="feature1Text">احتفظ بالحذاء الأساسي والنعل الأصلي.</p>
-      </div>
-
-      <div class="feature">
-        <h3 data-i18n="feature2Title">ألوان متعددة</h3>
-        <p data-i18n="feature2Text">غيّر شكل الحذاء حسب ذوقك ومناسبتك.</p>
-      </div>
-
-      <div class="feature">
-        <h3 data-i18n="feature3Title">تغيير المظهر</h3>
-        <p data-i18n="feature3Text">استمتع بمظهر متجدد دون شراء حذاء جديد كل مرة.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="offer">
-      <div class="eyebrow">SPECIAL OFFER</div>
-      <h2 data-i18n="offerTitle">حذاء واحد + خمسة كفرات هدية</h2>
-      <p data-i18n="offerDescription">اختار خمسة ألوان من الألوان المتاحة واستمتع بتغيير مظهرك.</p>
-      <a href="#order" class="btn btn-primary" data-i18n="offerButton">اطلب عرضك الآن</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="order">
-  <div class="wrap">
-
-    <div class="section-title">
-      <div class="eyebrow">PLACE YOUR ORDER</div>
-      <h2 data-i18n="orderTitle">اطلب Leather Cover R</h2>
-      <p data-i18n="orderDescription">سجّل بياناتك واختار خمسة ألوان للكفرات.</p>
-    </div>
-
-    <div class="order-layout">
-
-      <div class="order-note">
-        <h3 data-i18n="paymentTitle">طرق الدفع</h3>
-        <ul>
-          <li data-i18n="paymentCashNote">الدفع عند الاستلام.</li>
-          <li data-i18n="paymentWalletNote">المحفظة الإلكترونية على رقم واتساب نفسه بعد تأكيد الطلب.</li>
-          <li data-i18n="paymentBankNote">الدفع البنكي والبطاقات: قريبًا.</li>
-        </ul>
-
-        <p class="notice" data-i18n="paymentWarning">
-          لا ترسل أي مبلغ قبل تأكيد الطلب مع خدمة العملاء.
-        </p>
-      </div>
-
-      <form class="order-form" id="orderForm">
-        <h3 data-i18n="customerDetails">بيانات العميل</h3>
-
-        <div class="form-grid">
-
-          <div class="field">
-            <label for="customerName" data-i18n="nameLabel">الاسم بالكامل</label>
-            <input id="customerName" required placeholder="اكتب اسمك" data-i18n-placeholder="namePlaceholder">
-          </div>
-
-          <div class="field">
-            <label for="phone" data-i18n="phoneLabel">رقم الموبايل</label>
-            <input id="phone" type="tel" required placeholder="01xxxxxxxxx">
-          </div>
-
-          <div class="field">
-            <label for="size" data-i18n="sizeLabel">مقاس الحذاء</label>
-            <select id="size" required>
-              <option value="" data-i18n="chooseSize">اختر المقاس</option>
-              <option>40</option>
-              <option>41</option>
-              <option>42</option>
-              <option>43</option>
-              <option>44</option>
-              <option>45</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label for="quantity" data-i18n="quantityLabel">الكمية</label>
-            <input id="quantity" type="number" min="1" value="1" required>
-          </div>
-
-          <div class="field">
-            <label for="city" data-i18n="cityLabel">المحافظة / المدينة</label>
-            <input id="city" required placeholder="المحافظة" data-i18n-placeholder="cityPlaceholder">
-          </div>
-
-          <div class="field">
-            <label for="address" data-i18n="addressLabel">العنوان بالتفصيل</label>
-            <input id="address" required placeholder="الشارع والمنطقة ورقم العقار" data-i18n-placeholder="addressPlaceholder">
-          </div>
-
-          <div class="field full">
-            <label data-i18n="selectedColorsLabel">الألوان الخمسة المطلوبة</label>
-            <div id="orderColors" style="color:#c5a477" data-i18n="noColorsSelected">
-              لم يتم اختيار الألوان بعد
-            </div>
-          </div>
-
-          <div class="field full">
-            <label for="customColor" data-i18n="extraColorLabel">
-              لون إضافي من اختيارك (اختياري)
-            </label>
-            <input
-              id="customColor"
-              type="text"
-              placeholder="اكتب اسم اللون الذي تريده"
-              data-i18n-placeholder="extraColorPlaceholder"
-            >
-            <small style="color:#aaa" data-i18n="extraColorHint">
-              يمكننا تنفيذ ألوان أخرى غير المعروضة حسب طلبك.
-            </small>
-          </div>
-
-          <div class="field full">
-            <label data-i18n="paymentMethodLabel">طريقة الدفع</label>
-
-            <div class="payment-list">
-
-              <label class="payment">
-                <input type="radio" name="payment" value="cod" checked>
-                <span>
-                  <strong data-i18n="cashPayment">الدفع عند الاستلام</strong>
-                  <small data-i18n="cashPaymentHint">ادفع عند وصول طلبك.</small>
-                </span>
-              </label>
-
-              <label class="payment">
-                <input type="radio" name="payment" value="wallet">
-                <span>
-                  <strong data-i18n="walletPayment">المحفظة الإلكترونية</strong>
-                  <small data-i18n="walletPaymentHint">بعد تأكيد الطلب مع خدمة العملاء.</small>
-                </span>
-              </label>
-
-              <label class="payment disabled">
-                <input type="radio" disabled>
-                <span>
-                  <strong data-i18n="bankPayment">الدفع البنكي والبطاقات — قريبًا</strong>
-                </span>
-              </label>
-
-            </div>
-          </div>
-
-          <div class="field full">
-            <label for="notes" data-i18n="notesLabel">ملاحظات إضافية</label>
-            <textarea id="notes" placeholder="أي تفاصيل إضافية" data-i18n-placeholder="notesPlaceholder"></textarea>
-          </div>
-
-        </div>
-
-        <button class="btn btn-primary form-submit" type="submit" data-i18n="sendOrder">
-          إرسال الطلب عبر واتساب
-        </button>
-
-        <p class="fineprint" data-i18n="whatsappNotice">
-          سيتم فتح واتساب برسالة جاهزة. لن يتم إرسال الطلب إلا بعد تأكيدك.
-        </p>
-
-      </form>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-
-    <div class="section-title">
-      <div class="eyebrow">CONTACT US</div>
-      <h2 data-i18n="contactTitle">تواصل معنا</h2>
-    </div>
-
-    <div class="contact-row">
-
-      <a class="contact-card"
-         href="https://wa.me/201225655101"
-         target="_blank" rel="noopener">
-        <strong>WhatsApp</strong>
-        <small>01225655101</small>
-      </a>
-
-      <a class="contact-card"
-         href="https://www.instagram.com/remonfouadking/"
-         target="_blank" rel="noopener">
-        <strong>Instagram</strong>
-        <small>@remonfouadking</small>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="footer">
-  <div class="wrap">
-    <img class="logo-img footer-logo"
-         src="./logo.png"
-         alt="Leather Cover R">
-    <p data-i18n="footerSlogan">غيّر اللون وليس الحذاء.</p>
-    <small>© 2026 Leather Cover R. All Rights Reserved.</small>
-  </div>
-</footer>
-
-<a class="whatsapp-float"
-   href="https://wa.me/201225655101"
-   target="_blank" rel="noopener"
-   aria-label="WhatsApp">✆</a>
-
-<script>
-  const translations = {
-  ar: {
-    navHome:"الرئيسية",
-    navColors:"الألوان",
-    navIdea:"الفكرة",
-    navOrder:"اطلب الآن",
-    heroTitle:"حذاء واحد.. وألوان متعددة",
-    heroDescription:"غيّر لون الكفر الخارجي بسهولة واستمتع بمظهر جديد، مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.",
-    customColorNote:"لم تجد اللون الذي تبحث عنه؟ اختر لونك الخاص!",
-    currentColorLabel:"اللون الحالي:",
-    originalWhite:"الأبيض الأصلي",
-    productCaption:"اضغط على أي لون لمشاهدة مظهر جديد لحذائك",
-    buyNow:"اشتري الآن ←",
-    colorsTitle:"اختار ألوان الكفرات",
-    colorsDescription:"اختار خمسة ألوان لتحصل عليها مع الحذاء.",
-    chooseFive:"اختار 5 ألوان للطلب:",
-    styleTitle:"حذاء واحد… يليق بكل إطلالاتك!",
-    styleP1:"كام مرة احتجت حذاء بلون مختلف عشان يناسب البنطلون أو القميص اللي لابسه؟",
-    styleP2:"مع Leather Cover R مش محتاج تشتري حذاء جديد مع كل إطلالة.",
-    styleP3:"جلد طبيعي بقري في حذائك الأساسي، وكفرات بألوان متعددة تختار منها اللون اللي يناسب لبسك، سواء بنطلون أو قميص أو طقم كامل.",
-    styleSubtitle:"كمّل أناقتك… وغيّر لون حذائك!",
-    styleOffer:"حذاء واحد + خمسة كفرات هدية",
-    discoverColors:"اكتشف الألوان",
-    ideaTitle:"غيّر اللون وليس الحذاء",
-    ideaDescription:"فكرة مختلفة تمنحك حرية تغيير مظهر حذائك.",
-    feature1Title:"حذاء واحد",
-    feature1Text:"احتفظ بالحذاء الأساسي والنعل الأصلي.",
-    feature2Title:"ألوان متعددة",
-    feature2Text:"غيّر شكل الحذاء حسب ذوقك ومناسبتك.",
-    feature3Title:"تغيير المظهر",
-    feature3Text:"استمتع بمظهر متجدد دون شراء حذاء جديد كل مرة.",
-    offerTitle:"حذاء واحد + خمسة كفرات هدية",
-    offerDescription:"اختار خمسة ألوان من الألوان المتاحة واستمتع بتغيير مظهرك.",
-    offerButton:"اطلب عرضك الآن",
-    orderTitle:"اطلب Leather Cover R",
-    orderDescription:"سجّل بياناتك واختار خمسة ألوان للكفرات.",
-    paymentTitle:"طرق الدفع",
-    paymentCashNote:"الدفع عند الاستلام.",
-    paymentWalletNote:"المحفظة الإلكترونية على رقم واتساب نفسه بعد تأكيد الطلب.",
-    paymentBankNote:"الدفع البنكي والبطاقات: قريبًا.",
-    paymentWarning:"لا ترسل أي مبلغ قبل تأكيد الطلب مع خدمة العملاء.",
-    customerDetails:"بيانات العميل",
-    nameLabel:"الاسم بالكامل",
-    namePlaceholder:"اكتب اسمك",
-    phoneLabel:"رقم الموبايل",
-    sizeLabel:"مقاس الحذاء",
-    chooseSize:"اختر المقاس",
-    quantityLabel:"الكمية",
-    cityLabel:"المحافظة / المدينة",
-    cityPlaceholder:"المحافظة",
-    addressLabel:"العنوان بالتفصيل",
-    addressPlaceholder:"الشارع والمنطقة ورقم العقار",
-    selectedColorsLabel:"الألوان الخمسة المطلوبة",
-    noColorsSelected:"لم يتم اختيار الألوان بعد",
-    extraColorLabel:"لون إضافي من اختيارك (اختياري)",
-    extraColorPlaceholder:"اكتب اسم اللون الذي تريده",
-    extraColorHint:"يمكننا تنفيذ ألوان أخرى غير المعروضة حسب طلبك.",
-    paymentMethodLabel:"طريقة الدفع",
-    cashPayment:"الدفع عند الاستلام",
-    cashPaymentHint:"ادفع عند وصول طلبك.",
-    walletPayment:"المحفظة الإلكترونية",
-    walletPaymentHint:"بعد تأكيد الطلب مع خدمة العملاء.",
-    bankPayment:"الدفع البنكي والبطاقات — قريبًا",
-    notesLabel:"ملاحظات إضافية",
-    notesPlaceholder:"أي تفاصيل إضافية",
-    sendOrder:"إرسال الطلب عبر واتساب",
-    whatsappNotice:"سيتم فتح واتساب برسالة جاهزة. لن يتم إرسال الطلب إلا بعد تأكيدك.",
-    contactTitle:"تواصل معنا",
-    footerSlogan:"غيّر اللون وليس الحذاء.",
-    customButton:"لون من اختيارك",
-    onlyFive:"يمكنك اختيار خمسة ألوان فقط.",
-    chooseFiveAlert:"اختار خمسة ألوان قبل إرسال الطلب.",
-    imageError:"تعذر تحميل صورة اللون: ",
-    noExtraColor:"لا يوجد",
-    noNotes:"لا يوجد",
-    orderMessage:"طلب جديد من موقع Leather Cover R",
-    msgName:"الاسم",
-    msgPhone:"رقم الموبايل",
-    msgSize:"المقاس",
-    msgQuantity:"الكمية",
-    msgColors:"الألوان الخمسة",
-    msgExtra:"لون إضافي من اختيار العميل",
-    msgPayment:"طريقة الدفع",
-    msgCity:"المحافظة",
-    msgAddress:"العنوان",
-    msgNotes:"ملاحظات",
-    msgConfirm:"برجاء تأكيد الطلب والتفاصيل.",
-    codValue:"الدفع عند الاستلام",
-    walletValue:"المحفظة الإلكترونية"
-  },
-
-  en: {
-    navHome:"Home",
-    navColors:"Colors",
-    navIdea:"The Idea",
-    navOrder:"Order Now",
-    heroTitle:"One Shoe. Multiple Colors.",
-    heroDescription:"Change the outer leather cover easily and enjoy a new look while keeping the original shoe and sole.",
-    customColorNote:"Can't find the color you're looking for? Choose your own!",
-    currentColorLabel:"Current color:",
-    originalWhite:"Original White",
-    productCaption:"Select any color to see a new look for your shoe",
-    buyNow:"Shop Now ←",
-    colorsTitle:"Choose Your Cover Colors",
-    colorsDescription:"Choose five colors to receive with your shoe.",
-    chooseFive:"Choose 5 colors for your order:",
-    styleTitle:"One Shoe… Made for Every Look!",
-    styleP1:"How often have you needed a different shoe color to match the trousers or shirt you're wearing?",
-    styleP2:"With Leather Cover R, you don't need to buy a new pair of shoes for every outfit.",
-    styleP3:"Your original shoe features natural cow leather, with multiple colored covers to choose from and match your trousers, shirt, or complete outfit.",
-    styleSubtitle:"Complete Your Style… Change Your Shoe Color!",
-    styleOffer:"One Shoe + Five Free Covers",
-    discoverColors:"Discover Colors",
-    ideaTitle:"Change the Color, Not the Shoe",
-    ideaDescription:"A different idea that gives you the freedom to change your shoe's appearance.",
-    feature1Title:"One Shoe",
-    feature1Text:"Keep your original shoe and sole.",
-    feature2Title:"Multiple Colors",
-    feature2Text:"Change your shoe's look to match your style and occasion.",
-    feature3Title:"A New Look",
-    feature3Text:"Enjoy a refreshed look without buying a new pair every time.",
-    offerTitle:"One Shoe + Five Free Covers",
-    offerDescription:"Choose five available colors and enjoy changing your look.",
-    offerButton:"Order Your Offer Now",
-    orderTitle:"Order Leather Cover R",
-    orderDescription:"Enter your details and choose five cover colors.",
-    paymentTitle:"Payment Methods",
-    paymentCashNote:"Cash on delivery.",
-    paymentWalletNote:"Electronic wallet payment using the same WhatsApp number after order confirmation.",
-    paymentBankNote:"Bank transfer and cards: Coming soon.",
-    paymentWarning:"Do not send any money before your order is confirmed by customer service.",
-    customerDetails:"Customer Details",
-    nameLabel:"Full Name",
-    namePlaceholder:"Enter your name",
-    phoneLabel:"Mobile Number",
-    sizeLabel:"Shoe Size",
-    chooseSize:"Choose size",
-    quantityLabel:"Quantity",
-    cityLabel:"Governorate / City",
-    cityPlaceholder:"Enter your city",
-    addressLabel:"Full Address",
-    addressPlaceholder:"Street, area and building number",
-    selectedColorsLabel:"Your Five Selected Colors",
-    noColorsSelected:"No colors selected yet",
-    extraColorLabel:"Additional Custom Color (Optional)",
-    extraColorPlaceholder:"Enter the color you want",
-    extraColorHint:"Other colors may be available upon request.",
-    paymentMethodLabel:"Payment Method",
-    cashPayment:"Cash on Delivery",
-    cashPaymentHint:"Pay when your order arrives.",
-    walletPayment:"Electronic Wallet",
-    walletPaymentHint:"After order confirmation with customer service.",
-    bankPayment:"Bank Transfer and Cards — Coming Soon",
-    notesLabel:"Additional Notes",
-    notesPlaceholder:"Any additional details",
-    sendOrder:"Send Order via WhatsApp",
-    whatsappNotice:"WhatsApp will open with a prepared message. Your order will only be sent after you confirm.",
-    contactTitle:"Contact Us",
-    footerSlogan:"Change the Color, Not the Shoe.",
-    customButton:"Choose Your Own Color",
-    onlyFive:"You can select only five colors.",
-    chooseFiveAlert:"Please select five colors before sending your order.",
-    imageError:"Unable to load color image: ",
-    noExtraColor:"None",
-    noNotes:"None",
-    orderMessage:"New Order from Leather Cover R Website",
-    msgName:"Name",
-    msgPhone:"Mobile Number",
-    msgSize:"Size",
-    msgQuantity:"Quantity",
-    msgColors:"Five Colors",
-    msgExtra:"Additional Customer Color",
-    msgPayment:"Payment Method",
-    msgCity:"City",
-    msgAddress:"Address",
-    msgNotes:"Notes",
-    msgConfirm:"Please confirm the order and details.",
-    codValue:"Cash on Delivery",
-    walletValue:"Electronic Wallet"
-  }
-};
-
-const colors = [
-  {name:"أسود", en:"Black", file:"black.png", hex:"#171717"},
-  {name:"بترولي", en:"Petrol Blue", file:"petrol.png", hex:"#087887"},
-  {name:"أخضر", en:"Green", file:"green.png", hex:"#08734f"},
-  {name:"زيتي", en:"Olive", file:"olive.png", hex:"#65652d"},
-  {name:"رمادي", en:"Gray", file:"gray.png", hex:"#666666"},
-  {name:"أزرق", en:"Blue", file:"blue.png", hex:"#073d83"},
-  {name:"سماوي", en:"Sky Blue", file:"sky-blue.png", hex:"#77b9e8"},
-  {name:"برتقالي", en:"Orange", file:"orange.png", hex:"#f45a16"},
-  {name:"نبيتي", en:"Burgundy", file:"burgundy.png", hex:"#702033"},
-  {name:"بني", en:"Brown", file:"cafe.png", hex:"#754526"},
-  {name:"أحمر", en:"Red", file:"Red.png", hex:"#c81429"}
-];
-
-let currentLanguage = "ar";
-let currentIndex = -1;
-let selectedColors = [];
-let automaticTimer = null;
-
-const productImage = document.getElementById("productImage");
-const currentColorText = document.getElementById("currentColor");
-const grid = document.getElementById("colorGrid");
-
-function t(key) {
-  return translations[currentLanguage][key] || key;
-}
-
-function colorName(color) {
-  return currentLanguage === "ar" ? color.name : color.en;
-}
-
-/* تغيير اللغة */
-function setLanguage(language) {
-  currentLanguage = language;
-
-  document.documentElement.lang = language;
-  document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
-
-  document.querySelectorAll("[data-i18n]").forEach(element => {
-    const key = element.dataset.i18n;
-
-    if (translations[language][key] !== undefined) {
-      element.textContent = translations[language][key];
-    }
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
-    const key = element.dataset.i18nPlaceholder;
-
-    if (translations[language][key] !== undefined) {
-      element.placeholder = translations[language][key];
-    }
-  });
-
-  document.getElementById("languageButton").textContent =
-    language === "ar" ? "EN" : "AR";
-
-  document.getElementById("languageButton").setAttribute(
-    "aria-label",
-    language === "ar" ? "Switch to English" : "التبديل إلى العربية"
-  );
-
-  document.title = "Leather Cover R | Official";
-
-  renderColorButtons();
-  updateSelections();
-
-  currentColorText.textContent =
-    currentIndex >= 0
-      ? colorName(colors[currentIndex])
-      : t("originalWhite");
-}
-
-/* عرض صورة اللون */
-function showColor(index) {
-  currentIndex = index;
-
-  const color = colors[index];
-
-  productImage.style.opacity = "0.25";
-
-  const newImage = new Image();
-
-  newImage.onload = function() {
-    productImage.src = newImage.src;
-    productImage.style.opacity = "1";
-  };
-
-  newImage.onerror = function() {
-    productImage.style.opacity = "1";
-    alert(t("imageError") + color.file);
-  };
-
-  newImage.src = "images/" + color.file;
-
-  currentColorText.textContent = colorName(color);
-
-  document.querySelectorAll(".color-choice").forEach((button, i) => {
-    button.classList.toggle("active", i === index);
-  });
-}
-
-/* تحديث الألوان المختارة */
-function updateSelections() {
-  document.getElementById("selectionCount").textContent =
-    selectedColors.length;
-
-  document.getElementById("orderColors").textContent =
-    selectedColors.length
-      ? selectedColors.map(colorName).join(" - ")
-      : t("noColorsSelected");
-
-  document.querySelectorAll(".order-color-button").forEach(button => {
-    const index = Number(button.dataset.index);
-
-    button.classList.toggle(
-      "selected",
-      selectedColors.includes(colors[index])
-    );
-  });
-}
-
-/* اختيار أو إلغاء اختيار لون */
-function toggleSelection(color) {
-  const existing = selectedColors.indexOf(color);
-
-  if (existing >= 0) {
-    selectedColors.splice(existing, 1);
-  } else {
-    if (selectedColors.length >= 5) {
-      alert(t("onlyFive"));
-      return;
-    }
-
-    selectedColors.push(color);
-  }
-
-  updateSelections();
-}
-
-/* إنشاء أزرار الألوان */
-function renderColorButtons() {
-  grid.innerHTML = "";
-  document.getElementById("orderColorButtons").innerHTML = "";
-
-  colors.forEach((color, index) => {
-    const button = document.createElement("button");
-
-    button.type = "button";
-    button.className = "color-choice";
-
-    const dot = document.createElement("span");
-    dot.className = "color-dot";
-    dot.style.background = color.hex;
-
-    const label = document.createElement("span");
-    label.textContent = colorName(color);
-
-    button.appendChild(dot);
-    button.appendChild(label);
-
-    button.addEventListener("click", () => {
-      stopAutomatic();
-      showColor(index);
-    });
-
-    grid.appendChild(button);
-
-    const orderButton = document.createElement("button");
-
-    orderButton.type = "button";
-    orderButton.className = "order-color-button";
-    orderButton.dataset.index = index;
-    orderButton.textContent = colorName(color);
-
-    orderButton.addEventListener("click", () => {
-      toggleSelection(color);
-    });
-
-    document.getElementById("orderColorButtons").appendChild(orderButton);
-  });
-
-  const customColorButton = document.createElement("button");
-
-  customColorButton.type = "button";
-  customColorButton.className = "custom-color-button";
-  customColorButton.textContent = t("customButton");
-
-  customColorButton.addEventListener("click", () => {
-    document.getElementById("order").scrollIntoView({
-      behavior:"smooth"
-    });
-
-    setTimeout(() => {
-      document.getElementById("customColor").focus();
-    }, 500);
-  });
-
-  grid.appendChild(customColorButton);
-
-  if (currentIndex >= 0) {
-    document.querySelectorAll(".color-choice").forEach((button, index) => {
-      button.classList.toggle("active", index === currentIndex);
-    });
-  }
-}
-
-/* إيقاف العرض التلقائي */
-function stopAutomatic() {
-  clearInterval(automaticTimer);
-  automaticTimer = null;
-}
-
-/* تشغيل العرض التلقائي */
-function startAutomatic() {
-  stopAutomatic();
-
-  automaticTimer = setInterval(() => {
-    const nextIndex = (currentIndex + 1) % colors.length;
-    showColor(nextIndex);
-  }, 3000);
-}
-
-/* زر تبديل اللغة */
-document.getElementById("languageButton").addEventListener("click", function() {
-  const nextLanguage = currentLanguage === "ar" ? "en" : "ar";
-  setLanguage(nextLanguage);
-});
-
-/* تجهيز الألوان عند فتح الموقع */
-renderColorButtons();
-showColor(0);
-startAutomatic();
-
-/* إرسال الطلب إلى واتساب */
-document.getElementById("orderForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  if (selectedColors.length !== 5) {
-    alert(t("chooseFiveAlert"));
-
-    document.getElementById("colors").scrollIntoView({
-      behavior:"smooth"
-    });
-
-    return;
-  }
-
-  const name = document.getElementById("customerName").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const size = document.getElementById("size").value;
-  const quantity = document.getElementById("quantity").value;
-  const city = document.getElementById("city").value.trim();
-  const address = document.getElementById("address").value.trim();
-  const notes = document.getElementById("notes").value.trim();
-  const customColor = document.getElementById("customColor").value.trim();
-
-  const paymentChoice = document.querySelector(
-    'input[name="payment"]:checked'
-  ).value;
-
-  const payment = paymentChoice === "cod"
-    ? t("codValue")
-    : t("walletValue");
-
-  const message =
-`${t("orderMessage")}
-
-${t("msgName")}: ${name}
-${t("msgPhone")}: ${phone}
-${t("msgSize")}: ${size}
-${t("msgQuantity")}: ${quantity}
-${t("msgColors")}: ${selectedColors.map(colorName).join("، ")}
-${t("msgExtra")}: ${customColor || t("noExtraColor")}
-${t("msgPayment")}: ${payment}
-${t("msgCity")}: ${city}
-${t("msgAddress")}: ${address}
-${t("msgNotes")}: ${notes || t("noNotes")}
-
-${t("msgConfirm")}`;
-
-  const whatsappUrl =
-    "https://wa.me/201225655101?text=" + encodeURIComponent(message);
-
-  window.open(whatsappUrl, "_blank");
-});
-</script>
-
-</body>
+<!DOCTYPE html>  <html lang="ar" dir="rtl">  
+<head><link rel="icon" type="image/png" href="./logo.png">  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Leather Cover R | Official</title>  
+<meta name="description" content="Leather Cover R - حذاء جلد طبيعي كلاسيكي بكفرات خارجية قابلة للتغيير بكل سهوله. حذاء واحد وألوان متعددة.">  
+<meta name="robots" content="index,follow">  
+<link rel="canonical" href="https://remonking56-rgb.github.io/leathercoverr/">  <style>  
+:root {  
+  --bg:#090909;  
+  --panel:#151515;  
+  --gold:#c5a477;  
+  --white:#f5f3ef;  
+  --muted:#aaa;  
+}  
+  
+* { box-sizing:border-box; }  
+html { scroll-behavior:smooth; }  
+  
+body {  
+  margin:0;  
+  background:var(--bg);  
+  color:var(--white);  
+  font-family:Tahoma,Arial,sans-serif;  
+  line-height:1.8;  
+}  
+  
+a { color:inherit;text-decoration:none; }  
+button,input,select,textarea { font:inherit; }  
+  
+.wrap {  
+  width:min(1150px,calc(100% - 36px));  
+  margin:auto;  
+}  
+  
+header {  
+  position:sticky;  
+  top:0;  
+  z-index:20;  
+  background:rgba(9,9,9,.97);  
+  border-bottom:1px solid #29231c;  
+}  
+  
+.header-inner {  
+  min-height:72px;  
+  display:flex;  
+  justify-content:space-between;  
+  align-items:center;  
+  gap:15px;  
+}  
+  
+.logo-img {  
+  display:block;  
+  width:190px;  
+  max-height:65px;  
+  object-fit:contain;  
+}  
+  
+.footer-logo {  
+  width:170px;  
+  margin:0 auto;  
+}  
+  
+nav {  
+  display:flex;  
+  align-items:center;  
+  gap:20px;  
+  font-size:14px;  
+}  
+  
+nav a:hover { color:var(--gold); }  
+  
+.lang-btn {  
+  border:1px solid var(--gold);  
+  color:var(--gold);  
+  background:transparent;  
+  padding:5px 13px;  
+  cursor:pointer;  
+  border-radius:5px;  
+}  
+  
+.hero {  
+  padding:48px 0 65px;  
+  text-align:center;  
+}  
+  
+.eyebrow {  
+  color:var(--gold);  
+  letter-spacing:3px;  
+  font-size:12px;  
+  margin-bottom:12px;  
+}  
+  
+h1 {  
+  font-size:clamp(30px,5vw,52px);  
+  line-height:1.4;  
+  margin:0 0 12px;  
+}  
+  
+.hero p {  
+  color:#c0c0c0;  
+  max-width:650px;  
+  margin:0 auto 24px;  
+}  
+  
+.btn {  
+  display:inline-flex;  
+  justify-content:center;  
+  align-items:center;  
+  border:0;  
+  cursor:pointer;  
+  border-radius:7px;  
+  padding:13px 25px;  
+  font-weight:bold;  
+}  
+  
+.btn-primary {  
+  background:var(--gold);  
+  color:#090909;  
+}  
+  
+.btn-primary:hover { background:#e0c39a; }  
+  
+.product-area {  
+  width:min(560px,100%);  
+  margin:38px auto 0;  
+}  
+  
+.product-stage {  
+  width:100%;  
+  height:460px;  
+  display:flex;  
+  justify-content:center;  
+  align-items:center;  
+  overflow:hidden;  
+  border-radius:12px;  
+  background:#111;  
+  line-height:0;  
+}  
+  
+.product-stage img {  
+  display:block;  
+  width:100%;  
+  height:100%;  
+  object-fit:contain;  
+  object-position:center;  
+  transition:opacity .25s ease;  
+}  
+  
+.color-grid {  
+  display:grid;  
+  grid-template-columns:repeat(6,minmax(0,1fr));  
+  gap:8px;  
+  max-width:650px;  
+  margin:10px auto 0;  
+}  
+  
+.color-choice {  
+  background:#151515;  
+  border:1px solid #333;  
+  color:white;  
+  border-radius:7px;  
+  padding:6px 3px;  
+  cursor:pointer;  
+  font-size:11px;  
+  transition:.2s;  
+}  
+  
+.color-choice:hover,  
+.color-choice.active {  
+  border-color:var(--gold);  
+  background:#211d17;  
+}  
+  
+.color-dot {  
+  width:17px;  
+  height:17px;  
+  display:block;  
+  border-radius:50%;  
+  margin:0 auto 3px;  
+  border:1px solid #aaa;  
+}  
+  
+.custom-color-button {  
+  background:#211d17;  
+  color:var(--gold);  
+  border:1px solid var(--gold);  
+  border-radius:7px;  
+  padding:6px 3px;  
+  cursor:pointer;  
+  font-size:11px;  
+  font-weight:bold;  
+  transition:.2s;  
+}  
+  
+.custom-color-button:hover {  
+  background:var(--gold);  
+  color:#090909;  
+}  
+  
+.custom-color-note {  
+  color:#aaa;  
+  text-align:center;  
+  font-size:13px;  
+  margin:12px auto 0;  
+}  
+  
+.selected-info {  
+  text-align:center;  
+  color:var(--gold);  
+  margin-top:8px;  
+  font-size:14px;  
+}  
+  
+.product-caption {  
+  color:#aaa;  
+  margin-top:8px;  
+  font-size:13px;  
+}  
+  
+.product-buy {  
+  width:220px;  
+  min-height:58px;  
+  font-size:20px;  
+  margin:22px auto 0;  
+}  
+  
+.auto-note {  
+  color:#999;  
+  text-align:center;  
+  font-size:12px;  
+  margin-top:8px;  
+}  
+  
+.section {  
+  padding:65px 0;  
+  border-top:1px solid #211e19;  
+}  
+  
+.section-title {  
+  text-align:center;  
+  margin-bottom:30px;  
+}  
+  
+.section-title h2 {  
+  font-size:29px;  
+  margin:0 0 8px;  
+}  
+  
+.section-title p { color:var(--muted); }  
+  
+.selection-box {  
+  text-align:center;  
+  margin-top:25px;  
+  color:#ddd;  
+}  
+  
+.order-color-button {  
+  background:#151515;  
+  color:var(--gold);  
+  border:1px solid #4b3c28;  
+  padding:9px 14px;  
+  border-radius:6px;  
+  cursor:pointer;  
+  margin:4px;  
+}  
+  
+.order-color-button.selected {  
+  background:var(--gold);  
+  color:#090909;  
+}  
+  
+.selection-counter {  
+  color:var(--gold);  
+  margin-bottom:10px;  
+}  
+  
+.features {  
+  display:grid;  
+  grid-template-columns:repeat(3,1fr);  
+  gap:18px;  
+}  
+  
+.feature {  
+  background:var(--panel);  
+  padding:24px;  
+  border:1px solid #29241e;  
+  border-radius:10px;  
+  text-align:center;  
+}  
+  
+.feature h3 { color:var(--gold); }  
+  
+.feature p {  
+  color:#aaa;  
+  font-size:14px;  
+}  
+  
+.offer {  
+  text-align:center;  
+  background:linear-gradient(135deg,#19150f,#101010);  
+  border:1px solid #4b3c28;  
+  border-radius:12px;  
+  padding:35px 20px;  
+}  
+  
+.offer h2 { color:var(--gold); }  
+.offer p { color:#ccc; }  
+  
+.style-section {  
+  padding:65px 0;  
+  border-top:1px solid #211e19;  
+  text-align:center;  
+}  
+  
+.style-section h2 {  
+  font-size:29px;  
+  margin:0 0 18px;  
+}  
+  
+.style-section p {  
+  color:#ccc;  
+  max-width:760px;  
+  margin:12px auto;  
+}  
+  
+.style-section h3 {  
+  color:var(--gold);  
+  margin-top:25px;  
+}  
+  
+.style-offer {  
+  color:var(--gold);  
+  font-size:20px;  
+  font-weight:bold;  
+  margin:18px 0;  
+}  
+  
+#order { scroll-margin-top:95px; }  
+  
+.order-layout {  
+  display:grid;  
+  grid-template-columns:.8fr 1.4fr;  
+  gap:25px;  
+  align-items:start;  
+}  
+  
+.order-note,.order-form {  
+  background:var(--panel);  
+  border:1px solid #30291f;  
+  border-radius:10px;  
+  padding:24px;  
+}  
+  
+.order-note h3,.order-form h3 { color:var(--gold); }  
+.order-note li { margin-bottom:10px; }  
+  
+.notice {  
+  color:var(--gold);  
+  font-size:13px;  
+  border-top:1px solid #383027;  
+  padding-top:15px;  
+}  
+  
+.form-grid {  
+  display:grid;  
+  grid-template-columns:1fr 1fr;  
+  gap:14px;  
+}  
+  
+.field {  
+  display:flex;  
+  flex-direction:column;  
+  gap:7px;  
+}  
+  
+.field.full { grid-column:1/-1; }  
+  
+.field label {  
+  font-size:14px;  
+  color:#ddd;  
+}  
+  
+.field input,.field select,.field textarea {  
+  background:#0b0b0b;  
+  color:white;  
+  border:1px solid #484038;  
+  border-radius:6px;  
+  padding:11px;  
+  width:100%;  
+}  
+  
+.field textarea {  
+  min-height:85px;  
+  resize:vertical;  
+}  
+  
+.payment-list {  
+  display:grid;  
+  gap:10px;  
+}  
+  
+.payment {  
+  display:flex;  
+  align-items:center;  
+  gap:12px;  
+  padding:12px;  
+  background:#0c0c0c;  
+  border:1px solid #39332b;  
+  border-radius:7px;  
+  cursor:pointer;  
+}  
+  
+.payment input { accent-color:var(--gold); }  
+  
+.payment small {  
+  display:block;  
+  color:#999;  
+  font-size:12px;  
+}  
+  
+.payment.disabled { opacity:.45; }  
+  
+.form-submit {  
+  width:100%;  
+  margin-top:20px;  
+  font-size:16px;  
+}  
+  
+.fineprint {  
+  color:#999;  
+  font-size:12px;  
+  text-align:center;  
+}  
+  
+.contact-row {  
+  display:flex;  
+  justify-content:center;  
+  gap:18px;  
+  flex-wrap:wrap;  
+}  
+  
+.contact-card {  
+  width:220px;  
+  padding:22px;  
+  background:var(--panel);  
+  border:1px solid #393027;  
+  border-radius:9px;  
+  text-align:center;  
+}  
+  
+.contact-card strong {  
+  display:block;  
+  color:var(--gold);  
+}  
+  
+.contact-card small { color:#999; }  
+  
+.footer {  
+  padding:35px 0;  
+  border-top:1px solid #29231c;  
+  text-align:center;  
+  color:#999;  
+}  
+  
+.whatsapp-float {  
+  position:fixed;  
+  bottom:20px;  
+  left:20px;  
+  z-index:30;  
+  width:52px;  
+  height:52px;  
+  display:grid;  
+  place-items:center;  
+  border-radius:50%;  
+  background:#168b55;  
+  color:white;  
+  font-size:26px;  
+}  
+  
+@media(max-width:700px) {  
+  .header-inner {  
+    flex-wrap:wrap;  
+    padding:10px 0;  
+  }  
+  
+  nav {  
+    order:3;  
+    width:100%;  
+    justify-content:center;  
+    gap:13px;  
+    font-size:12px;  
+  }  
+  
+  .logo-img { width:150px; }  
+  
+  .product-stage { height:360px; }  
+  
+  .color-grid { grid-template-columns:repeat(4,1fr); }  
+  
+  .features { grid-template-columns:1fr; }  
+  
+  .order-layout { grid-template-columns:1fr; }  
+  
+  .form-grid { grid-template-columns:1fr; }  
+  
+  .field.full { grid-column:auto; }  
+}  
+</style>  </head>  <body>  <header>  
+  <div class="wrap header-inner">  
+    <a href="#home" aria-label="Leather Cover R">  
+      <img class="logo-img" src="./logo.png" alt="Leather Cover R">  
+    </a>  <nav>  
+  <a href="#home">الرئيسية</a>  
+  <a href="#colors">الألوان</a>  
+  <a href="#idea">الفكرة</a>  
+  <a href="#order">اطلب الآن</a>  
+</nav>  
+
+<button class="lang-btn" id="languageButton">EN</button>
+
+  </div>  
+</header>  <main>  <section class="hero" id="home">  
+  <div class="wrap">  <div class="eyebrow">A NEW WAY TO WEAR LEATHER</div>  
+
+<h1>حذاء واحد.. وألوان متعددة</h1>  
+
+<p>  
+  غيّر لون الكفر الخارجي بسهولة واستمتع بمظهر جديد،  
+  مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.  
+</p>  
+
+<div class="product-area">  
+
+  <div class="product-stage">  
+    <img  
+      src="images/white-shoe.png"  
+      alt="Leather Cover R"  
+      id="productImage"  
+    >  
+  </div>  
+
+  <div class="color-grid" id="colorGrid"></div>  
+
+  <div class="custom-color-note">  
+    لم تجد اللون الذي تبحث عنه؟ اختر لونك الخاص!  
+  </div>  
+
+  <div class="selected-info">  
+    اللون الحالي: <strong id="currentColor">الأبيض الأصلي</strong>  
+  </div>  
+
+  <div class="product-caption">  
+    اضغط على أي لون لمشاهدة مظهر جديد لحذائك  
+  </div>  
+
+  <a href="#order" class="btn btn-primary product-buy">  
+    اشتري الآن ←  
+  </a>  
+
+</div>
+
+  </div>  
+</section>  <section class="section" id="colors">  
+  <div class="wrap">  <div class="section-title">  
+  <div class="eyebrow">YOUR STYLE YOUR COLOR</div>  
+  <h2>اختار ألوان الكفرات</h2>  
+  <p>اختار خمسة ألوان لتحصل عليها مع الحذاء.</p>  
+</div>  
+
+<div class="selection-box">  
+  <div class="selection-counter">  
+    اختار 5 ألوان للطلب:  
+    <strong id="selectionCount">0</strong> / 5  
+  </div>  
+
+  <div id="orderColorButtons"></div>  
+</div>
+
+  </div>  
+</section>  <section class="style-section">  
+  <div class="wrap">  <div class="eyebrow">COMPLETE YOUR STYLE</div>  
+
+<h2>حذاء واحد… يليق بكل إطلالاتك!</h2>  
+
+<p>  
+  كام مرة احتجت حذاء بلون مختلف عشان يناسب  
+  البنطلون أو القميص اللي لابسه؟  
+</p>  
+
+<p>  
+  مع Leather Cover R مش محتاج تشتري حذاء جديد  
+  مع كل إطلالة.  
+</p>  
+
+<p>  
+  جلد طبيعي بقري في حذائك الأساسي،  
+  وكفرات بألوان متعددة تختار منها اللون  
+  اللي يناسب لبسك، سواء بنطلون أو قميص  
+  أو طقم كامل.  
+</p>  
+
+<h3>كمّل أناقتك… وغيّر لون حذائك!</h3>  
+
+<div class="style-offer">  
+  حذاء واحد + خمسة كفرات هدية  
+</div>  
+
+<a href="#colors" class="btn btn-primary">  
+  اكتشف الألوان  
+</a>
+
+  </div>  
+</section>  <section class="section" id="idea">  
+  <div class="wrap">  <div class="section-title">  
+  <div class="eyebrow">THE IDEA</div>  
+  <h2>غيّر اللون وليس الحذاء</h2>  
+  <p>فكرة مختلفة تمنحك حرية تغيير مظهر حذائك.</p>  
+</div>  
+
+<div class="features">  
+
+  <div class="feature">  
+    <h3>حذاء واحد</h3>  
+    <p>احتفظ بالحذاء الأساسي والنعل الأصلي.</p>  
+  </div>  
+
+  <div class="feature">  
+    <h3>ألوان متعددة</h3>  
+    <p>غيّر شكل الحذاء حسب ذوقك ومناسبتك.</p>  
+  </div>  
+
+  <div class="feature">  
+    <h3>تغيير المظهر</h3>  
+    <p>استمتع بمظهر متجدد دون شراء حذاء جديد كل مرة.</p>  
+  </div>  
+
+</div>
+
+  </div>  
+</section>  <section class="section">  
+  <div class="wrap">  
+    <div class="offer">  
+      <div class="eyebrow">SPECIAL OFFER</div>  
+      <h2>حذاء واحد + خمسة كفرات هدية</h2>  
+      <p>اختار خمسة ألوان من الألوان المتاحة واستمتع بتغيير مظهرك.</p>  
+      <a href="#order" class="btn btn-primary">اطلب عرضك الآن</a>  
+    </div>  
+  </div>  
+</section>  <section class="section" id="order">  
+  <div class="wrap">  <div class="section-title">  
+  <div class="eyebrow">PLACE YOUR ORDER</div>  
+  <h2>اطلب Leather Cover R</h2>  
+  <p>سجّل بياناتك واختار خمسة ألوان للكفرات.</p>  
+</div>  
+
+<div class="order-layout">  
+
+  <div class="order-note">  
+    <h3>طرق الدفع</h3>  
+    <ul>  
+      <li>الدفع عند الاستلام.</li>  
+      <li>المحفظة الإلكترونية على رقم واتساب نفسه بعد تأكيد الطلب.</li>  
+      <li>الدفع البنكي والبطاقات: قريبًا.</li>  
+    </ul>  
+
+    <p class="notice">  
+      لا ترسل أي مبلغ قبل تأكيد الطلب مع خدمة العملاء.  
+    </p>  
+  </div>  
+
+  <form class="order-form" id="orderForm">  
+    <h3>بيانات العميل</h3>  
+
+    <div class="form-grid">  
+
+      <div class="field">  
+        <label for="customerName">الاسم بالكامل</label>  
+        <input id="customerName" required placeholder="اكتب اسمك">  
+      </div>  
+
+      <div class="field">  
+        <label for="phone">رقم الموبايل</label>  
+        <input id="phone" type="tel" required placeholder="01xxxxxxxxx">  
+      </div>  
+
+      <div class="field">  
+        <label for="size">مقاس الحذاء</label>  
+        <select id="size" required>  
+          <option value="">اختر المقاس</option>  
+          <option>40</option>  
+          <option>41</option>  
+          <option>42</option>  
+          <option>43</option>  
+          <option>44</option>  
+          <option>45</option>  
+        </select>  
+      </div>  
+
+      <div class="field">  
+        <label for="quantity">الكمية</label>  
+        <input id="quantity" type="number" min="1" value="1" required>  
+      </div>  
+
+      <div class="field">  
+        <label for="city">المحافظة / المدينة</label>  
+        <input id="city" required placeholder="المحافظة">  
+      </div>  
+
+      <div class="field">  
+        <label for="address">العنوان بالتفصيل</label>  
+        <input id="address" required placeholder="الشارع والمنطقة ورقم العقار">  
+      </div>  
+
+      <div class="field full">  
+        <label>الألوان الخمسة المطلوبة</label>  
+        <div id="orderColors" style="color:#c5a477">  
+          لم يتم اختيار الألوان بعد  
+        </div>  
+      </div>  
+
+      <div class="field full">  
+        <label for="customColor">  
+          لون إضافي من اختيارك (اختياري)  
+        </label>  
+        <input  
+          id="customColor"  
+          type="text"  
+          placeholder="اكتب اسم اللون الذي تريده"  
+        >  
+        <small style="color:#aaa">  
+          يمكننا تنفيذ ألوان أخرى غير المعروضة حسب طلبك.  
+        </small>  
+      </div>  
+
+      <div class="field full">  
+        <label>طريقة الدفع</label>  
+
+        <div class="payment-list">  
+
+          <label class="payment">  
+            <input type="radio" name="payment" value="الدفع عند الاستلام" checked>  
+            <span>  
+              <strong>الدفع عند الاستلام</strong>  
+              <small>ادفع عند وصول طلبك.</small>  
+            </span>  
+          </label>  
+
+          <label class="payment">  
+            <input type="radio" name="payment" value="المحفظة الإلكترونية">  
+            <span>  
+              <strong>المحفظة الإلكترونية</strong>  
+              <small>بعد تأكيد الطلب مع خدمة العملاء.</small>  
+            </span>  
+          </label>  
+
+          <label class="payment disabled">  
+            <input type="radio" disabled>  
+            <span>  
+              <strong>الدفع البنكي والبطاقات — قريبًا</strong>  
+            </span>  
+          </label>  
+
+        </div>  
+      </div>  
+
+      <div class="field full">  
+        <label for="notes">ملاحظات إضافية</label>  
+        <textarea id="notes" placeholder="أي تفاصيل إضافية"></textarea>  
+      </div>  
+
+    </div>  
+
+    <button class="btn btn-primary form-submit" type="submit">  
+      إرسال الطلب عبر واتساب  
+    </button>  
+
+    <p class="fineprint">  
+      سيتم فتح واتساب برسالة جاهزة. لن يتم إرسال الطلب إلا بعد تأكيدك.  
+    </p>  
+
+  </form>  
+</div>
+
+  </div>  
+</section>  <section class="section">  
+  <div class="wrap">  <div class="section-title">  
+  <div class="eyebrow">CONTACT US</div>  
+  <h2>تواصل معنا</h2>  
+</div>  
+
+<div class="contact-row">  
+
+  <a class="contact-card"  
+     href="https://wa.me/201225655101"  
+     target="_blank" rel="noopener">  
+    <strong>WhatsApp</strong>  
+    <small>01225655101</small>  
+  </a>  
+
+  <a class="contact-card"  
+     href="https://www.instagram.com/remonfouadking/"  
+     target="_blank" rel="noopener">  
+    <strong>Instagram</strong>  
+    <small>@remonfouadking</small>  
+  </a>  
+
+</div>
+
+  </div>  
+</section>  </main>  <footer class="footer">  
+  <div class="wrap">  
+    <img class="logo-img footer-logo"  
+         src="./logo.png"  
+         alt="Leather Cover R">  
+    <p>غيّر اللون وليس الحذاء.</p>  
+    <small>© 2026 Leather Cover R. All Rights Reserved.</small>  
+  </div>  
+</footer>  <a class="whatsapp-float"  
+href="https://wa.me/201225655101"  
+target="_blank" rel="noopener"  
+aria-label="WhatsApp">✆</a>
+
+<script>  
+const colors = [  
+  {name:"أسود", file:"black.png", hex:"#171717"},  
+  {name:"بترولي", file:"petrol.png", hex:"#087887"},  
+  {name:"أخضر", file:"green.png", hex:"#08734f"},  
+  {name:"زيتي", file:"olive.png", hex:"#65652d"},  
+  {name:"رمادي", file:"gray.png", hex:"#666666"},  
+  {name:"أزرق", file:"blue.png", hex:"#073d83"},  
+  {name:"سماوي", file:"sky-blue.png", hex:"#77b9e8"},  
+  {name:"برتقالي", file:"orange.png", hex:"#f45a16"},  
+  {name:"نبيتي", file:"burgundy.png", hex:"#702033"},  
+  {name:"بني", file:"cafe.png", hex:"#754526"},  
+  {name:"أحمر", file:"Red.png", hex:"#c81429"}  
+];  
+  
+let currentIndex = -1;  
+let selectedColors = [];  
+let automaticTimer = null;  
+  
+const productImage = document.getElementById("productImage");  
+const currentColorText = document.getElementById("currentColor");  
+const grid = document.getElementById("colorGrid");  
+  
+function showColor(index) {  
+  currentIndex = index;  
+  
+  const color = colors[index];  
+  
+  productImage.style.opacity = "0.25";  
+  
+  const newImage = new Image();  
+  
+  newImage.onload = function() {  
+    productImage.src = newImage.src;  
+    productImage.style.opacity = "1";  
+  };  
+  
+  newImage.onerror = function() {  
+    productImage.style.opacity = "1";  
+    alert("تعذر تحميل صورة اللون: " + color.file);  
+  };  
+  
+  newImage.src = "images/" + color.file;  
+  
+  currentColorText.textContent = color.name;  
+  
+  document.querySelectorAll(".color-choice").forEach((button,i) => {  
+    button.classList.toggle("active",i === index);  
+  });  
+}  
+  
+function updateSelections() {  
+  document.getElementById("selectionCount").textContent =  
+    selectedColors.length;  
+  
+  document.getElementById("orderColors").textContent =  
+    selectedColors.length  
+      ? selectedColors.map(c => c.name).join(" - ")  
+      : "لم يتم اختيار الألوان بعد";  
+  
+  document.querySelectorAll(".order-color-button").forEach(button => {  
+    button.classList.toggle(  
+      "selected",  
+      selectedColors.some(c => c.name === button.dataset.name)  
+    );  
+  });  
+}  
+  
+function toggleSelection(color) {  
+  const existing = selectedColors.findIndex(c => c.name === color.name);  
+  
+  if (existing >= 0) {  
+    selectedColors.splice(existing,1);  
+  } else {  
+    if (selectedColors.length >= 5) {  
+      alert("يمكنك اختيار خمسة ألوان فقط.");  
+      return;  
+    }  
+  
+    selectedColors.push(color);  
+  }  
+  
+  updateSelections();  
+}  
+  
+function stopAutomatic() {  
+  clearInterval(automaticTimer);  
+  automaticTimer = null;  
+}  
+  
+function startAutomatic() {  
+  stopAutomatic();  
+  
+  automaticTimer = setInterval(() => {  
+    const nextIndex = (currentIndex + 1) % colors.length;  
+    showColor(nextIndex);  
+  },3000);  
+}  
+  
+colors.forEach((color,index) => {  
+  const button = document.createElement("button");  
+  
+  button.type = "button";  
+  button.className = "color-choice";  
+  
+  button.innerHTML =  
+    `<span class="color-dot" style="background:${color.hex}"></span>${color.name}`;  
+  
+  button.addEventListener("click",() => {  
+    stopAutomatic();  
+    showColor(index);  
+  });  
+  
+  grid.appendChild(button);  
+  
+  const orderButton = document.createElement("button");  
+  
+  orderButton.type = "button";  
+  orderButton.className = "order-color-button";  
+  orderButton.dataset.name = color.name;  
+  orderButton.textContent = color.name;  
+  
+  orderButton.addEventListener("click",() => {  
+    toggleSelection(color);  
+  });  
+  
+  document.getElementById("orderColorButtons").appendChild(orderButton);  
+});  
+  
+/* زر لون من اختيارك */  
+const customColorButton = document.createElement("button");  
+  
+customColorButton.type = "button";  
+customColorButton.className = "custom-color-button";  
+customColorButton.textContent = "لون من اختيارك";  
+  
+customColorButton.addEventListener("click",() => {  
+  document.getElementById("order").scrollIntoView({  
+    behavior:"smooth"  
+  });  
+  
+  setTimeout(() => {  
+    document.getElementById("customColor").focus();  
+  },500);  
+});  
+  
+grid.appendChild(customColorButton);  
+  
+/* ابدأ بالعرض التلقائي */  
+showColor(0);  
+startAutomatic();  
+  
+/* إرسال الطلب إلى واتساب */  
+document.getElementById("orderForm").addEventListener("submit",function(event) {  
+  event.preventDefault();  
+  
+  if (selectedColors.length !== 5) {  
+    alert("اختار خمسة ألوان قبل إرسال الطلب.");  
+    document.getElementById("colors").scrollIntoView({behavior:"smooth"});  
+    return;  
+  }  
+  
+  const name = document.getElementById("customerName").value.trim();  
+  const phone = document.getElementById("phone").value.trim();  
+  const size = document.getElementById("size").value;  
+  const quantity = document.getElementById("quantity").value;  
+  const city = document.getElementById("city").value.trim();  
+  const address = document.getElementById("address").value.trim();  
+  const notes = document.getElementById("notes").value.trim();  
+  const customColor = document.getElementById("customColor").value.trim();  
+  
+  const payment = document.querySelector(  
+    'input[name="payment"]:checked'  
+  ).value;  
+  
+  const message =  
+`طلب جديد من موقع Leather Cover R  
+  
+الاسم: ${name}  
+رقم الموبايل: ${phone}  
+المقاس: ${size}  
+الكمية: ${quantity}  
+الألوان الخمسة: ${selectedColors.map(c => c.name).join("، ")}  
+لون إضافي من اختيار العميل: ${customColor || "لا يوجد"}  
+طريقة الدفع: ${payment}  
+المحافظة: ${city}  
+العنوان: ${address}  
+ملاحظات: ${notes || "لا يوجد"}  
+  
+برجاء تأكيد الطلب والتفاصيل.`;  
+  
+  const whatsappUrl =  
+    "https://wa.me/201225655101?text=" + encodeURIComponent(message);  
+  
+  window.open(whatsappUrl,"_blank");  
+});  
+  
+/* زر اللغة */  
+document.getElementById("languageButton").addEventListener("click",function() {  
+  alert("النسخة الإنجليزية الكاملة ستُضاف في تحديث اللغة القادم.");  
+});  
+</script>  </body>  
 </html>
