@@ -628,11 +628,13 @@ body.english nav {
     gap: 18px;
   }
 
-  .hero-media-layout .hero-video {
-    width: 65% !important;
-    max-width: 190px !important;
-    margin: auto;
-  }
+ .hero-media-layout .hero-video {
+  width: 100% !important;
+  max-width: 340px !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  object-fit: contain !important;
+  justify-self: center;
 }
 @media (max-width: 600px) {
   .hero-video {
