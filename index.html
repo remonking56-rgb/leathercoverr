@@ -648,6 +648,23 @@ body.english nav {
     max-height: 240px !important;
   }
 }
+ @media (min-width: 701px) {
+  .hero-media-layout {
+    display: grid !important;
+    grid-template-columns: 260px minmax(300px, 1fr) 260px !important;
+    max-width: 1150px !important;
+    width: 100% !important;
+    gap: 15px !important;
+  }
+
+  .hero-media-layout .hero-video {
+    width: 260px !important;
+    max-width: 260px !important;
+    height: auto !important;
+    max-height: 260px !important;
+    object-fit: contain !important;
+  }
+}
 </style>  </head>  <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
