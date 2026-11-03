@@ -669,6 +669,41 @@ body.english nav {
     max-height: 120px !important;
   }
 }
+ .hero-media-layout {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: nowrap !important;
+  gap: 15px !important;
+  width: 100% !important;
+}
+
+.hero-media-layout > * {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  width: 50% !important;
+}
+
+.hero-media-layout .hero-video {
+  width: 100% !important;
+  max-width: 340px !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: contain !important;
+}
+
+.hero-media-layout img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 600px) {
+  .hero-media-layout {
+    gap: 8px !important;
+  }
+}
 </style>  </head>  <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
