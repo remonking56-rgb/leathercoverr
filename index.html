@@ -670,8 +670,22 @@ body.english nav {
   }
 
   .hero-media-layout .product-stage {
-    height: 300px !important;
-  }
+  height: auto !important;
+  min-height: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.hero-media-layout .product-stage img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 300px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: none !important;
+  box-shadow: none !important;
 }
 </style>  </head>  <body>  <header>  
   <div class="wrap header-inner">  
