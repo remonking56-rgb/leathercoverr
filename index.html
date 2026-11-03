@@ -644,15 +644,33 @@ body.english nav {
 /* الموبايل - بدون تغيير */
 @media (max-width: 700px) {
   .hero-media-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr) !important;
-    gap: 5px !important;
+    display: grid !important;
+    grid-template-columns:  minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 4px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 15px auto !important;
+    direction: ltr !important;
+  }
+
+  .hero-media-layout .product-area {
+    min-width: 0 !important;
+    width: 100% !important;
   }
 
   .hero-media-layout .hero-video {
+    display: block !important;
     width: 100% !important;
     max-width: 100% !important;
-    height: auto !important;
-    max-height: 110px !important;
+    height: 150px !important;
+    max-height: 150px !important;
+    object-fit: contain !important;
+    justify-self: center !important;
+  }
+
+  .hero-media-layout .product-stage {
+    height: 300px !important;
   }
 }
 </style>  </head>  <body>  <header>  
