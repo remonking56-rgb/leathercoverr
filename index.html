@@ -3,33 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090909">
 
 <title>Leather Cover R | حذاء يتغير لونه</title>
-
-<meta name="description" content="Leather Cover R - حذاء جلد كلاسيكي بفكرة مبتكرة. غيّر لون حذائك باستخدام كفرات خارجية قابلة للتبديل.">
+<meta name="description" content="اكتشف Leather Cover R، الحذاء الكلاسيكي ذو الكفرات الجلدية القابلة للتغيير. حذاء واحد وألوان متعددة.">
 <meta name="robots" content="index, follow">
-
 <link rel="canonical" href="https://remonking56-rgb.github.io/leathercoverr/">
 
 <meta property="og:title" content="Leather Cover R">
-<meta property="og:description" content="حذاء واحد وألوان متعددة. غيّر مظهر حذائك بكفرات جلدية قابلة للتبديل.">
+<meta property="og:description" content="غيّر اللون وليس الحذاء">
 <meta property="og:type" content="website">
 
 <style>
 :root {
   --bg: #090909;
-  --panel: #111111;
+  --panel: #151515;
   --gold: #c5a477;
-  --gold-light: #e2c69b;
-  --text: #f4f0e9;
-  --muted: #aaa39a;
-  --line: rgba(197,164,119,.25);
+  --white: #f5f3ef;
+  --muted: #aaa;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
@@ -38,7 +31,7 @@ html {
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--text);
+  color: var(--white);
   font-family: Tahoma, Arial, sans-serif;
   line-height: 1.8;
 }
@@ -53,558 +46,663 @@ button, input, select, textarea {
 }
 
 .wrap {
-  width: min(1160px, calc(100% - 36px));
+  width: min(1150px, calc(100% - 36px));
   margin: auto;
 }
-
-/* HEADER */
 
 header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 20;
   background: rgba(9,9,9,.96);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #29231c;
 }
 
-.nav {
-  min-height: 78px;
+.header-inner {
+  min-height: 76px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   color: var(--gold);
-  font-size: 19px;
+  font-size: 23px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.brand-mark {
-  width: 38px;
-  height: 38px;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-family: Georgia, serif;
-  font-size: 23px;
-}
-
-.navlinks {
+nav {
   display: flex;
-  gap: 24px;
-  color: #ddd4c8;
+  gap: 22px;
+  align-items: center;
   font-size: 14px;
 }
 
-.navlinks a:hover {
-  color: var(--gold);
-}
+nav a:hover { color: var(--gold); }
 
-.lang {
+.lang-btn {
+  border: 1px solid var(--gold);
+  color: var(--gold);
   background: transparent;
-  color: var(--gold);
-  border: 1px solid var(--line);
-  padding: 8px 14px;
-  border-radius: 30px;
+  padding: 6px 13px;
   cursor: pointer;
+  border-radius: 5px;
 }
-
-/* HERO */
 
 .hero {
-  padding: 75px 0 60px;
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 45px;
-  align-items: center;
+  padding: 55px 0 75px;
+  text-align: center;
 }
 
 .eyebrow {
   color: var(--gold);
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 12px;
 }
 
 h1 {
-  font-size: clamp(38px, 5vw, 66px);
-  line-height: 1.2;
-  margin: 15px 0 20px;
+  font-size: clamp(30px, 5vw, 54px);
+  line-height: 1.4;
+  margin: 0 0 12px;
 }
 
-h1 span {
-  color: var(--gold);
-}
-
-.lead {
-  font-size: 18px;
-  color: #c8c1b7;
-  max-width: 620px;
-  margin-bottom: 28px;
+.hero p {
+  color: #c0c0c0;
+  max-width: 650px;
+  margin: 0 auto 24px;
 }
 
 .btn {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  padding: 13px 23px;
-  border-radius: 40px;
-  font-weight: bold;
-  border: 1px solid var(--gold);
+  justify-content: center;
+  gap: 10px;
+  border: 0;
   cursor: pointer;
+  border-radius: 7px;
+  padding: 14px 27px;
+  font-weight: bold;
+  transition: .2s;
 }
 
 .btn-primary {
   background: var(--gold);
-  color: #100e0b;
+  color: #090909;
 }
 
-.btn-outline {
-  color: var(--gold);
-  background: transparent;
-  margin-right: 8px;
+.btn-primary:hover {
+  background: #e0c39a;
+  transform: translateY(-2px);
 }
 
-/* مساحة الصور لاحقًا */
-
-.product-placeholder {
-  min-height: 370px;
-  border: 1px solid var(--line);
-  border-radius: 25px;
-  background:
-    radial-gradient(ellipse, rgba(197,164,119,.13), transparent 65%),
-    #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
+.hero-buy {
+  min-width: 220px;
+  min-height: 58px;
+  font-size: 20px;
+  margin-top: 8px;
 }
 
-.placeholder-content {
-  max-width: 300px;
+.product-area {
+  max-width: 760px;
+  margin: 42px auto 0;
 }
 
-.placeholder-r {
-  font-family: Georgia, serif;
-  font-size: 85px;
-  color: var(--gold);
-  line-height: 1;
+.product-stage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #111;
+  line-height: 0;
 }
 
-.placeholder-content strong {
+.product-stage img {
   display: block;
-  color: var(--gold-light);
-  margin-top: 15px;
-  letter-spacing: 2px;
+  width: 100%;
+  height: auto;
 }
 
-.placeholder-content p {
-  color: var(--muted);
-  font-size: 13px;
+.color-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  mix-blend-mode: multiply;
 }
 
-/* SECTIONS */
-
-section {
-  padding: 65px 0;
-  border-top: 1px solid rgba(255,255,255,.05);
+.color-overlay path {
+  fill: var(--active-color, #087887);
+  opacity: .82;
+  transition: fill .55s ease;
 }
 
-.section-head {
+.product-caption {
+  color: var(--gold);
+  margin-top: 17px;
+  font-size: 14px;
+}
+
+.section {
+  padding: 75px 0;
+  border-top: 1px solid #211e19;
+}
+
+.section-title {
   text-align: center;
-  max-width: 720px;
-  margin: 0 auto 38px;
+  margin-bottom: 35px;
 }
 
-.section-head h2 {
-  font-size: 36px;
-  margin: 8px 0;
+.section-title h2 {
+  font-size: 30px;
+  margin: 0 0 8px;
 }
 
-.section-head p {
+.section-title p {
   color: var(--muted);
+  margin: 0;
 }
 
-/* FEATURES */
-
-.feature-grid {
+.color-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 17px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 13px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.color-choice {
+  background: #151515;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 9px;
+  padding: 13px 7px;
+  cursor: pointer;
+  text-align: center;
+  transition: .2s;
+}
+
+.color-choice:hover,
+.color-choice.active {
+  border-color: var(--gold);
+  background: #211d17;
+}
+
+.color-dot {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 7px;
+  border: 2px solid rgba(255,255,255,.35);
+}
+
+.selected-info {
+  text-align: center;
+  color: var(--gold);
+  margin-top: 20px;
+}
+
+.auto-note {
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .feature {
   background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 20px;
   padding: 25px;
-}
-
-.feature-number {
-  font: 30px Georgia,serif;
-  color: var(--gold);
+  border: 1px solid #29241e;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .feature h3 {
-  margin: 8px 0;
+  color: var(--gold);
+  margin: 0 0 8px;
 }
 
 .feature p {
-  color: var(--muted);
+  color: #aaa;
+  margin: 0;
   font-size: 14px;
 }
 
-/* COLORS */
-
-.color-grid {
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  gap: 13px;
-}
-
-.color-option {
-  background: var(--panel);
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: 15px;
-  padding: 13px 8px;
-  color: white;
+.offer {
   text-align: center;
-  cursor: pointer;
-  position: relative;
+  background: linear-gradient(135deg, #19150f, #101010);
+  border: 1px solid #4b3c28;
+  border-radius: 12px;
+  padding: 35px 20px;
 }
 
-.color-option.selected {
-  border: 1px solid var(--gold);
-  box-shadow: 0 0 0 1px var(--gold);
-}
-
-.swatch {
-  display: block;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  margin: auto auto 8px;
-  border: 2px solid rgba(255,255,255,.2);
-}
-
-.color-option small {
-  color: #ddd;
-}
-
-.checkmark {
-  display: none;
-  position: absolute;
-  top: 5px;
-  left: 8px;
+.offer h2 {
   color: var(--gold);
+  margin-top: 0;
 }
 
-.color-option.selected .checkmark {
-  display: block;
+.offer p { color: #ccc; }
+
+#order {
+  scroll-margin-top: 95px;
 }
 
-.selection-bar {
-  margin-top: 22px;
-  padding: 17px;
-  border: 1px solid var(--line);
-  border-radius: 15px;
-  background: #111;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+.order-layout {
+  display: grid;
+  grid-template-columns: .8fr 1.4fr;
+  gap: 25px;
+  align-items: start;
 }
 
-.selection-bar strong {
+.order-note,
+.order-form {
+  background: var(--panel);
+  border: 1px solid #30291f;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.order-note h3,
+.order-form h3 {
   color: var(--gold);
+  margin-top: 0;
 }
 
-.selected-dots {
+.order-note li {
+  margin-bottom: 12px;
+}
+
+.notice {
+  color: #c5a477;
+  font-size: 13px;
+  border-top: 1px solid #383027;
+  padding-top: 15px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.field {
   display: flex;
+  flex-direction: column;
   gap: 7px;
 }
 
-.mini-dot {
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  border: 1px solid #aaa;
+.field.full { grid-column: 1 / -1; }
+
+.field label {
+  font-size: 14px;
+  color: #ddd;
 }
 
-/* OFFER */
-
-.offer {
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: 30px;
-  background: linear-gradient(120deg,#17130e,#0e0e0e);
+.field input,
+.field select,
+.field textarea {
+  background: #0b0b0b;
+  color: white;
+  border: 1px solid #484038;
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  min-width: 0;
 }
 
-.offer h3 {
+.field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.payment-list {
+  display: grid;
+  gap: 10px;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  background: #0c0c0c;
+  border: 1px solid #39332b;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.payment input { accent-color: var(--gold); }
+
+.payment small {
+  display: block;
+  color: #999;
+  font-size: 12px;
+}
+
+.payment.disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 22px;
+  font-size: 17px;
+}
+
+.fineprint {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 230px;
+  padding: 23px;
+  background: var(--panel);
+  border: 1px solid #393027;
+  border-radius: 9px;
+  text-align: center;
+}
+
+.contact-card strong {
+  display: block;
   color: var(--gold);
-  font-size: 24px;
-  margin: 8px 0;
 }
 
-.offer p {
-  color: var(--muted);
+.contact-card small { color: #999; }
+
+.footer {
+  padding: 35px 0;
+  border-top: 1px solid #29231c;
+  text-align: center;
+  color: #999;
+}
+
+.footer-brand {
+  color: var(--gold);
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 30;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #168b55;
+  color: white;
+  font-size: 27px;
+  box-shadow: 0 4px 20px #0008;
+}
+
+@media (max-width: 700px) {
+  .header-inner { flex-wrap: wrap; padding: 12px 0; }
+  nav { order: 3; width: 100%; justify-content: center; gap: 15px; }
+  .brand { font-size: 19px; }
+  .hero { padding-top: 38px; }
+  .color-grid { grid-template-columns: repeat(2, 1fr); }
+  .features { grid-template-columns: 1fr; }
+  .order-layout { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .field.full { grid-column: auto; }
 }
 </style>
 </head>
 
 <body>
 
-<div class="topline"></div>
-
 <header>
-  <div class="wrap nav">
+  <div class="wrap header-inner">
+    <a class="brand" href="#home">LEATHER COVER R</a>
 
-    <a class="brand" href="#home">
-      <span class="brand-mark">R</span>
-      <span>LEATHER COVER R</span>
-    </a>
-
-    <nav class="navlinks" id="navlinks">
-      <a href="#idea" data-ar="الفكرة" data-en="The Idea">الفكرة</a>
-      <a href="#colors" data-ar="الألوان" data-en="Colors">الألوان</a>
-      <a href="#order" data-ar="اطلب الآن" data-en="Order">اطلب الآن</a>
-      <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#colors">الألوان</a>
+      <a href="#idea">الفكرة</a>
+      <a href="#order">اطلب الآن</a>
     </nav>
 
-    <button class="lang" id="langBtn">EN</button>
-
+    <button class="lang-btn" id="languageButton">EN</button>
   </div>
 </header>
 
-<main id="home">
+<main>
 
-<section class="wrap hero">
+<!-- HERO -->
 
-  <div>
-    <div class="eyebrow"
-      data-ar="أسلوبك يتغير وقت ما تحب"
-      data-en="YOUR STYLE. YOUR CHOICE.">
-      أسلوبك يتغير وقت ما تحب
-    </div>
+<section class="hero" id="home">
+  <div class="wrap">
 
-    <h1
-      data-ar="حذاء واحد،<br><span>وألوان بلا حدود.</span>"
-      data-en="ONE SHOE.<br><span>MORE WAYS TO STYLE.</span>">
-      حذاء واحد،<br>
-      <span>وألوان بلا حدود.</span>
-    </h1>
+    <div class="eyebrow">A NEW WAY TO WEAR LEATHER</div>
 
-    <p class="lead"
-      data-ar="اكتشف Leather Cover R — حذاء جلد كلاسيكي بفكرة مختلفة: غيّر اللون والمظهر باستخدام كفرات خارجية قابلة للتبديل، واحتفظ بحذائك الأساسي."
-      data-en="Discover Leather Cover R — a classic leather shoe with a new idea. Change its look with replaceable outer covers while keeping your original shoe.">
-      اكتشف Leather Cover R — حذاء جلد كلاسيكي بفكرة مختلفة: غيّر اللون والمظهر باستخدام كفرات خارجية قابلة للتبديل، واحتفظ بحذائك الأساسي.
+    <h1>حذاء واحد.. وألوان متعددة</h1>
+
+    <p>
+      غيّر لون الكفر الخارجي واستمتع بمظهر جديد،
+      مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.
     </p>
 
-    <a class="btn btn-primary" href="#colors"
-       data-ar="اختار ألوانك" data-en="Choose Your Colors">
-      اختار ألوانك
+    <a href="#order" class="btn btn-primary hero-buy">
+      اشتري الآن <span>←</span>
     </a>
 
-    <a class="btn btn-outline" href="#idea"
-       data-ar="اكتشف الفكرة" data-en="Discover the Idea">
-      اكتشف الفكرة
-    </a>
-  </div>
+    <!-- صورة الحذاء الأصلية -->
+    <div class="product-area">
+      <div class="product-stage" id="productStage">
 
-  <div class="product-placeholder">
-    <div class="placeholder-content">
-      <div class="placeholder-r">R</div>
-      <strong>LEATHER COVER R</strong>
-      <p>مساحة صورة الحذاء — سنضيف صور منتجك الأصلية عند إرسالها</p>
-    </div>
-  </div>
+        <img
+          src="assets/white-shoe.png"
+          alt="الحذاء الأصلي Leather Cover R"
+          id="baseShoe"
+        >
 
-</section>
+        <!-- طبقات تغيير لون الكفر -->
+        <svg
+          class="color-overlay"
+          viewBox="0 0 1024 1536"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <filter id="leatherTexture">
+              <feGaussianBlur stdDeviation="0.25"/>
+            </filter>
+          </defs>
 
-<section id="idea">
-  <div class="wrap">
+          <!-- الجزء الجانبي الظاهر -->
+          <path id="sideCover"
+            d="
+            M 105,500
+            L 145,455
+            Q 180,435 225,460
+            L 315,505
+            L 415,565
+            L 515,635
+            L 590,700
+            L 625,745
+            L 595,785
+            Q 545,790 490,770
+            L 385,735
+            L 270,690
+            L 165,650
+            Q 110,625 90,585
+            Z
+            "
+          />
 
-    <div class="section-head">
-      <div class="eyebrow">THE IDEA</div>
-      <h2>غيّر اللون… وليس الحذاء</h2>
-      <p>
-        بدل ما تشتري حذاء جديد كل مرة، غيّر مظهر حذائك
-        بالكفر الخارجي القابل للتبديل.
-      </p>
-    </div>
+          <!-- الجزء الأمامي -->
+          <path id="frontCover"
+            d="
+            M 465,500
+            Q 495,475 535,485
+            L 620,550
+            L 735,635
+            L 855,720
+            L 965,790
+            Q 1000,820 1005,855
+            L 985,890
+            Q 955,905 925,900
+            L 810,865
+            L 690,820
+            L 595,775
+            L 540,725
+            L 500,650
+            Z
+            "
+          />
+        </svg>
 
-    <div class="feature-grid">
-
-      <article class="feature">
-        <div class="feature-number">01</div>
-        <h3>حذاء جلد كلاسيكي</h3>
-        <p>تصميم كلاسيكي أنيق مع الحفاظ على جسم الحذاء والنعل الأساسي.</p>
-      </article>
-
-      <article class="feature">
-        <div class="feature-number">02</div>
-        <h3>كفرات قابلة للتبديل</h3>
-        <p>اختار اللون الذي يناسب ملابسك ومناسبتك، وبدّل المظهر وقت ما تحب.</p>
-      </article>
-
-      <article class="feature">
-        <div class="feature-number">03</div>
-        <h3>اختيارات أكثر</h3>
-        <p>تنوع في المظهر دون الحاجة إلى امتلاك عدة أحذية.</p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section id="colors">
-  <div class="wrap">
-
-    <div class="section-head">
-      <div class="eyebrow">MAKE IT YOURS</div>
-      <h2>اختار 5 ألوان من مجموعتنا</h2>
-      <p>حدد خمسة ألوان تفضلها ليتم تسجيلها مع طلبك.</p>
-    </div>
-
-    <div class="color-grid" id="colorGrid">
-
-      <button class="color-option" type="button" data-color="أحمر">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#a51f2b"></i>
-        <small>أحمر</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="أخضر">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#285b3b"></i>
-        <small>أخضر</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="زيتوني">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#62613a"></i>
-        <small>زيتوني</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="برتقالي">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#c76b27"></i>
-        <small>برتقالي</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="كحلي">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#172b4d"></i>
-        <small>كحلي</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="أزرق">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#285c9b"></i>
-        <small>أزرق</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="نبيتي">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#64253d"></i>
-        <small>نبيتي</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="بترولي">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#17636a"></i>
-        <small>بترولي</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="بني">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#70452f"></i>
-        <small>بني</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="رمادي">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#777b80"></i>
-        <small>رمادي</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="رمادي غامق">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#393b40"></i>
-        <small>رمادي غامق</small>
-      </button>
-
-      <button class="color-option" type="button" data-color="سماوي">
-        <span class="checkmark">✓</span>
-        <i class="swatch" style="background:#79b8d4"></i>
-        <small>سماوي</small>
-      </button>
-
-    </div>
-
-    <div class="selection-bar">
-      <div>
-        <strong id="selectionText">تم اختيار 0 من 5 ألوان</strong>
-        <div id="selectionHint">اختر خمسة ألوان لإكمال الطلب</div>
       </div>
-      <div class="selected-dots" id="selectedDots"></div>
+
+      <div class="product-caption">
+        غيّر اللون وشاهد مظهرًا جديدًا لحذائك
+      </div>
     </div>
 
   </div>
 </section>
 
-<section>
-  <div class="wrap offer">
-    <div class="eyebrow">LAUNCH OFFER</div>
-    <h3>خمسة كفرات بألوان من اختيارك</h3>
-    <p>حدد اختياراتك من مجموعة الألوان، وسنتواصل معك لتأكيد تفاصيل الطلب.</p>
+
+<!-- COLORS -->
+
+<section class="section" id="colors">
+  <div class="wrap">
+
+    <div class="section-title">
+      <div class="eyebrow">YOUR STYLE YOUR COLOR</div>
+      <h2>اختار لون الكفر</h2>
+      <p>اضغط على اللون لمشاهدته على الحذاء.</p>
+    </div>
+
+    <div class="color-grid" id="colorGrid"></div>
+
+    <div class="selected-info">
+      اللون الحالي: <strong id="currentColor">بترولي</strong>
+    </div>
+
+    <div class="auto-note">
+      يتم عرض الألوان تلقائيًا، ويمكنك اختيار اللون بنفسك في أي وقت.
+    </div>
+
   </div>
 </section>
-<!-- ORDER SECTION -->
 
-<section id="order">
+
+<!-- IDEA -->
+
+<section class="section" id="idea">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">YOUR ORDER</div>
-      <h2>سجّل طلبك الآن</h2>
-      <p>اختار المقاس وطريقة الدفع وسجّل بيانات التوصيل. سيتم فتح واتساب لتأكيد طلبك.</p>
+
+    <div class="section-title">
+      <div class="eyebrow">THE IDEA</div>
+      <h2>غيّر اللون وليس الحذاء</h2>
+      <p>فكرة مختلفة تمنحك حرية تغيير مظهر حذائك.</p>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        <h3>حذاء واحد</h3>
+        <p>احتفظ بالحذاء الأساسي والنعل الأصلي.</p>
+      </div>
+
+      <div class="feature">
+        <h3>ألوان متعددة</h3>
+        <p>غيّر شكل الحذاء حسب ذوقك ومناسبتك.</p>
+      </div>
+
+      <div class="feature">
+        <h3>تغيير المظهر</h3>
+        <p>استمتع بمظهر متجدد دون شراء حذاء جديد كل مرة.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- OFFER -->
+
+<section class="section">
+  <div class="wrap">
+
+    <div class="offer">
+      <div class="eyebrow">SPECIAL OFFER</div>
+      <h2>حذاء واحد + خمسة كفرات هدية</h2>
+      <p>اختار خمسة ألوان من الألوان المتاحة واستمتع بتغيير مظهرك.</p>
+      <a href="#order" class="btn btn-primary">اطلب عرضك الآن</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ORDER -->
+
+<section class="section" id="order">
+  <div class="wrap">
+
+    <div class="section-title">
+      <div class="eyebrow">PLACE YOUR ORDER</div>
+      <h2>اطلب Leather Cover R</h2>
+      <p>سجّل بياناتك واختار خمسة ألوان للكفرات.</p>
     </div>
 
     <div class="order-layout">
+
       <div class="order-note">
-        <h3>طرق الدفع المتاحة</h3>
+        <h3>طرق الدفع</h3>
+
         <ul>
           <li>الدفع عند الاستلام.</li>
-          <li>المحفظة الإلكترونية على رقم واتساب نفسه.</li>
+          <li>المحفظة الإلكترونية على رقم واتساب نفسه بعد تأكيد الطلب.</li>
           <li>الدفع البنكي والبطاقات: قريبًا.</li>
         </ul>
+
         <p class="notice">
-          تحويل المحفظة يتم بعد تأكيد الطلب مع خدمة العملاء.
-          لا ترسل أي مبلغ قبل تأكيد تفاصيل الطلب.
+          في حالة اختيار المحفظة الإلكترونية، سيتم التواصل معك لتأكيد الطلب
+          وتفاصيل التحويل. لا ترسل أي مبلغ قبل تأكيد الطلب.
         </p>
       </div>
 
       <form class="order-form" id="orderForm">
-        <h3>بيانات الطلب</h3>
+
+        <h3>بيانات العميل</h3>
 
         <div class="form-grid">
+
           <div class="field">
             <label for="customerName">الاسم بالكامل</label>
-            <input id="customerName" type="text" placeholder="اكتب اسمك" required>
+            <input id="customerName" required placeholder="اكتب اسمك">
           </div>
 
           <div class="field">
             <label for="phone">رقم الموبايل</label>
-            <input id="phone" type="tel" placeholder="01xxxxxxxxx" required>
+            <input id="phone" type="tel" required placeholder="01xxxxxxxxx">
           </div>
 
           <div class="field">
@@ -628,18 +726,26 @@ section {
 
           <div class="field">
             <label for="city">المحافظة / المدينة</label>
-            <input id="city" type="text" placeholder="المحافظة أو المدينة" required>
+            <input id="city" required placeholder="المحافظة">
           </div>
 
           <div class="field">
             <label for="address">العنوان بالتفصيل</label>
-            <input id="address" type="text" placeholder="الشارع والمنطقة ورقم العقار" required>
+            <input id="address" required placeholder="الشارع والمنطقة ورقم العقار">
+          </div>
+
+          <div class="field full">
+            <label>الألوان الخمسة المطلوبة</label>
+            <div id="orderColors" style="color:#c5a477">
+              لم يتم اختيار الألوان بعد
+            </div>
           </div>
 
           <div class="field full">
             <label>طريقة الدفع</label>
 
             <div class="payment-list">
+
               <label class="payment">
                 <input type="radio" name="payment" value="الدفع عند الاستلام" checked>
                 <span>
@@ -652,24 +758,26 @@ section {
                 <input type="radio" name="payment" value="المحفظة الإلكترونية">
                 <span>
                   <strong>المحفظة الإلكترونية</strong>
-                  <small>على نفس رقم واتساب بعد تأكيد الطلب.</small>
+                  <small>بعد تأكيد الطلب مع خدمة العملاء.</small>
                 </span>
               </label>
 
               <label class="payment disabled">
-                <input type="radio" name="payment" value="الدفع البنكي والبطاقات" disabled>
+                <input type="radio" disabled>
                 <span>
                   <strong>الدفع البنكي والبطاقات — قريبًا</strong>
-                  <small>سيتم تفعيل هذه الخدمة لاحقًا.</small>
+                  <small>سيتم تفعيل الخدمة لاحقًا.</small>
                 </span>
               </label>
+
             </div>
           </div>
 
           <div class="field full">
-            <label for="notes">ملاحظات إضافية (اختياري)</label>
-            <textarea id="notes" placeholder="أي تفاصيل إضافية تحب توضحها"></textarea>
+            <label for="notes">ملاحظات إضافية</label>
+            <textarea id="notes" placeholder="أي تفاصيل إضافية"></textarea>
           </div>
+
         </div>
 
         <button class="btn btn-primary form-submit" type="submit">
@@ -677,37 +785,41 @@ section {
         </button>
 
         <p class="fineprint">
-          سيتم فتح واتساب برسالة تحتوي على بيانات طلبك.
-          لن يتم إرسال الطلب إلا بعد الضغط على إرسال داخل واتساب.
+          سيتم فتح واتساب برسالة جاهزة. لن يُرسل الطلب إلا بعد تأكيدك من داخل واتساب.
         </p>
+
       </form>
     </div>
   </div>
 </section>
 
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT -->
 
-<section id="contact">
+<section class="section">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">STAY CONNECTED</div>
-      <h2>تابع Leather Cover R</h2>
-      <p>تابعنا لمعرفة أحدث الألوان والتحديثات والعروض.</p>
+
+    <div class="section-title">
+      <div class="eyebrow">CONTACT US</div>
+      <h2>تواصل معنا</h2>
     </div>
 
     <div class="contact-row">
-      <a class="contact-card" href="https://wa.me/201225655101" target="_blank" rel="noopener">
-        <span class="contact-icon">✆</span>
+
+      <a class="contact-card"
+         href="https://wa.me/201225655101"
+         target="_blank">
         <strong>WhatsApp</strong>
-        <small>تواصل معنا مباشرة</small>
+        <small>01225655101</small>
       </a>
 
-      <a class="contact-card" href="https://www.instagram.com/remonfouadking/" target="_blank" rel="noopener">
-        <span class="contact-icon">◎</span>
+      <a class="contact-card"
+         href="https://www.instagram.com/remonfouadking/"
+         target="_blank">
         <strong>Instagram</strong>
         <small>@remonfouadking</small>
       </a>
+
     </div>
   </div>
 </section>
@@ -715,109 +827,138 @@ section {
 </main>
 
 
-<!-- FOOTER -->
-
 <footer class="footer">
   <div class="wrap">
     <div class="footer-brand">LEATHER COVER R</div>
     <p>غيّر اللون وليس الحذاء.</p>
-    <p class="copyright">
-      © 2026 Leather Cover R. All Rights Reserved.
-    </p>
+    <small>© 2026 Leather Cover R. All Rights Reserved.</small>
   </div>
 </footer>
-
-
-<!-- FLOATING WHATSAPP -->
 
 <a class="whatsapp-float"
    href="https://wa.me/201225655101"
    target="_blank"
-   rel="noopener"
-   aria-label="تواصل عبر واتساب">
-  <span>✆</span>
-</a>
+   aria-label="WhatsApp">✆</a>
 
 
 <script>
-/* COLOR SELECTION */
 
-const colorOptions = document.querySelectorAll(".color-option");
-const selectedColorsBox = document.getElementById("selectedColors");
-const colorCount = document.getElementById("colorCount");
+/* COLORS */
 
-const selectedColors = [];
+const colors = [
+  {name:"بترولي", hex:"#087887"},
+  {name:"برتقالي", hex:"#f45a16"},
+  {name:"أحمر", hex:"#c81429"},
+  {name:"نبيتي", hex:"#702033"},
+  {name:"رمادي", hex:"#666666"},
+  {name:"أزرق", hex:"#073d83"},
+  {name:"سماوي", hex:"#77b9e8"},
+  {name:"أسود", hex:"#171717"},
+  {name:"أخضر", hex:"#08734f"},
+  {name:"زيتي", hex:"#65652d"},
+  {name:"بني", hex:"#754526"},
+  {name:"كحلي", hex:"#101e48"}
+];
 
-function updateSelectedColors() {
-  if (selectedColorsBox) {
-    selectedColorsBox.innerHTML = "";
+let currentIndex = 0;
+let selectedColors = [];
+let automaticTimer;
 
-    selectedColors.forEach(function(color) {
-      const item = document.createElement("span");
-      item.className = "selected-color";
-      item.textContent = color;
-      selectedColorsBox.appendChild(item);
-    });
-  }
+const grid = document.getElementById("colorGrid");
+const currentColorText = document.getElementById("currentColor");
+const stage = document.getElementById("productStage");
 
-  if (colorCount) {
-    colorCount.textContent = selectedColors.length;
-  }
+function showColor(index) {
+  currentIndex = index;
+  const color = colors[index];
+
+  stage.style.setProperty("--active-color", color.hex);
+  currentColorText.textContent = color.name;
+
+  document.querySelectorAll(".color-choice").forEach((button, i) => {
+    button.classList.toggle("active", i === index);
+  });
 }
 
-colorOptions.forEach(function(option) {
-  option.addEventListener("click", function() {
-    const color = option.dataset.color;
+function buildColors() {
+  colors.forEach((color, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "color-choice";
 
-    if (selectedColors.includes(color)) {
-      selectedColors.splice(selectedColors.indexOf(color), 1);
-      option.classList.remove("selected");
-    } else {
-      if (selectedColors.length >= 5) {
-        alert("يمكنك اختيار 5 ألوان فقط.");
-        return;
-      }
+    button.innerHTML = `
+      <span class="color-dot" style="background:${color.hex}"></span>
+      <span>${color.name}</span>
+    `;
 
-      selectedColors.push(color);
-      option.classList.add("selected");
-    }
+    button.addEventListener("click", () => {
+      stopAutomatic();
+      showColor(index);
+    });
 
-    updateSelectedColors();
+    grid.appendChild(button);
   });
+}
+
+function startAutomatic() {
+  automaticTimer = setInterval(() => {
+    const next = (currentIndex + 1) % colors.length;
+    showColor(next);
+  }, 3000);
+}
+
+function stopAutomatic() {
+  clearInterval(automaticTimer);
+}
+
+function updateOrderColors() {
+  document.getElementById("orderColors").textContent =
+    selectedColors.length
+      ? selectedColors.map(c => c.name).join(" - ")
+      : "لم يتم اختيار الألوان بعد";
+}
+
+buildColors();
+showColor(0);
+startAutomatic();
+
+
+/* IMAGE CHECK */
+
+document.getElementById("baseShoe").addEventListener("error", function() {
+  this.alt = "لم يتم العثور على صورة الحذاء. تأكد من رفعها داخل assets باسم white-shoe.png";
+});
+
+
+/* ORDER COLOR SELECTION */
+
+grid.addEventListener("contextmenu", function(event) {
+  event.preventDefault();
 });
 
 
 /* ORDER FORM */
 
-const orderForm = document.getElementById("orderForm");
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-if (orderForm) {
-  orderForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+  if (selectedColors.length !== 5) {
+    alert("اختار خمسة ألوان من قسم الألوان أولًا.");
+    document.getElementById("colors").scrollIntoView({behavior:"smooth"});
+    return;
+  }
 
-    if (selectedColors.length !== 5) {
-      alert("من فضلك اختر 5 ألوان للكفرات قبل إرسال الطلب.");
-      document.getElementById("colors").scrollIntoView({
-        behavior: "smooth"
-      });
-      return;
-    }
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const size = document.getElementById("size").value;
+  const quantity = document.getElementById("quantity").value;
+  const city = document.getElementById("city").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const notes = document.getElementById("notes").value.trim();
 
-    const name = document.getElementById("customerName").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const size = document.getElementById("size").value;
-    const quantity = document.getElementById("quantity").value;
-    const city = document.getElementById("city").value.trim();
-    const address = document.getElementById("address").value.trim();
-    const notes = document.getElementById("notes").value.trim();
+  const payment = document.querySelector('input[name="payment"]:checked').value;
 
-    const paymentInput = document.querySelector(
-      'input[name="payment"]:checked'
-    );
-
-    const payment = paymentInput ? paymentInput.value : "";
-
-    const message =
+  const message =
 `طلب جديد من موقع Leather Cover R
 
 الاسم: ${name}
@@ -825,59 +966,43 @@ if (orderForm) {
 المقاس: ${size}
 الكمية: ${quantity}
 
-الألوان المختارة:
-${selectedColors.map((color, index) => (index + 1) + "- " + color).join("\n")}
+الألوان الخمسة:
+${selectedColors.map(c => c.name).join("، ")}
 
 طريقة الدفع: ${payment}
-
 المحافظة: ${city}
 العنوان: ${address}
-
 ملاحظات: ${notes || "لا يوجد"}
 
-أرجو تأكيد الطلب والتفاصيل.`;
+برجاء تأكيد الطلب والتفاصيل.`;
 
-    const whatsappURL =
-      "https://wa.me/201225655101?text=" +
-      encodeURIComponent(message);
-
-    window.open(whatsappURL, "_blank");
-  });
-}
+  window.open(
+    "https://wa.me/201225655101?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+});
 
 
-/* LANGUAGE SWITCH */
+/* LANGUAGE BUTTON */
 
 const languageButton = document.getElementById("languageButton");
+let english = false;
 
-let currentLanguage = "ar";
+languageButton.addEventListener("click", function() {
+  english = !english;
 
-const translations = {
-  "LEATHER COVER R": "LEATHER COVER R",
-  "سجّل طلبك الآن": "Place Your Order",
-  "تابع Leather Cover R": "Follow Leather Cover R",
-  "غيّر اللون وليس الحذاء.": "Change the color, not the shoe."
-};
+  document.documentElement.lang = english ? "en" : "ar";
+  document.documentElement.dir = english ? "ltr" : "rtl";
 
-if (languageButton) {
-  languageButton.addEventListener("click", function() {
-    currentLanguage = currentLanguage === "ar" ? "en" : "ar";
+  languageButton.textContent = english ? "عربي" : "EN";
 
-    document.documentElement.lang = currentLanguage;
-    document.documentElement.dir =
-      currentLanguage === "ar" ? "rtl" : "ltr";
+  alert(
+    english
+      ? "English layout direction enabled. Full English translation will be added in the next language update."
+      : "تم الرجوع إلى العربية."
+  );
+});
 
-    languageButton.textContent =
-      currentLanguage === "ar" ? "EN" : "عربي";
-
-    document.querySelectorAll("[data-ar][data-en]").forEach(function(element) {
-      element.textContent =
-        currentLanguage === "ar"
-          ? element.dataset.ar
-          : element.dataset.en;
-    });
-  });
-}
 </script>
 
 </body>
