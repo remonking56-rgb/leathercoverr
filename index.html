@@ -164,17 +164,16 @@ h1 {
   object-fit:contain;
   object-position:center;
   transition:opacity .25s ease;
-}
-
-/* أزرار الألوان مرتبة رأسيًا */
+}  
 .color-grid {
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  width:min(280px,100%);
-  margin:14px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
 }
 
+.color-btn {
+  width: 100%;
+}
 .color-choice {
   width:100%;
   display:flex;
