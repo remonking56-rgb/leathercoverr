@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -9,42 +10,7 @@
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://remonking56-rgb.github.io/leathercoverr/">
 
-<style><section class="style-section">
-  <div class="wrap">
-
-    <div class="eyebrow">COMPLETE YOUR STYLE</div>
-
-    <h2>حذاء واحد… يليق بكل إطلالاتك!</h2>
-
-    <p>
-      كام مرة احتجت حذاء بلون مختلف عشان يناسب
-      البنطلون أو القميص اللي لابسه؟
-    </p>
-
-    <p>
-      مع Leather Cover R مش محتاج تشتري حذاء جديد
-      مع كل إطلالة.
-    </p>
-
-    <p>
-      جلد طبيعي بقري في حذائك الأساسي،
-      وكفرات بألوان متعددة تختار منها اللون
-      اللي يناسب لبسك، سواء بنطلون أو قميص
-      أو طقم كامل.
-    </p>
-
-    <h3>كمّل أناقتك… وغيّر لون حذائك!</h3>
-
-    <div class="style-offer">
-      حذاء واحد + خمسة كفرات هدية
-    </div>
-
-    <a href="#colors" class="btn btn-primary">
-      اكتشف الألوان
-    </a>
-
-  </div>
-</section>
+<style>
 :root {
   --bg:#090909;
   --panel:#151515;
@@ -88,11 +54,16 @@ header {
   gap:15px;
 }
 
-.brand {
-  color:var(--gold);
-  font-size:22px;
-  font-weight:bold;
-  letter-spacing:2px;
+.logo-img {
+  display:block;
+  width:190px;
+  max-height:65px;
+  object-fit:contain;
+}
+
+.footer-logo {
+  width:170px;
+  margin:0 auto;
 }
 
 nav {
@@ -162,7 +133,6 @@ h1 {
   margin-top:8px;
 }
 
-/* حجم موحد للصور */
 .product-area {
   width:min(560px,100%);
   margin:38px auto 0;
@@ -189,35 +159,12 @@ h1 {
   transition:opacity .25s ease;
 }
 
-.product-caption {
-  color:var(--gold);
-  margin-top:15px;
-  font-size:14px;
-}
-
-.section {
-  padding:65px 0;
-  border-top:1px solid #211e19;
-}
-
-.section-title {
-  text-align:center;
-  margin-bottom:30px;
-}
-
-.section-title h2 {
-  font-size:29px;
-  margin:0 0 8px;
-}
-
-.section-title p { color:var(--muted); }
-
 .color-grid {
   display:grid;
   grid-template-columns:repeat(6,minmax(0,1fr));
   gap:10px;
   max-width:650px;
-  margin:auto;
+  margin:10px auto 0;
 }
 
 .color-choice {
@@ -249,7 +196,14 @@ h1 {
 .selected-info {
   text-align:center;
   color:var(--gold);
-  margin-top:17px;
+  margin-top:8px;
+  font-size:14px;
+}
+
+.product-caption {
+  color:#aaa;
+  margin-top:8px;
+  font-size:13px;
 }
 
 .auto-note {
@@ -258,6 +212,23 @@ h1 {
   font-size:12px;
   margin-top:8px;
 }
+
+.section {
+  padding:65px 0;
+  border-top:1px solid #211e19;
+}
+
+.section-title {
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.section-title h2 {
+  font-size:29px;
+  margin:0 0 8px;
+}
+
+.section-title p { color:var(--muted); }
 
 .selection-box {
   text-align:center;
@@ -316,6 +287,35 @@ h1 {
 
 .offer h2 { color:var(--gold); }
 .offer p { color:#ccc; }
+
+.style-section {
+  padding:65px 0;
+  border-top:1px solid #211e19;
+  text-align:center;
+}
+
+.style-section h2 {
+  font-size:29px;
+  margin:0 0 18px;
+}
+
+.style-section p {
+  color:#ccc;
+  max-width:760px;
+  margin:12px auto;
+}
+
+.style-section h3 {
+  color:var(--gold);
+  margin-top:25px;
+}
+
+.style-offer {
+  color:var(--gold);
+  font-size:20px;
+  font-weight:bold;
+  margin:18px 0;
+}
 
 #order { scroll-margin-top:95px; }
 
@@ -444,13 +444,6 @@ h1 {
   color:#999;
 }
 
-.footer-brand {
-  color:var(--gold);
-  font-size:21px;
-  letter-spacing:2px;
-  font-weight:bold;
-}
-
 .whatsapp-float {
   position:fixed;
   bottom:20px;
@@ -480,7 +473,7 @@ h1 {
     font-size:12px;
   }
 
-  .brand { font-size:18px; }
+  .logo-img { width:150px; }
 
   .product-stage { height:360px; }
 
@@ -500,288 +493,333 @@ h1 {
 <body>
 
 <header>
-<div class="wrap header-inner">
-<a class="brand" href="#home">LEATHER COVER R</a>
+  <div class="wrap header-inner">
+    <a href="#home" aria-label="Leather Cover R">
+      <img class="logo-img" src="./logo.png" alt="Leather Cover R">
+    </a>
 
-<nav>
-<a href="#home">الرئيسية</a>
-<a href="#colors">الألوان</a>
-<a href="#idea">الفكرة</a>
-<a href="#order">اطلب الآن</a>
-</nav>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#colors">الألوان</a>
+      <a href="#idea">الفكرة</a>
+      <a href="#order">اطلب الآن</a>
+    </nav>
 
-<button class="lang-btn" id="languageButton">EN</button>
-</div>
+    <button class="lang-btn" id="languageButton">EN</button>
+  </div>
 </header>
 
 <main>
 
 <section class="hero" id="home">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="eyebrow">A NEW WAY TO WEAR LEATHER</div>
+    <div class="eyebrow">A NEW WAY TO WEAR LEATHER</div>
 
-<h1>حذاء واحد.. وألوان متعددة</h1>
+    <h1>حذاء واحد.. وألوان متعددة</h1>
 
-<p>
-غيّر لون الكفر الخارجي بسهولة واستمتع بمظهر جديد،
-مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.
-</p>
+    <p>
+      غيّر لون الكفر الخارجي بسهولة واستمتع بمظهر جديد،
+      مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.
+    </p>
 
-<a href="#order" class="btn btn-primary hero-buy">
-اشتري الآن ←
-</a>
+    <a href="#order" class="btn btn-primary hero-buy">
+      اشتري الآن ←
+    </a>
 
-<div class="product-area">
-<div class="product-stage">
-<img
-src="images/white-shoe.png"
-alt="Leather Cover R"
-id="productImage"
->
-</div>
+    <div class="product-area">
 
-<div class="product-caption">
-غيّر اللون وشاهد مظهرًا جديدًا لحذائك
-</div>
-</div>
+      <div class="product-stage">
+        <img
+          src="images/white-shoe.png"
+          alt="Leather Cover R"
+          id="productImage"
+        >
+      </div>
 
-</div>
+      <!-- أزرار الألوان تحت صورة الحذاء مباشرة -->
+      <div class="color-grid" id="colorGrid"></div>
+
+      <div class="selected-info">
+        اللون الحالي: <strong id="currentColor">الأبيض الأصلي</strong>
+      </div>
+
+      <div class="product-caption">
+        اضغط على أي لون لمشاهدة مظهر جديد لحذائك
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <section class="section" id="colors">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-title">
-<div class="eyebrow">YOUR STYLE YOUR COLOR</div>
-<h2>اختار لون الكفر</h2>
-<p>اضغط على اللون لمشاهدته على الحذاء.</p>
-</div>
+    <div class="section-title">
+      <div class="eyebrow">YOUR STYLE YOUR COLOR</div>
+      <h2>اختار ألوان الكفرات</h2>
+      <p>اختار خمسة ألوان لتحصل عليها مع الحذاء.</p>
+    </div>
 
-<div class="color-grid" id="colorGrid"></div>
+    <div class="selection-box">
+      <div class="selection-counter">
+        اختار 5 ألوان للطلب:
+        <strong id="selectionCount">0</strong> / 5
+      </div>
 
-<div class="selected-info">
-اللون الحالي: <strong id="currentColor">الأبيض الأصلي</strong>
-</div>
+      <div id="orderColorButtons"></div>
+    </div>
 
-<div class="auto-note">
-تتغير الألوان تلقائيًا كل 3 ثوانٍ. اختر لونًا لإيقاف العرض التلقائي.
-</div>
+  </div>
+</section>
 
-<div class="selection-box">
-<div class="selection-counter">
-اختار 5 ألوان للطلب: <strong id="selectionCount">0</strong> / 5
-</div>
-<div id="orderColorButtons"></div>
-</div>
+<section class="style-section">
+  <div class="wrap">
 
-</div>
+    <div class="eyebrow">COMPLETE YOUR STYLE</div>
+
+    <h2>حذاء واحد… يليق بكل إطلالاتك!</h2>
+
+    <p>
+      كام مرة احتجت حذاء بلون مختلف عشان يناسب
+      البنطلون أو القميص اللي لابسه؟
+    </p>
+
+    <p>
+      مع Leather Cover R مش محتاج تشتري حذاء جديد
+      مع كل إطلالة.
+    </p>
+
+    <p>
+      جلد طبيعي بقري في حذائك الأساسي،
+      وكفرات بألوان متعددة تختار منها اللون
+      اللي يناسب لبسك، سواء بنطلون أو قميص
+      أو طقم كامل.
+    </p>
+
+    <h3>كمّل أناقتك… وغيّر لون حذائك!</h3>
+
+    <div class="style-offer">
+      حذاء واحد + خمسة كفرات هدية
+    </div>
+
+    <a href="#colors" class="btn btn-primary">
+      اكتشف الألوان
+    </a>
+
+  </div>
 </section>
 
 <section class="section" id="idea">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-title">
-<div class="eyebrow">THE IDEA</div>
-<h2>غيّر اللون وليس الحذاء</h2>
-<p>فكرة مختلفة تمنحك حرية تغيير مظهر حذائك.</p>
-</div>
+    <div class="section-title">
+      <div class="eyebrow">THE IDEA</div>
+      <h2>غيّر اللون وليس الحذاء</h2>
+      <p>فكرة مختلفة تمنحك حرية تغيير مظهر حذائك.</p>
+    </div>
 
-<div class="features">
-<div class="feature">
-<h3>حذاء واحد</h3>
-<p>احتفظ بالحذاء الأساسي والنعل الأصلي.</p>
-</div>
+    <div class="features">
 
-<div class="feature">
-<h3>ألوان متعددة</h3>
-<p>غيّر شكل الحذاء حسب ذوقك ومناسبتك.</p>
-</div>
+      <div class="feature">
+        <h3>حذاء واحد</h3>
+        <p>احتفظ بالحذاء الأساسي والنعل الأصلي.</p>
+      </div>
 
-<div class="feature">
-<h3>تغيير المظهر</h3>
-<p>استمتع بمظهر متجدد دون شراء حذاء جديد كل مرة.</p>
-</div>
-</div>
+      <div class="feature">
+        <h3>ألوان متعددة</h3>
+        <p>غيّر شكل الحذاء حسب ذوقك ومناسبتك.</p>
+      </div>
 
-</div>
+      <div class="feature">
+        <h3>تغيير المظهر</h3>
+        <p>استمتع بمظهر متجدد دون شراء حذاء جديد كل مرة.</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <section class="section">
-<div class="wrap">
-<div class="offer">
-<div class="eyebrow">SPECIAL OFFER</div>
-<h2>حذاء واحد + خمسة كفرات هدية</h2>
-<p>اختار خمسة ألوان من الألوان المتاحة واستمتع بتغيير مظهرك.</p>
-<a href="#order" class="btn btn-primary">اطلب عرضك الآن</a>
-</div>
-</div>
+  <div class="wrap">
+    <div class="offer">
+      <div class="eyebrow">SPECIAL OFFER</div>
+      <h2>حذاء واحد + خمسة كفرات هدية</h2>
+      <p>اختار خمسة ألوان من الألوان المتاحة واستمتع بتغيير مظهرك.</p>
+      <a href="#order" class="btn btn-primary">اطلب عرضك الآن</a>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="order">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-title">
-<div class="eyebrow">PLACE YOUR ORDER</div>
-<h2>اطلب Leather Cover R</h2>
-<p>سجّل بياناتك واختار خمسة ألوان للكفرات.</p>
-</div>
+    <div class="section-title">
+      <div class="eyebrow">PLACE YOUR ORDER</div>
+      <h2>اطلب Leather Cover R</h2>
+      <p>سجّل بياناتك واختار خمسة ألوان للكفرات.</p>
+    </div>
 
-<div class="order-layout">
+    <div class="order-layout">
 
-<div class="order-note">
-<h3>طرق الدفع</h3>
-<ul>
-<li>الدفع عند الاستلام.</li>
-<li>المحفظة الإلكترونية على رقم واتساب نفسه بعد تأكيد الطلب.</li>
-<li>الدفع البنكي والبطاقات: قريبًا.</li>
-</ul>
-<p class="notice">
-لا ترسل أي مبلغ قبل تأكيد الطلب مع خدمة العملاء.
-</p>
-</div>
+      <div class="order-note">
+        <h3>طرق الدفع</h3>
+        <ul>
+          <li>الدفع عند الاستلام.</li>
+          <li>المحفظة الإلكترونية على رقم واتساب نفسه بعد تأكيد الطلب.</li>
+          <li>الدفع البنكي والبطاقات: قريبًا.</li>
+        </ul>
 
-<form class="order-form" id="orderForm">
-<h3>بيانات العميل</h3>
+        <p class="notice">
+          لا ترسل أي مبلغ قبل تأكيد الطلب مع خدمة العملاء.
+        </p>
+      </div>
 
-<div class="form-grid">
+      <form class="order-form" id="orderForm">
+        <h3>بيانات العميل</h3>
 
-<div class="field">
-<label for="customerName">الاسم بالكامل</label>
-<input id="customerName" required placeholder="اكتب اسمك">
-</div>
+        <div class="form-grid">
 
-<div class="field">
-<label for="phone">رقم الموبايل</label>
-<input id="phone" type="tel" required placeholder="01xxxxxxxxx">
-</div>
+          <div class="field">
+            <label for="customerName">الاسم بالكامل</label>
+            <input id="customerName" required placeholder="اكتب اسمك">
+          </div>
 
-<div class="field">
-<label for="size">مقاس الحذاء</label>
-<select id="size" required>
-<option value="">اختر المقاس</option>
-<option>40</option>
-<option>41</option>
-<option>42</option>
-<option>43</option>
-<option>44</option>
-<option>45</option>
-</select>
-</div>
+          <div class="field">
+            <label for="phone">رقم الموبايل</label>
+            <input id="phone" type="tel" required placeholder="01xxxxxxxxx">
+          </div>
 
-<div class="field">
-<label for="quantity">الكمية</label>
-<input id="quantity" type="number" min="1" value="1" required>
-</div>
+          <div class="field">
+            <label for="size">مقاس الحذاء</label>
+            <select id="size" required>
+              <option value="">اختر المقاس</option>
+              <option>40</option>
+              <option>41</option>
+              <option>42</option>
+              <option>43</option>
+              <option>44</option>
+              <option>45</option>
+            </select>
+          </div>
 
-<div class="field">
-<label for="city">المحافظة / المدينة</label>
-<input id="city" required placeholder="المحافظة">
-</div>
+          <div class="field">
+            <label for="quantity">الكمية</label>
+            <input id="quantity" type="number" min="1" value="1" required>
+          </div>
 
-<div class="field">
-<label for="address">العنوان بالتفصيل</label>
-<input id="address" required placeholder="الشارع والمنطقة ورقم العقار">
-</div>
+          <div class="field">
+            <label for="city">المحافظة / المدينة</label>
+            <input id="city" required placeholder="المحافظة">
+          </div>
 
-<div class="field full">
-<label>الألوان الخمسة المطلوبة</label>
-<div id="orderColors" style="color:#c5a477">
-لم يتم اختيار الألوان بعد
-</div>
-</div>
+          <div class="field">
+            <label for="address">العنوان بالتفصيل</label>
+            <input id="address" required placeholder="الشارع والمنطقة ورقم العقار">
+          </div>
 
-<div class="field full">
-<label>طريقة الدفع</label>
+          <div class="field full">
+            <label>الألوان الخمسة المطلوبة</label>
+            <div id="orderColors" style="color:#c5a477">
+              لم يتم اختيار الألوان بعد
+            </div>
+          </div>
 
-<div class="payment-list">
+          <div class="field full">
+            <label>طريقة الدفع</label>
 
-<label class="payment">
-<input type="radio" name="payment" value="الدفع عند الاستلام" checked>
-<span>
-<strong>الدفع عند الاستلام</strong>
-<small>ادفع عند وصول طلبك.</small>
-</span>
-</label>
+            <div class="payment-list">
 
-<label class="payment">
-<input type="radio" name="payment" value="المحفظة الإلكترونية">
-<span>
-<strong>المحفظة الإلكترونية</strong>
-<small>بعد تأكيد الطلب مع خدمة العملاء.</small>
-</span>
-</label>
+              <label class="payment">
+                <input type="radio" name="payment" value="الدفع عند الاستلام" checked>
+                <span>
+                  <strong>الدفع عند الاستلام</strong>
+                  <small>ادفع عند وصول طلبك.</small>
+                </span>
+              </label>
 
-<label class="payment disabled">
-<input type="radio" disabled>
-<span><strong>الدفع البنكي والبطاقات — قريبًا</strong></span>
-</label>
+              <label class="payment">
+                <input type="radio" name="payment" value="المحفظة الإلكترونية">
+                <span>
+                  <strong>المحفظة الإلكترونية</strong>
+                  <small>بعد تأكيد الطلب مع خدمة العملاء.</small>
+                </span>
+              </label>
 
-</div>
-</div>
+              <label class="payment disabled">
+                <input type="radio" disabled>
+                <span>
+                  <strong>الدفع البنكي والبطاقات — قريبًا</strong>
+                </span>
+              </label>
 
-<div class="field full">
-<label for="notes">ملاحظات إضافية</label>
-<textarea id="notes" placeholder="أي تفاصيل إضافية"></textarea>
-</div>
+            </div>
+          </div>
 
-</div>
+          <div class="field full">
+            <label for="notes">ملاحظات إضافية</label>
+            <textarea id="notes" placeholder="أي تفاصيل إضافية"></textarea>
+          </div>
 
-<button class="btn btn-primary form-submit" type="submit">
-إرسال الطلب عبر واتساب
-</button>
+        </div>
 
-<p class="fineprint">
-سيتم فتح واتساب برسالة جاهزة. لن يتم إرسال الطلب إلا بعد تأكيدك.
-</p>
+        <button class="btn btn-primary form-submit" type="submit">
+          إرسال الطلب عبر واتساب
+        </button>
 
-</form>
-</div>
-</div>
+        <p class="fineprint">
+          سيتم فتح واتساب برسالة جاهزة. لن يتم إرسال الطلب إلا بعد تأكيدك.
+        </p>
+
+      </form>
+    </div>
+  </div>
 </section>
 
 <section class="section">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-title">
-<div class="eyebrow">CONTACT US</div>
-<h2>تواصل معنا</h2>
-</div>
+    <div class="section-title">
+      <div class="eyebrow">CONTACT US</div>
+      <h2>تواصل معنا</h2>
+    </div>
 
-<div class="contact-row">
+    <div class="contact-row">
 
-<a class="contact-card"
-href="https://wa.me/201225655101"
-target="_blank" rel="noopener">
-<strong>WhatsApp</strong>
-<small>01225655101</small>
-</a>
+      <a class="contact-card"
+         href="https://wa.me/201225655101"
+         target="_blank" rel="noopener">
+        <strong>WhatsApp</strong>
+        <small>01225655101</small>
+      </a>
 
-<a class="contact-card"
-href="https://www.instagram.com/remonfouadking/"
-target="_blank" rel="noopener">
-<strong>Instagram</strong>
-<small>@remonfouadking</small>
-</a>
+      <a class="contact-card"
+         href="https://www.instagram.com/remonfouadking/"
+         target="_blank" rel="noopener">
+        <strong>Instagram</strong>
+        <small>@remonfouadking</small>
+      </a>
 
-</div>
-</div>
+    </div>
+  </div>
 </section>
 
 </main>
 
 <footer class="footer">
-<div class="wrap">
-<div class="footer-brand">LEATHER COVER R</div>
-<p>غيّر اللون وليس الحذاء.</p>
-<small>© 2026 Leather Cover R. All Rights Reserved.</small>
-</div>
+  <div class="wrap">
+    <img class="logo-img footer-logo"
+         src="./logo.png"
+         alt="Leather Cover R">
+    <p>غيّر اللون وليس الحذاء.</p>
+    <small>© 2026 Leather Cover R. All Rights Reserved.</small>
+  </div>
 </footer>
 
 <a class="whatsapp-float"
-href="https://wa.me/201225655101"
-target="_blank" rel="noopener"
-aria-label="WhatsApp">✆</a>
+   href="https://wa.me/201225655101"
+   target="_blank" rel="noopener"
+   aria-label="WhatsApp">✆</a>
 
 <script>
 const colors = [
@@ -801,7 +839,6 @@ const colors = [
 let currentIndex = -1;
 let selectedColors = [];
 let automaticTimer = null;
-let manualMode = false;
 
 const productImage = document.getElementById("productImage");
 const currentColorText = document.getElementById("currentColor");
@@ -894,7 +931,6 @@ colors.forEach((color,index) => {
 
   button.addEventListener("click",() => {
     stopAutomatic();
-    manualMode = true;
     showColor(index);
   });
 
