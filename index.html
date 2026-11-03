@@ -512,20 +512,40 @@ body.english nav {
   
 @media(max-width:700px) {  
   .header-inner {  
-    flex-wrap:wrap;  
-    padding:10px 0;  
-  }  
-  
-  nav {  
-    order:3;  
-    width:100%;  
-    justify-content:center;  
-    gap:13px;  
-    font-size:12px;  
-  }  
-  
-  .logo-img { width:150px; }  
-  
+.header-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 0 8px !important;
+  direction: rtl !important;
+}
+
+.logo-img {
+  width: 65px !important;
+  height: auto !important;
+}
+
+nav {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+}
+
+nav a {
+  font-size: 11px !important;
+  padding: 4px 0 !important;
+}
+
+.lang-btn {
+  order: 3 !important;
+  font-size: 11px !important;
+  padding: 5px 7px !important;
+  flex-shrink: 0 !important;
+}
   .product-stage { height:360px; }  
   
   .color-grid { grid-template-columns:repeat(4,1fr); }  
