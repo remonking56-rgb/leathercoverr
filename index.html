@@ -126,13 +126,6 @@ h1 {
 
 .btn-primary:hover { background:#e0c39a; }
 
-.hero-buy {
-  min-width:215px;
-  min-height:56px;
-  font-size:20px;
-  margin-top:8px;
-}
-
 .product-area {
   width:min(560px,100%);
   margin:38px auto 0;
@@ -162,7 +155,7 @@ h1 {
 .color-grid {
   display:grid;
   grid-template-columns:repeat(6,minmax(0,1fr));
-  gap:10px;
+  gap:8px;
   max-width:650px;
   margin:10px auto 0;
 }
@@ -172,9 +165,9 @@ h1 {
   border:1px solid #333;
   color:white;
   border-radius:7px;
-  padding:8px 4px;
+  padding:6px 3px;
   cursor:pointer;
-  font-size:12px;
+  font-size:11px;
   transition:.2s;
 }
 
@@ -185,12 +178,36 @@ h1 {
 }
 
 .color-dot {
-  width:19px;
-  height:19px;
+  width:17px;
+  height:17px;
   display:block;
   border-radius:50%;
-  margin:0 auto 4px;
+  margin:0 auto 3px;
   border:1px solid #aaa;
+}
+
+.custom-color-button {
+  background:#211d17;
+  color:var(--gold);
+  border:1px solid var(--gold);
+  border-radius:7px;
+  padding:6px 3px;
+  cursor:pointer;
+  font-size:11px;
+  font-weight:bold;
+  transition:.2s;
+}
+
+.custom-color-button:hover {
+  background:var(--gold);
+  color:#090909;
+}
+
+.custom-color-note {
+  color:#aaa;
+  text-align:center;
+  font-size:13px;
+  margin:12px auto 0;
 }
 
 .selected-info {
@@ -204,6 +221,13 @@ h1 {
   color:#aaa;
   margin-top:8px;
   font-size:13px;
+}
+
+.product-buy {
+  width:220px;
+  min-height:58px;
+  font-size:20px;
+  margin:22px auto 0;
 }
 
 .auto-note {
@@ -523,10 +547,6 @@ h1 {
       مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.
     </p>
 
-    <a href="#order" class="btn btn-primary hero-buy">
-      اشتري الآن ←
-    </a>
-
     <div class="product-area">
 
       <div class="product-stage">
@@ -537,8 +557,11 @@ h1 {
         >
       </div>
 
-      <!-- أزرار الألوان تحت صورة الحذاء مباشرة -->
       <div class="color-grid" id="colorGrid"></div>
+
+      <div class="custom-color-note">
+        لم تجد اللون الذي تبحث عنه؟ اختر لونك الخاص!
+      </div>
 
       <div class="selected-info">
         اللون الحالي: <strong id="currentColor">الأبيض الأصلي</strong>
@@ -547,6 +570,10 @@ h1 {
       <div class="product-caption">
         اضغط على أي لون لمشاهدة مظهر جديد لحذائك
       </div>
+
+      <a href="#order" class="btn btn-primary product-buy">
+        اشتري الآن ←
+      </a>
 
     </div>
   </div>
@@ -723,6 +750,20 @@ h1 {
             <div id="orderColors" style="color:#c5a477">
               لم يتم اختيار الألوان بعد
             </div>
+          </div>
+
+          <div class="field full">
+            <label for="customColor">
+              لون إضافي من اختيارك (اختياري)
+            </label>
+            <input
+              id="customColor"
+              type="text"
+              placeholder="اكتب اسم اللون الذي تريده"
+            >
+            <small style="color:#aaa">
+              يمكننا تنفيذ ألوان أخرى غير المعروضة حسب طلبك.
+            </small>
           </div>
 
           <div class="field full">
@@ -950,6 +991,25 @@ colors.forEach((color,index) => {
   document.getElementById("orderColorButtons").appendChild(orderButton);
 });
 
+/* زر لون من اختيارك */
+const customColorButton = document.createElement("button");
+
+customColorButton.type = "button";
+customColorButton.className = "custom-color-button";
+customColorButton.textContent = "لون من اختيارك";
+
+customColorButton.addEventListener("click",() => {
+  document.getElementById("order").scrollIntoView({
+    behavior:"smooth"
+  });
+
+  setTimeout(() => {
+    document.getElementById("customColor").focus();
+  },500);
+});
+
+grid.appendChild(customColorButton);
+
 /* ابدأ بالعرض التلقائي */
 showColor(0);
 startAutomatic();
@@ -971,6 +1031,7 @@ document.getElementById("orderForm").addEventListener("submit",function(event) {
   const city = document.getElementById("city").value.trim();
   const address = document.getElementById("address").value.trim();
   const notes = document.getElementById("notes").value.trim();
+  const customColor = document.getElementById("customColor").value.trim();
 
   const payment = document.querySelector(
     'input[name="payment"]:checked'
@@ -984,6 +1045,7 @@ document.getElementById("orderForm").addEventListener("submit",function(event) {
 المقاس: ${size}
 الكمية: ${quantity}
 الألوان الخمسة: ${selectedColors.map(c => c.name).join("، ")}
+لون إضافي من اختيار العميل: ${customColor || "لا يوجد"}
 طريقة الدفع: ${payment}
 المحافظة: ${city}
 العنوان: ${address}
