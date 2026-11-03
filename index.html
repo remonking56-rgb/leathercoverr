@@ -603,6 +603,8 @@ body.english nav {
 
 /* ترتيب الفيديوهات وصورة الحذاء */
 
+/* ترتيب الفيديوهات وصورة الحذاء */
+
 .hero-media-layout {
   display: grid !important;
   grid-template-columns: 280px minmax(300px, 1fr) 280px !important;
@@ -619,34 +621,38 @@ body.english nav {
   min-width: 0 !important;
 }
 
-.hero-media-layout .hero-video {
-  display: block !important;
-  width: 320px !important;
-  max-width: 320px !important;
-  height: auto !important;
-  max-height: 320px !important;
-  object-fit: contain !important;
-  justify-self: center !important;
-  border-radius: 8px;
-}
-
+/* الكمبيوتر فقط */
 @media (min-width: 701px) {
   .hero-media-layout {
-    display: grid !important;
-    grid-template-columns: 320px minmax(300px, 1fr) 320px !important;
-    max-width: 1200px !important;
-    width: 100% !important;
+    grid-template-columns: 350px minmax(300px, 1fr) 350px !important;
+    max-width: 1400px !important;
     gap: 15px !important;
   }
 
   .hero-media-layout .hero-video {
     display: block !important;
-    width: 320px !important;
-    min-width: 320px !important;
-    max-width: 320px !important;
+    width: 350px !important;
+    max-width: 350px !important;
     height: auto !important;
-    max-height: 320px !important;
+    max-height: 350px !important;
     object-fit: contain !important;
+    justify-self: center !important;
+    border-radius: 8px;
+  }
+}
+
+/* الموبايل - بدون تغيير */
+@media (max-width: 700px) {
+  .hero-media-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr) !important;
+    gap: 5px !important;
+  }
+
+  .hero-media-layout .hero-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 110px !important;
   }
 }
 </style>  </head>  <body>  <header>  
