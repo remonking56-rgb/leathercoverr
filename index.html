@@ -687,6 +687,44 @@ body.english nav {
   filter: none !important;
   box-shadow: none !important;
 }
+ @media (max-width: 700px) {
+  header {
+    padding: 5px 0 !important;
+  }
+
+  .header-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 0 8px !important;
+  }
+
+  .logo-img {
+    width: 65px !important;
+    height: auto !important;
+  }
+
+  nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    white-space: nowrap !important;
+  }
+
+  nav a {
+    font-size: 11px !important;
+    padding: 4px 0 !important;
+  }
+
+  .lang-btn {
+    font-size: 11px !important;
+    padding: 5px 7px !important;
+    flex-shrink: 0 !important;
+  }
+}
 </style>  </head>  <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
