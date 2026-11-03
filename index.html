@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Leather Cover R | Official</title>
-<meta name="description" content="Leather Cover R - حذاء جلد طبيعي كلاسيكي بكفرات جلدية قابلة للتغيير بكل سهوله. حذاء واحد وألوان متعددة.">
+<meta name="description" content="Leather Cover R - حذاء جلد كلاسيكي بكفرات خارجية قابلة للتغيير. حذاء واحد وألوان متعددة.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://remonking56-rgb.github.io/leathercoverr/">
 
@@ -19,7 +19,6 @@
 }
 
 * { box-sizing:border-box; }
-
 html { scroll-behavior:smooth; }
 
 body {
@@ -31,7 +30,6 @@ body {
 }
 
 a { color:inherit;text-decoration:none; }
-
 button,input,select,textarea { font:inherit; }
 
 .wrap {
@@ -108,7 +106,6 @@ h1 {
   display:inline-flex;
   justify-content:center;
   align-items:center;
-  gap:10px;
   border:0;
   cursor:pointer;
   border-radius:7px;
@@ -130,13 +127,18 @@ h1 {
   margin-top:8px;
 }
 
+/* حجم موحد للصور */
 .product-area {
-  max-width:760px;
+  width:min(560px,100%);
   margin:38px auto 0;
 }
 
 .product-stage {
-  position:relative;
+  width:100%;
+  height:460px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   overflow:hidden;
   border-radius:12px;
   background:#111;
@@ -146,22 +148,10 @@ h1 {
 .product-stage img {
   display:block;
   width:100%;
-  height:auto;
-}
-
-.color-overlay {
-  position:absolute;
-  inset:0;
-  width:100%;
   height:100%;
-  pointer-events:none;
-  mix-blend-mode:multiply;
-}
-
-.color-overlay path {
-  fill:var(--active-color,#087887);
-  opacity:.82;
-  transition:fill .6s ease;
+  object-fit:contain;
+  object-position:center;
+  transition:opacity .25s ease;
 }
 
 .product-caption {
@@ -240,7 +230,7 @@ h1 {
   color:#ddd;
 }
 
-.selection-box button {
+.order-color-button {
   background:#151515;
   color:var(--gold);
   border:1px solid #4b3c28;
@@ -250,8 +240,8 @@ h1 {
   margin:4px;
 }
 
-.selection-box button.selected {
-  background:#c5a477;
+.order-color-button.selected {
+  background:var(--gold);
   color:#090909;
 }
 
@@ -290,7 +280,6 @@ h1 {
 }
 
 .offer h2 { color:var(--gold); }
-
 .offer p { color:#ccc; }
 
 #order { scroll-margin-top:95px; }
@@ -310,7 +299,6 @@ h1 {
 }
 
 .order-note h3,.order-form h3 { color:var(--gold); }
-
 .order-note li { margin-bottom:10px; }
 
 .notice {
@@ -444,7 +432,11 @@ h1 {
 }
 
 @media(max-width:700px) {
-  .header-inner { flex-wrap:wrap;padding:10px 0; }
+  .header-inner {
+    flex-wrap:wrap;
+    padding:10px 0;
+  }
+
   nav {
     order:3;
     width:100%;
@@ -452,11 +444,19 @@ h1 {
     gap:13px;
     font-size:12px;
   }
+
   .brand { font-size:18px; }
+
+  .product-stage { height:360px; }
+
   .color-grid { grid-template-columns:repeat(4,1fr); }
+
   .features { grid-template-columns:1fr; }
+
   .order-layout { grid-template-columns:1fr; }
+
   .form-grid { grid-template-columns:1fr; }
+
   .field.full { grid-column:auto; }
 }
 </style>
@@ -489,7 +489,7 @@ h1 {
 <h1>حذاء واحد.. وألوان متعددة</h1>
 
 <p>
-غيّر لون الكفر الخارجي بسهوله واستمتع بمظهر جديد،
+غيّر لون الكفر الخارجي بسهولة واستمتع بمظهر جديد،
 مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.
 </p>
 
@@ -498,33 +498,12 @@ h1 {
 </a>
 
 <div class="product-area">
-<div class="product-stage" id="productStage">
-
+<div class="product-stage">
 <img
 src="images/white-shoe.png"
-alt="الحذاء الأصلي Leather Cover R"
-id="baseShoe"
+alt="Leather Cover R"
+id="productImage"
 >
-
-<svg class="color-overlay"
-viewBox="0 0 1024 1536"
-preserveAspectRatio="none"
-aria-hidden="true">
-
-<path id="sideCover"
-d="M 105,500 L 145,455 Q 180,435 225,460
-L 315,505 L 415,565 L 515,635 L 590,700
-L 625,745 L 595,785 Q 545,790 490,770
-L 385,735 L 270,690 L 165,650 Q 110,625 90,585 Z"/>
-
-<path id="frontCover"
-d="M 465,500 Q 495,475 535,485
-L 620,550 L 735,635 L 855,720 L 965,790
-Q 1000,820 1005,855 L 985,890
-Q 955,905 925,900 L 810,865 L 690,820
-L 595,775 L 540,725 L 500,650 Z"/>
-
-</svg>
 </div>
 
 <div class="product-caption">
@@ -534,7 +513,6 @@ L 595,775 L 540,725 L 500,650 Z"/>
 
 </div>
 </section>
-
 
 <section class="section" id="colors">
 <div class="wrap">
@@ -548,11 +526,11 @@ L 595,775 L 540,725 L 500,650 Z"/>
 <div class="color-grid" id="colorGrid"></div>
 
 <div class="selected-info">
-اللون الحالي: <strong id="currentColor">بترولي</strong>
+اللون الحالي: <strong id="currentColor">الأبيض الأصلي</strong>
 </div>
 
 <div class="auto-note">
-تتغير الألوان تلقائيًا كل 3 ثوانٍ. اختر اللون لإيقاف التغيير التلقائي.
+تتغير الألوان تلقائيًا كل 3 ثوانٍ. اختر لونًا لإيقاف العرض التلقائي.
 </div>
 
 <div class="selection-box">
@@ -564,7 +542,6 @@ L 595,775 L 540,725 L 500,650 Z"/>
 
 </div>
 </section>
-
 
 <section class="section" id="idea">
 <div class="wrap">
@@ -595,7 +572,6 @@ L 595,775 L 540,725 L 500,650 Z"/>
 </div>
 </section>
 
-
 <section class="section">
 <div class="wrap">
 <div class="offer">
@@ -606,7 +582,6 @@ L 595,775 L 540,725 L 500,650 Z"/>
 </div>
 </div>
 </section>
-
 
 <section class="section" id="order">
 <div class="wrap">
@@ -649,8 +624,13 @@ L 595,775 L 540,725 L 500,650 Z"/>
 <div class="field">
 <label for="size">مقاس الحذاء</label>
 <select id="size" required>
-<option value="">اختر المقاس<option><option>40</option><option>41</option>
-<option>42</option><option>43</option><option>44</option><option>45</option>
+<option value="">اختر المقاس</option>
+<option>40</option>
+<option>41</option>
+<option>42</option>
+<option>43</option>
+<option>44</option>
+<option>45</option>
 </select>
 </div>
 
@@ -671,7 +651,9 @@ L 595,775 L 540,725 L 500,650 Z"/>
 
 <div class="field full">
 <label>الألوان الخمسة المطلوبة</label>
-<div id="orderColors" style="color:#c5a477">لم يتم اختيار الألوان بعد</div>
+<div id="orderColors" style="color:#c5a477">
+لم يتم اختيار الألوان بعد
+</div>
 </div>
 
 <div class="field full">
@@ -681,12 +663,18 @@ L 595,775 L 540,725 L 500,650 Z"/>
 
 <label class="payment">
 <input type="radio" name="payment" value="الدفع عند الاستلام" checked>
-<span><strong>الدفع عند الاستلام</strong><small>ادفع عند وصول طلبك.</small></span>
+<span>
+<strong>الدفع عند الاستلام</strong>
+<small>ادفع عند وصول طلبك.</small>
+</span>
 </label>
 
 <label class="payment">
 <input type="radio" name="payment" value="المحفظة الإلكترونية">
-<span><strong>المحفظة الإلكترونية</strong><small>بعد تأكيد الطلب مع خدمة العملاء.</small></span>
+<span>
+<strong>المحفظة الإلكترونية</strong>
+<small>بعد تأكيد الطلب مع خدمة العملاء.</small>
+</span>
 </label>
 
 <label class="payment disabled">
@@ -716,7 +704,6 @@ L 595,775 L 540,725 L 500,650 Z"/>
 </div>
 </div>
 </section>
-
 
 <section class="section">
 <div class="wrap">
@@ -748,7 +735,6 @@ target="_blank" rel="noopener">
 
 </main>
 
-
 <footer class="footer">
 <div class="wrap">
 <div class="footer-brand">LEATHER COVER R</div>
@@ -762,37 +748,51 @@ href="https://wa.me/201225655101"
 target="_blank" rel="noopener"
 aria-label="WhatsApp">✆</a>
 
-
 <script>
-
 const colors = [
-{name:"بترولي",hex:"#087887"},
-{name:"برتقالي",hex:"#f45a16"},
-{name:"أحمر",hex:"#c81429"},
-{name:"نبيتي",hex:"#702033"},
-{name:"رمادي",hex:"#666666"},
-{name:"أزرق",hex:"#073d83"},
-{name:"سماوي",hex:"#77b9e8"},
-{name:"أسود",hex:"#171717"},
-{name:"أخضر",hex:"#08734f"},
-{name:"زيتي",hex:"#65652d"},
-{name:"بني",hex:"#754526"},
-{name:"كحلي",hex:"#101e48"}
+  {name:"أسود", file:"black.png", hex:"#171717"},
+  {name:"بترولي", file:"petrol.png", hex:"#087887"},
+  {name:"أخضر", file:"green.png", hex:"#08734f"},
+  {name:"زيتي", file:"olive.png", hex:"#65652d"},
+  {name:"رمادي", file:"gray.png", hex:"#666666"},
+  {name:"أزرق", file:"blue.png", hex:"#073d83"},
+  {name:"سماوي", file:"sky-blue.png", hex:"#77b9e8"},
+  {name:"برتقالي", file:"orange.png", hex:"#f45a16"},
+  {name:"نبيتي", file:"burgundy.png", hex:"#702033"},
+  {name:"بني", file:"cafe.png", hex:"#754526"},
+  {name:"أحمر", file:"Red.png", hex:"#c81429"}
 ];
 
-let currentIndex = 0;
+let currentIndex = -1;
 let selectedColors = [];
-let automaticTimer;
+let automaticTimer = null;
+let manualMode = false;
 
-const grid = document.getElementById("colorGrid");
+const productImage = document.getElementById("productImage");
 const currentColorText = document.getElementById("currentColor");
-const stage = document.getElementById("productStage");
+const grid = document.getElementById("colorGrid");
 
 function showColor(index) {
   currentIndex = index;
+
   const color = colors[index];
 
-  stage.style.setProperty("--active-color",color.hex);
+  productImage.style.opacity = "0.25";
+
+  const newImage = new Image();
+
+  newImage.onload = function() {
+    productImage.src = newImage.src;
+    productImage.style.opacity = "1";
+  };
+
+  newImage.onerror = function() {
+    productImage.style.opacity = "1";
+    alert("تعذر تحميل صورة اللون: " + color.file);
+  };
+
+  newImage.src = "images/" + color.file;
+
   currentColorText.textContent = color.name;
 
   document.querySelectorAll(".color-choice").forEach((button,i) => {
@@ -808,14 +808,6 @@ function updateSelections() {
     selectedColors.length
       ? selectedColors.map(c => c.name).join(" - ")
       : "لم يتم اختيار الألوان بعد";
-
-  document.querySelectorAll(".color-choice").forEach(button => {
-    const name = button.dataset.name;
-    button.classList.toggle(
-      "chosen",
-      selectedColors.some(c => c.name === name)
-    );
-  });
 
   document.querySelectorAll(".order-color-button").forEach(button => {
     button.classList.toggle(
@@ -835,30 +827,46 @@ function toggleSelection(color) {
       alert("يمكنك اختيار خمسة ألوان فقط.");
       return;
     }
+
     selectedColors.push(color);
   }
 
   updateSelections();
 }
 
+function stopAutomatic() {
+  clearInterval(automaticTimer);
+  automaticTimer = null;
+}
+
+function startAutomatic() {
+  stopAutomatic();
+
+  automaticTimer = setInterval(() => {
+    const nextIndex = (currentIndex + 1) % colors.length;
+    showColor(nextIndex);
+  },3000);
+}
+
 colors.forEach((color,index) => {
   const button = document.createElement("button");
+
   button.type = "button";
   button.className = "color-choice";
-  button.dataset.name = color.name;
 
   button.innerHTML =
     `<span class="color-dot" style="background:${color.hex}"></span>${color.name}`;
 
   button.addEventListener("click",() => {
     stopAutomatic();
+    manualMode = true;
     showColor(index);
-    toggleSelection(color);
   });
 
   grid.appendChild(button);
 
   const orderButton = document.createElement("button");
+
   orderButton.type = "button";
   orderButton.className = "order-color-button";
   orderButton.dataset.name = color.name;
@@ -871,19 +879,11 @@ colors.forEach((color,index) => {
   document.getElementById("orderColorButtons").appendChild(orderButton);
 });
 
-function startAutomatic() {
-  automaticTimer = setInterval(() => {
-    showColor((currentIndex + 1) % colors.length);
-  },3000);
-}
-
-function stopAutomatic() {
-  clearInterval(automaticTimer);
-}
-
+/* ابدأ بالعرض التلقائي */
 showColor(0);
 startAutomatic();
 
+/* إرسال الطلب إلى واتساب */
 document.getElementById("orderForm").addEventListener("submit",function(event) {
   event.preventDefault();
 
@@ -900,7 +900,10 @@ document.getElementById("orderForm").addEventListener("submit",function(event) {
   const city = document.getElementById("city").value.trim();
   const address = document.getElementById("address").value.trim();
   const notes = document.getElementById("notes").value.trim();
-  const payment = document.querySelector('input[name="payment"]:checked').value;
+
+  const payment = document.querySelector(
+    'input[name="payment"]:checked'
+  ).value;
 
   const message =
 `طلب جديد من موقع Leather Cover R
@@ -917,16 +920,16 @@ document.getElementById("orderForm").addEventListener("submit",function(event) {
 
 برجاء تأكيد الطلب والتفاصيل.`;
 
-  window.open(
-    "https://wa.me/201225655101?text=" + encodeURIComponent(message),
-    "_blank"
-  );
+  const whatsappUrl =
+    "https://wa.me/201225655101?text=" + encodeURIComponent(message);
+
+  window.open(whatsappUrl,"_blank");
 });
 
+/* زر اللغة */
 document.getElementById("languageButton").addEventListener("click",function() {
   alert("النسخة الإنجليزية الكاملة ستُضاف في تحديث اللغة القادم.");
 });
-
 </script>
 
 </body>
