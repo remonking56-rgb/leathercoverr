@@ -677,8 +677,16 @@ body.english nav {
   مع الاحتفاظ بالحذاء الأساسي والنعل الأصلي.  
 </p>  
 
-<div class="hero-media-layout">
-
+.hero-media-layout .hero-video {
+  width: 100% !important;
+  max-width: 230px !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  justify-self: center;
+  clip-path: inset(3% 0 0 0);
+}
+ 
   <video class="hero-video" autoplay muted loop playsinline preload="metadata">
   <source src="images/ad-1.mp4" type="video/mp4">
 </video>
