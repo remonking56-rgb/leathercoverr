@@ -2,507 +2,882 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090909">
-<title>Leather Cover R | Official Website</title>
-<meta name="description" content="Leather Cover R - حذاء جلد طبيعي ابيض كلاسيكي مع خمسة كفرات جلدية ملونة هدية. حذاء واحد واختيارات متعددة.">
+
+<title>Leather Cover R | حذاء يتغير لونه</title>
+
+<meta name="description" content="Leather Cover R - حذاء جلد كلاسيكي بفكرة مبتكرة. غيّر لون حذائك باستخدام كفرات خارجية قابلة للتبديل.">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://remonking56-rgb.github.io/leathercoverr/">
+
+<meta property="og:title" content="Leather Cover R">
+<meta property="og:description" content="حذاء واحد وألوان متعددة. غيّر مظهر حذائك بكفرات جلدية قابلة للتبديل.">
+<meta property="og:type" content="website">
 
 <style>
 :root {
-  --bg:#090909;
-  --panel:#141414;
-  --gold:#c5a477;
-  --gold-light:#e5cba4;
-  --white:#f5f2ec;
-  --muted:#aaa39a;
-  --border:rgba(197,164,119,.25);
+  --bg: #090909;
+  --panel: #111111;
+  --gold: #c5a477;
+  --gold-light: #e2c69b;
+  --text: #f4f0e9;
+  --muted: #aaa39a;
+  --line: rgba(197,164,119,.25);
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;background:var(--bg);color:var(--white);
-  font-family:Tahoma,Arial,sans-serif;line-height:1.8
+
+* {
+  box-sizing: border-box;
 }
-a{text-decoration:none;color:inherit}
-button,input,select{font:inherit}
-.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+.wrap {
+  width: min(1160px, calc(100% - 36px));
+  margin: auto;
+}
 
 /* HEADER */
-header{background:#090909;border-bottom:1px solid var(--border)}
-.topbar{
-  min-height:78px;display:flex;align-items:center;
-  justify-content:space-between
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(9,9,9,.96);
+  border-bottom: 1px solid var(--line);
 }
-.brand-logo{display:flex;align-items:center;max-width:160px}
-.brand-logo img{
-  display:block;width:auto;height:auto;max-width:150px;
-  max-height:58px;object-fit:contain
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
-.top-actions{display:flex;align-items:center;gap:22px}
-.lang-btn{
-  color:var(--gold);background:none;border:0;
-  cursor:pointer;font-weight:bold;letter-spacing:1px
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gold);
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-.menu-btn{
-  width:40px;height:40px;border:1px solid var(--border);
-  border-radius:4px;background:transparent;cursor:pointer;
-  display:flex;flex-direction:column;align-items:center;
-  justify-content:center;gap:5px
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 23px;
 }
-.menu-btn span{width:19px;height:2px;background:var(--gold)}
-.site-name{
-  text-align:center;padding:5px 0 21px;color:var(--gold);
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(25px,5vw,39px);font-weight:bold;
-  letter-spacing:3px;line-height:1.4
+
+.navlinks {
+  display: flex;
+  gap: 24px;
+  color: #ddd4c8;
+  font-size: 14px;
 }
-nav{
-  display:none;text-align:center;padding:13px;
-  border-top:1px solid var(--border)
+
+.navlinks a:hover {
+  color: var(--gold);
 }
-nav.open{display:block}
-nav a{
-  display:inline-block;margin:5px 13px;
-  color:var(--muted);font-size:14px
+
+.lang {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--line);
+  padding: 8px 14px;
+  border-radius: 30px;
+  cursor: pointer;
 }
-nav a:hover{color:var(--gold)}
 
 /* HERO */
-.hero{
-  padding:85px 0 75px;text-align:center;
-  background:radial-gradient(ellipse at 50% 35%,rgba(197,164,119,.12),transparent 60%),var(--bg)
-}
-.eyebrow{color:var(--gold);font-size:13px;letter-spacing:2px;margin-bottom:17px}
-h1{
-  max-width:850px;margin:0 auto 17px;
-  font-size:clamp(32px,6vw,57px);line-height:1.4
-}
-h1 span{color:var(--gold)}
-.hero-description{
-  max-width:680px;margin:0 auto 25px;
-  color:var(--muted);font-size:17px
-}
-.gift-offer{
-  max-width:650px;margin:28px auto 30px;padding:23px 18px;
-  border:1px solid var(--gold);border-radius:5px;
-  background:linear-gradient(135deg,#19150f,#100f0d);
-  box-shadow:0 8px 35px rgba(197,164,119,.07)
-}
-.gift-label{
-  display:inline-block;color:#111;background:var(--gold);
-  padding:3px 17px;border-radius:20px;
-  font-size:13px;font-weight:bold
-}
-.gift-offer h2{
-  color:var(--gold-light);font-size:clamp(23px,4vw,31px);
-  line-height:1.5;margin:12px 0 5px
-}
-.gift-offer p{color:var(--muted);margin:0;font-size:15px}
-.gift-count{color:var(--gold);font-weight:bold}
-.btn{
-  display:inline-flex;justify-content:center;align-items:center;
-  min-height:53px;padding:12px 34px;border:1px solid var(--gold);
-  border-radius:3px;background:var(--gold);color:#111;
-  font-weight:bold;cursor:pointer;transition:.2s
-}
-.btn:hover{background:var(--gold-light);transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--gold);margin-inline-start:10px}
-.btn-outline:hover{background:var(--gold);color:#111}
 
-/* GENERAL SECTIONS */
-section{padding:72px 0}
-.section-title{text-align:center;margin-bottom:38px}
-.section-title h2{
-  color:var(--gold);font-size:clamp(25px,4vw,35px);margin:0 0 8px
+.hero {
+  padding: 75px 0 60px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 45px;
+  align-items: center;
 }
-.section-title p{color:var(--muted);margin:0}
-.dark-section{
-  background:#101010;border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border)
-}
-.message{max-width:850px;margin:auto;text-align:center}
-.message h2{color:var(--gold);font-size:clamp(27px,5vw,42px);margin:0 0 17px}
-.message p{color:var(--muted);font-size:17px;margin:0 auto 15px}
-.highlight{color:var(--gold-light)!important;font-weight:bold}
 
-/* BENEFITS */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{
-  background:var(--panel);border:1px solid var(--border);
-  border-radius:5px;padding:28px 22px;text-align:center
+.eyebrow {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
-.card-symbol{
-  width:49px;height:49px;margin:0 auto 15px;
-  display:grid;place-items:center;border:1px solid var(--gold);
-  border-radius:50%;color:var(--gold);font-size:23px
+
+h1 {
+  font-size: clamp(38px, 5vw, 66px);
+  line-height: 1.2;
+  margin: 15px 0 20px;
 }
-.card h3{color:var(--gold-light);margin:0 0 9px;font-size:19px}
-.card p{color:var(--muted);margin:0;font-size:14px}
+
+h1 span {
+  color: var(--gold);
+}
+
+.lead {
+  font-size: 18px;
+  color: #c8c1b7;
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 23px;
+  border-radius: 40px;
+  font-weight: bold;
+  border: 1px solid var(--gold);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #100e0b;
+}
+
+.btn-outline {
+  color: var(--gold);
+  background: transparent;
+  margin-right: 8px;
+}
+
+/* مساحة الصور لاحقًا */
+
+.product-placeholder {
+  min-height: 370px;
+  border: 1px solid var(--line);
+  border-radius: 25px;
+  background:
+    radial-gradient(ellipse, rgba(197,164,119,.13), transparent 65%),
+    #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.placeholder-content {
+  max-width: 300px;
+}
+
+.placeholder-r {
+  font-family: Georgia, serif;
+  font-size: 85px;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.placeholder-content strong {
+  display: block;
+  color: var(--gold-light);
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.placeholder-content p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 65px 0;
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 38px;
+}
+
+.section-head h2 {
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.section-head p {
+  color: var(--muted);
+}
+
+/* FEATURES */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 17px;
+}
+
+.feature {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.feature-number {
+  font: 30px Georgia,serif;
+  color: var(--gold);
+}
+
+.feature h3 {
+  margin: 8px 0;
+}
+
+.feature p {
+  color: var(--muted);
+  font-size: 14px;
+}
 
 /* COLORS */
-.color-list{
-  display:flex;flex-wrap:wrap;justify-content:center;
-  gap:20px;margin-top:28px
-}
-.color-item{
-  display:flex;flex-direction:column;align-items:center;
-  gap:9px;color:var(--muted);font-size:13px
-}
-.swatch{
-  width:44px;height:44px;border-radius:50%;
-  border:2px solid #777;box-shadow:0 0 0 3px #191919
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 13px;
 }
 
-/* ORDER */
-.order-box{
-  max-width:700px;margin:auto;padding:30px;
-  background:var(--panel);border:1px solid var(--border);border-radius:5px
-}
-.order-gift{
-  text-align:center;padding:15px;margin-bottom:23px;
-  border:1px solid var(--border);background:#100f0d
-}
-.order-gift strong{display:block;color:var(--gold-light);font-size:20px}
-.order-gift span{color:var(--muted);font-size:13px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:19px}
-.field{display:flex;flex-direction:column;gap:7px}
-.field label{color:var(--gold-light);font-size:14px}
-.field input,.field select{
-  width:100%;min-height:48px;padding:10px 12px;
-  background:#0b0b0b;color:var(--white);
-  border:1px solid #40392f;border-radius:3px;outline:none
-}
-.field input:focus,.field select:focus{border-color:var(--gold)}
-.order-box .btn{width:100%;margin-top:24px;font-size:17px}
-.form-note{color:var(--muted);font-size:12px;text-align:center;margin:14px 0 0}
-#orderResult{
-  display:none;margin-top:20px;padding:18px;
-  border:1px solid var(--gold);background:#17140f;
-  color:var(--white);white-space:pre-line;font-size:14px
+.color-option {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 15px;
+  padding: 13px 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
 }
 
-/* FOOTER */
-footer{
-  padding:27px 0;text-align:center;
-  border-top:1px solid var(--border);
-  color:var(--muted);font-size:13px
+.color-option.selected {
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
 }
-footer p{margin:4px 0}
 
-/* MOBILE */
-@media(max-width:700px){
-  .wrap{width:calc(100% - 30px)}
-  .hero{padding:65px 0 58px}
-  section{padding:55px 0}
-  .cards{grid-template-columns:1fr}
-  .form-grid{grid-template-columns:1fr}
-  .order-box{padding:21px 16px}
-  .hero .btn{width:min(100%,280px);margin:6px auto}
-  .btn-outline{margin-inline-start:0}
-  .brand-logo img{max-width:125px;max-height:52px}
-  .top-actions{gap:15px}
+.swatch {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: auto auto 8px;
+  border: 2px solid rgba(255,255,255,.2);
+}
+
+.color-option small {
+  color: #ddd;
+}
+
+.checkmark {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: var(--gold);
+}
+
+.color-option.selected .checkmark {
+  display: block;
+}
+
+.selection-bar {
+  margin-top: 22px;
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.selection-bar strong {
+  color: var(--gold);
+}
+
+.selected-dots {
+  display: flex;
+  gap: 7px;
+}
+
+.mini-dot {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+}
+
+/* OFFER */
+
+.offer {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 30px;
+  background: linear-gradient(120deg,#17130e,#0e0e0e);
+}
+
+.offer h3 {
+  color: var(--gold);
+  font-size: 24px;
+  margin: 8px 0;
+}
+
+.offer p {
+  color: var(--muted);
 }
 </style>
 </head>
 
 <body>
 
+<div class="topline"></div>
+
 <header>
-  <div class="wrap">
-    <div class="topbar">
+  <div class="wrap nav">
 
-      <!-- اللوجو الأصلي -->
-      <a href="#home" class="brand-logo" aria-label="Leather Cover R">
-        <img src="logo.png" alt="Leather Cover R Logo">
-      </a>
+    <a class="brand" href="#home">
+      <span class="brand-mark">R</span>
+      <span>LEATHER COVER R</span>
+    </a>
 
-      <div class="top-actions">
-        <button class="lang-btn" id="langBtn" type="button">EN</button>
-        <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
+    <nav class="navlinks" id="navlinks">
+      <a href="#idea" data-ar="الفكرة" data-en="The Idea">الفكرة</a>
+      <a href="#colors" data-ar="الألوان" data-en="Colors">الألوان</a>
+      <a href="#order" data-ar="اطلب الآن" data-en="Order">اطلب الآن</a>
+      <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+    </nav>
 
-    <div class="site-name">LEATHER COVER R</div>
+    <button class="lang" id="langBtn">EN</button>
+
   </div>
-
-  <nav id="mainNav">
-    <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-    <a href="#idea" data-ar="فكرة المنتج" data-en="The Concept">فكرة المنتج</a>
-    <a href="#benefits" data-ar="المميزات" data-en="Benefits">المميزات</a>
-    <a href="#colors" data-ar="الألوان" data-en="Colors">الألوان</a>
-    <a href="#order" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</a>
-  </nav>
 </header>
 
-<main>
+<main id="home">
 
-<section class="hero" id="home">
-  <div class="wrap">
+<section class="wrap hero">
+
+  <div>
     <div class="eyebrow"
-      data-ar="مفهوم جديد للأناقة الذكية"
-      data-en="A NEW WAY TO STYLE YOUR SHOES">
-  مفهوم جديد للأناقة الذكية
+      data-ar="أسلوبك يتغير وقت ما تحب"
+      data-en="YOUR STYLE. YOUR CHOICE.">
+      أسلوبك يتغير وقت ما تحب
     </div>
 
-    <h1 data-ar="حذاء واحد... <span>اختيارات لا تنتهي</span>"
-        data-en="One Shoe... <span>Endless Choices</span>">
-      حذاء واحد... <span>اختيارات لا تنتهي</span>
+    <h1
+      data-ar="حذاء واحد،<br><span>وألوان بلا حدود.</span>"
+      data-en="ONE SHOE.<br><span>MORE WAYS TO STYLE.</span>">
+      حذاء واحد،<br>
+      <span>وألوان بلا حدود.</span>
     </h1>
 
-    <p class="hero-description"
-       data-ar="حذاء جلد طبيعي أبيض كلاسيكي، مع كفرات جلدية ملونة قابلة للتبديل بسهوله لتجديد مظهرك في أي وقت."
-       data-en="A classic white leather shoe with interchangeable colored leather covers to refresh your look anytime.">
-      حذاء جلد طبيعي أبيض كلاسيكي، مع كفرات جلدية ملونة قابلة للتبديل بسهوله لتجديد مظهرك في أي وقت.
+    <p class="lead"
+      data-ar="اكتشف Leather Cover R — حذاء جلد كلاسيكي بفكرة مختلفة: غيّر اللون والمظهر باستخدام كفرات خارجية قابلة للتبديل، واحتفظ بحذائك الأساسي."
+      data-en="Discover Leather Cover R — a classic leather shoe with a new idea. Change its look with replaceable outer covers while keeping your original shoe.">
+      اكتشف Leather Cover R — حذاء جلد كلاسيكي بفكرة مختلفة: غيّر اللون والمظهر باستخدام كفرات خارجية قابلة للتبديل، واحتفظ بحذائك الأساسي.
     </p>
 
-    <div class="gift-offer">
-      <span class="gift-label" data-ar="هدية مجانية مع الحذاء" data-en="FREE GIFT WITH YOUR SHOE">هدية مجانية مع الحذاء</span>
-      <h2 data-ar="حذاء أبيض + 5 كفرات ملونة هدية"
-          data-en="1 WHITE SHOE + 5 FREE COLOR COVERS">
-        حذاء أبيض + 5 كفرات ملونة هدية
-      </h2>
-      <p data-ar="احصل على الحذاء الأبيض الأساسي + 5 كفرات جلدية ملونة (هدية مجانية) لتستمتع بـ 6 إطلالات كاملة تناسب جميع ملابسك ومناسباتك بطلب واحد.""
-         data-en="Five different colored covers included with your white shoe to change your look and match your outfits.">
-         احصل على الحذاء الأبيض الأساسي + 5 كفرات جلدية ملونة (هدية مجانية) لتستمتع بـ 6 إطلالات كاملة تناسب جميع ملابسك ومناسباتك بطلب واحد.
-      </p>
-    </div>
+    <a class="btn btn-primary" href="#colors"
+       data-ar="اختار ألوانك" data-en="Choose Your Colors">
+      اختار ألوانك
+    </a>
 
-    <a href="#order" class="btn" data-ar="اطلب الآن" data-en="ORDER NOW">اطلب الآن</a>
-    <a href="#idea" class="btn btn-outline" data-ar="اكتشف الفكرة" data-en="DISCOVER THE IDEA">اكتشف الفكرة</a>
+    <a class="btn btn-outline" href="#idea"
+       data-ar="اكتشف الفكرة" data-en="Discover the Idea">
+      اكتشف الفكرة
+    </a>
   </div>
+
+  <div class="product-placeholder">
+    <div class="placeholder-content">
+      <div class="placeholder-r">R</div>
+      <strong>LEATHER COVER R</strong>
+      <p>مساحة صورة الحذاء — سنضيف صور منتجك الأصلية عند إرسالها</p>
+    </div>
+  </div>
+
 </section>
 
 <section id="idea">
   <div class="wrap">
-    <div class="section-title">
-      <h2 data-ar="فكرة Leather Cover R" data-en="The Leather Cover R Concept">فكرة Leather Cover R</h2>
-      <p data-ar="حذاء كلاسيكي بتجربة مختلفة" data-en="A classic shoe with a different experience">حذاء كلاسيكي بتجربة مختلفة</p>
-    </div>
 
-    <div class="message">
-      <h2 data-ar="غيّر مظهرك، واحتفظ بحذائك."
-          data-en="Change Your Look. Keep Your Shoe.">
-        غيّر مظهرك، واحتفظ بحذائك.
-      </h2>
-      <p data-ar="بدلاً من شراء حذاء جديد مع كل لون، يمكنك تغيير الكفر الجلدي الخارجي بكل سهوله والاستمتاع بمظهر مختلف مع الحفاظ على الحذاء الأساسي."
-         data-en="Instead of buying a new shoe for every color, change the outer leather cover and enjoy a different look while keeping your original shoe.">
-        بدلاً من شراء حذاء جديد مع كل لون، يمكنك تغيير الكفر الجلدي الخارجي بكل سهوله والاستمتاع بمظهر مختلف مع الحفاظ على الحذاء الأساسي.
-      </p>
-      <p class="highlight" data-ar="الحذاء أبيض، وخمسة ألوان إضافية هدية معاه."
-         data-en="A white shoe, with five additional colors included as a gift.">
-        الحذاء أبيض، وخمسة ألوان إضافية هدية معاه.
+    <div class="section-head">
+      <div class="eyebrow">THE IDEA</div>
+      <h2>غيّر اللون… وليس الحذاء</h2>
+      <p>
+        بدل ما تشتري حذاء جديد كل مرة، غيّر مظهر حذائك
+        بالكفر الخارجي القابل للتبديل.
       </p>
     </div>
-  </div>
-</section>
 
-<section class="dark-section" id="benefits">
-  <div class="wrap">
-    <div class="section-title">
-      <h2 data-ar="أكثر من مجرد حذاء" data-en="More Than Just a Shoe">أكثر من مجرد حذاء</h2>
-      <p data-ar="ثلاث مزايا تجعل اختياراتك أوسع" data-en="Three benefits that give you more choices">ثلاث مزايا تجعل اختياراتك أوسع</p>
-    </div>
+    <div class="feature-grid">
 
-    <div class="cards">
-      <article class="card">
-        <div class="card-symbol">₤</div>
-        <h3 data-ar="التوفير" data-en="Save More">التوفير</h3>
-        <p data-ar="مش محتاج تشتري كل الجزم بكل الألوان. حذاء واحد وخمسة كفرات هدية يمنحوك اختيارات أكثر."
-           data-en="No need to buy shoes in every color. One shoe and five free covers give you more choices.">
-          مش محتاج تشتري كل الجزم بكل الألوان. حذاء واحد وخمسة كفرات هدية يمنحوك اختيارات أكثر.
-        </p>
+      <article class="feature">
+        <div class="feature-number">01</div>
+        <h3>حذاء جلد كلاسيكي</h3>
+        <p>تصميم كلاسيكي أنيق مع الحفاظ على جسم الحذاء والنعل الأساسي.</p>
       </article>
 
-      <article class="card">
-        <div class="card-symbol">✦</div>
-        <h3 data-ar="الأناقة" data-en="Style">الأناقة</h3>
-        <p data-ar="غيّر شكل حذائك حسب المناسبة والمظهر الذي تختاره."
-           data-en="Change your shoe's look to suit the occasion and your personal style.">
-          غيّر شكل حذائك حسب المناسبة والمظهر الذي تختاره.
-        </p>
+      <article class="feature">
+        <div class="feature-number">02</div>
+        <h3>كفرات قابلة للتبديل</h3>
+        <p>اختار اللون الذي يناسب ملابسك ومناسبتك، وبدّل المظهر وقت ما تحب.</p>
       </article>
 
-      <article class="card">
-        <div class="card-symbol">◈</div>
-        <h3 data-ar="التناسق" data-en="Matching">التناسق</h3>
-        <p data-ar="اختار لون الكافر المناسب لقميصك وملابسك، وجدّد إطلالتك بسهولة."
-           data-en="Choose a cover color that matches your shirt and outfit, and refresh your look easily.">
-          اختار لون الكافر المناسب لقميصك وملابسك، وجدّد إطلالتك بسهولة.
-        </p>
+      <article class="feature">
+        <div class="feature-number">03</div>
+        <h3>اختيارات أكثر</h3>
+        <p>تنوع في المظهر دون الحاجة إلى امتلاك عدة أحذية.</p>
       </article>
+
     </div>
   </div>
 </section>
 
 <section id="colors">
   <div class="wrap">
-    <div class="section-title">
-      <h2 data-ar="ألوان تناسب أسلوبك" data-en="Colors That Match Your Style">ألوان تناسب أسلوبك</h2>
-      <p data-ar="مجموعة من الألوان لتجديد مظهرك" data-en="A range of colors to refresh your look">مجموعة من الألوان لتجديد مظهرك</p>
+
+    <div class="section-head">
+      <div class="eyebrow">MAKE IT YOURS</div>
+      <h2>اختار 5 ألوان من مجموعتنا</h2>
+      <p>حدد خمسة ألوان تفضلها ليتم تسجيلها مع طلبك.</p>
     </div>
 
-    <div class="color-list">
-      <div class="color-item"><span class="swatch" style="background:#b3262d"></span><span data-ar="أحمر" data-en="Red">أحمر</span></div>
-      <div class="color-item"><span class="swatch" style="background:#173c2b"></span><span data-ar="أخضر" data-en="Green">أخضر</span></div>
-      <div class="color-item"><span class="swatch" style="background:#777044"></span><span data-ar="زيتوني" data-en="Olive">زيتوني</span></div>
-      <div class="color-item"><span class="swatch" style="background:#d87925"></span><span data-ar="برتقالي" data-en="Orange">برتقالي</span></div>
-      <div class="color-item"><span class="swatch" style="background:#172b50"></span><span data-ar="كحلي" data-en="Navy">كحلي</span></div>
-      <div class="color-item"><span class="swatch" style="background:#2872b9"></span><span data-ar="أزرق" data-en="Blue">أزرق</span></div>
-      <div class="color-item"><span class="swatch" style="background:#702c43"></span><span data-ar="نبيتي" data-en="Burgundy">نبيتي</span></div>
-      <div class="color-item"><span class="swatch" style="background:#17616a"></span><span data-ar="بترولي" data-en="Petrol">بترولي</span></div>
-      <div class="color-item"><span class="swatch" style="background:#75472e"></span><span data-ar="بني" data-en="Brown">بني</span></div>
-      <div class="color-item"><span class="swatch" style="background:#999999"></span><span data-ar="رمادي" data-en="Grey">رمادي</span></div>
-      <div class="color-item"><span class="swatch" style="background:#424242"></span><span data-ar="رمادي غامق" data-en="Dark Grey">رمادي غامق</span></div>
-      <div class="color-item"><span class="swatch" style="background:#83c6df"></span><span data-ar="سماوي" data-en="Sky Blue">سماوي</span></div>
+    <div class="color-grid" id="colorGrid">
+
+      <button class="color-option" type="button" data-color="أحمر">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#a51f2b"></i>
+        <small>أحمر</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="أخضر">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#285b3b"></i>
+        <small>أخضر</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="زيتوني">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#62613a"></i>
+        <small>زيتوني</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="برتقالي">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#c76b27"></i>
+        <small>برتقالي</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="كحلي">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#172b4d"></i>
+        <small>كحلي</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="أزرق">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#285c9b"></i>
+        <small>أزرق</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="نبيتي">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#64253d"></i>
+        <small>نبيتي</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="بترولي">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#17636a"></i>
+        <small>بترولي</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="بني">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#70452f"></i>
+        <small>بني</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="رمادي">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#777b80"></i>
+        <small>رمادي</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="رمادي غامق">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#393b40"></i>
+        <small>رمادي غامق</small>
+      </button>
+
+      <button class="color-option" type="button" data-color="سماوي">
+        <span class="checkmark">✓</span>
+        <i class="swatch" style="background:#79b8d4"></i>
+        <small>سماوي</small>
+      </button>
+
     </div>
+
+    <div class="selection-bar">
+      <div>
+        <strong id="selectionText">تم اختيار 0 من 5 ألوان</strong>
+        <div id="selectionHint">اختر خمسة ألوان لإكمال الطلب</div>
+      </div>
+      <div class="selected-dots" id="selectedDots"></div>
+    </div>
+
   </div>
 </section>
 
-<section class="dark-section" id="order">
+<section>
+  <div class="wrap offer">
+    <div class="eyebrow">LAUNCH OFFER</div>
+    <h3>خمسة كفرات بألوان من اختيارك</h3>
+    <p>حدد اختياراتك من مجموعة الألوان، وسنتواصل معك لتأكيد تفاصيل الطلب.</p>
+  </div>
+</section>
+<!-- ORDER SECTION -->
+
+<section id="order">
   <div class="wrap">
-    <div class="section-title">
-      <h2 data-ar="اطلب حذاءك الآن" data-en="Order Your Shoe Now">اطلب حذاءك الآن</h2>
-      <p data-ar="حذاء أبيض وخمسة كفرات ملونة هدية" data-en="One white shoe and five free colored covers">حذاء أبيض وخمسة كفرات ملونة هدية</p>
+    <div class="section-head">
+      <div class="eyebrow">YOUR ORDER</div>
+      <h2>سجّل طلبك الآن</h2>
+      <p>اختار المقاس وطريقة الدفع وسجّل بيانات التوصيل. سيتم فتح واتساب لتأكيد طلبك.</p>
     </div>
 
-    <div class="order-box">
-      <div class="order-gift">
-        <strong data-ar="حذاء أبيض + 5 كفرات هدية"
-                data-en="White Shoe + 5 Free Covers">
-          حذاء أبيض + 5 كفرات هدية
-        </strong>
-        <span data-ar="الهدية تشمل خمسة كفرات بألوان مختلفة"
-              data-en="The gift includes five covers in different colors">
-          الهدية تشمل خمسة كفرات بألوان مختلفة
-        </span>
+    <div class="order-layout">
+      <div class="order-note">
+        <h3>طرق الدفع المتاحة</h3>
+        <ul>
+          <li>الدفع عند الاستلام.</li>
+          <li>المحفظة الإلكترونية على رقم واتساب نفسه.</li>
+          <li>الدفع البنكي والبطاقات: قريبًا.</li>
+        </ul>
+        <p class="notice">
+          تحويل المحفظة يتم بعد تأكيد الطلب مع خدمة العملاء.
+          لا ترسل أي مبلغ قبل تأكيد تفاصيل الطلب.
+        </p>
       </div>
 
-      <form id="orderForm">
+      <form class="order-form" id="orderForm">
+        <h3>بيانات الطلب</h3>
+
         <div class="form-grid">
           <div class="field">
-            <label for="shoeSize" data-ar="مقاس الحذاء" data-en="Shoe Size">مقاس الحذاء</label>
-            <select id="shoeSize" required>
-              <option value="" data-ar="اختر المقاس" data-en="Select size">اختر المقاس</option>
-              <option>40</option><option>41</option>
-              <option>42</option><option>43</option><option>44</option><option>45</option>
+            <label for="customerName">الاسم بالكامل</label>
+            <input id="customerName" type="text" placeholder="اكتب اسمك" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">رقم الموبايل</label>
+            <input id="phone" type="tel" placeholder="01xxxxxxxxx" required>
+          </div>
+
+          <div class="field">
+            <label for="size">مقاس الحذاء</label>
+            <select id="size" required>
+              <option value="">اختر المقاس</option>
+              <option>39</option>
+              <option>40</option>
+              <option>41</option>
+              <option>42</option>
+              <option>43</option>
+              <option>44</option>
+              <option>45</option>
             </select>
           </div>
 
           <div class="field">
-            <label for="quantity" data-ar="الكمية" data-en="Quantity">الكمية</label>
+            <label for="quantity">الكمية</label>
             <input id="quantity" type="number" min="1" value="1" required>
           </div>
 
           <div class="field">
-            <label for="payment" data-ar="طريقة الدفع المفضلة" data-en="Preferred Payment">طريقة الدفع المفضلة</label>
-            <select id="payment" required>
-              <option value="الدفع عند الاستلام" data-ar="الدفع عند الاستلام" data-en="Cash on Delivery">الدفع عند الاستلام</option>
-              <option value="الدفع الإلكتروني" data-ar="الدفع الإلكتروني" data-en="Electronic Payment">الدفع الإلكتروني</option>
-            </select>
+            <label for="city">المحافظة / المدينة</label>
+            <input id="city" type="text" placeholder="المحافظة أو المدينة" required>
+          </div>
+
+          <div class="field">
+            <label for="address">العنوان بالتفصيل</label>
+            <input id="address" type="text" placeholder="الشارع والمنطقة ورقم العقار" required>
+          </div>
+
+          <div class="field full">
+            <label>طريقة الدفع</label>
+
+            <div class="payment-list">
+              <label class="payment">
+                <input type="radio" name="payment" value="الدفع عند الاستلام" checked>
+                <span>
+                  <strong>الدفع عند الاستلام</strong>
+                  <small>ادفع عند وصول طلبك.</small>
+                </span>
+              </label>
+
+              <label class="payment">
+                <input type="radio" name="payment" value="المحفظة الإلكترونية">
+                <span>
+                  <strong>المحفظة الإلكترونية</strong>
+                  <small>على نفس رقم واتساب بعد تأكيد الطلب.</small>
+                </span>
+              </label>
+
+              <label class="payment disabled">
+                <input type="radio" name="payment" value="الدفع البنكي والبطاقات" disabled>
+                <span>
+                  <strong>الدفع البنكي والبطاقات — قريبًا</strong>
+                  <small>سيتم تفعيل هذه الخدمة لاحقًا.</small>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="notes">ملاحظات إضافية (اختياري)</label>
+            <textarea id="notes" placeholder="أي تفاصيل إضافية تحب توضحها"></textarea>
           </div>
         </div>
 
-        <button class="btn" type="submit"
-          data-ar="جهّز طلبك الآن"
-          data-en="PREPARE YOUR ORDER">جهّز طلبك الآن</button>
+        <button class="btn btn-primary form-submit" type="submit">
+          إرسال الطلب عبر واتساب
+        </button>
 
-        <p class="form-note"
-          data-ar="هذه معاينة للطلب فقط. استقبال الطلبات والدفع الإلكتروني يحتاجان إلى ربط نظام طلبات وبوابة دفع."
-          data-en="This is an order preview only. Receiving orders and electronic payments requires an order system and payment gateway.">
-          هذه معاينة للطلب فقط. استقبال الطلبات والدفع الإلكتروني يحتاجان إلى ربط نظام طلبات وبوابة دفع.
+        <p class="fineprint">
+          سيتم فتح واتساب برسالة تحتوي على بيانات طلبك.
+          لن يتم إرسال الطلب إلا بعد الضغط على إرسال داخل واتساب.
         </p>
-
-        <div id="orderResult" aria-live="polite"></div>
       </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">STAY CONNECTED</div>
+      <h2>تابع Leather Cover R</h2>
+      <p>تابعنا لمعرفة أحدث الألوان والتحديثات والعروض.</p>
+    </div>
+
+    <div class="contact-row">
+      <a class="contact-card" href="https://wa.me/201225655101" target="_blank" rel="noopener">
+        <span class="contact-icon">✆</span>
+        <strong>WhatsApp</strong>
+        <small>تواصل معنا مباشرة</small>
+      </a>
+
+      <a class="contact-card" href="https://www.instagram.com/remonfouadking/" target="_blank" rel="noopener">
+        <span class="contact-icon">◎</span>
+        <strong>Instagram</strong>
+        <small>@remonfouadking</small>
+      </a>
     </div>
   </div>
 </section>
 
 </main>
 
-<footer>
+
+<!-- FOOTER -->
+
+<footer class="footer">
   <div class="wrap">
-    <p data-ar="حذاء واحد... اختيارات لا تنتهي."
-       data-en="One Shoe... Endless Choices.">
-      حذاء واحد... اختيارات لا تنتهي.
+    <div class="footer-brand">LEATHER COVER R</div>
+    <p>غيّر اللون وليس الحذاء.</p>
+    <p class="copyright">
+      © 2026 Leather Cover R. All Rights Reserved.
     </p>
-    <p>© <span id="year"></span> Leather Cover R. All Rights Reserved.</p>
   </div>
 </footer>
 
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="whatsapp-float"
+   href="https://wa.me/201225655101"
+   target="_blank"
+   rel="noopener"
+   aria-label="تواصل عبر واتساب">
+  <span>✆</span>
+</a>
+
+
 <script>
-let currentLang = "ar";
+/* COLOR SELECTION */
 
-const langBtn = document.getElementById("langBtn");
-const menuBtn = document.getElementById("menuBtn");
-const mainNav = document.getElementById("mainNav");
+const colorOptions = document.querySelectorAll(".color-option");
+const selectedColorsBox = document.getElementById("selectedColors");
+const colorCount = document.getElementById("colorCount");
 
-menuBtn.addEventListener("click", () => {
-  mainNav.classList.toggle("open");
-});
+const selectedColors = [];
 
-mainNav.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => mainNav.classList.remove("open"));
-});
+function updateSelectedColors() {
+  if (selectedColorsBox) {
+    selectedColorsBox.innerHTML = "";
 
-function changeLanguage(lang) {
-  currentLang = lang;
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-  langBtn.textContent = lang === "ar" ? "EN" : "AR";
+    selectedColors.forEach(function(color) {
+      const item = document.createElement("span");
+      item.className = "selected-color";
+      item.textContent = color;
+      selectedColorsBox.appendChild(item);
+    });
+  }
 
-  document.querySelectorAll("[data-ar][data-en]").forEach(element => {
-    const translated = element.getAttribute("data-" + lang);
+  if (colorCount) {
+    colorCount.textContent = selectedColors.length;
+  }
+}
 
-    if (element.tagName === "OPTION") {
-      element.textContent = translated;
+colorOptions.forEach(function(option) {
+  option.addEventListener("click", function() {
+    const color = option.dataset.color;
+
+    if (selectedColors.includes(color)) {
+      selectedColors.splice(selectedColors.indexOf(color), 1);
+      option.classList.remove("selected");
     } else {
-      element.innerHTML = translated;
+      if (selectedColors.length >= 5) {
+        alert("يمكنك اختيار 5 ألوان فقط.");
+        return;
+      }
+
+      selectedColors.push(color);
+      option.classList.add("selected");
     }
+
+    updateSelectedColors();
+  });
+});
+
+
+/* ORDER FORM */
+
+const orderForm = document.getElementById("orderForm");
+
+if (orderForm) {
+  orderForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (selectedColors.length !== 5) {
+      alert("من فضلك اختر 5 ألوان للكفرات قبل إرسال الطلب.");
+      document.getElementById("colors").scrollIntoView({
+        behavior: "smooth"
+      });
+      return;
+    }
+
+    const name = document.getElementById("customerName").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const size = document.getElementById("size").value;
+    const quantity = document.getElementById("quantity").value;
+    const city = document.getElementById("city").value.trim();
+    const address = document.getElementById("address").value.trim();
+    const notes = document.getElementById("notes").value.trim();
+
+    const paymentInput = document.querySelector(
+      'input[name="payment"]:checked'
+    );
+
+    const payment = paymentInput ? paymentInput.value : "";
+
+    const message =
+`طلب جديد من موقع Leather Cover R
+
+الاسم: ${name}
+رقم الموبايل: ${phone}
+المقاس: ${size}
+الكمية: ${quantity}
+
+الألوان المختارة:
+${selectedColors.map((color, index) => (index + 1) + "- " + color).join("\n")}
+
+طريقة الدفع: ${payment}
+
+المحافظة: ${city}
+العنوان: ${address}
+
+ملاحظات: ${notes || "لا يوجد"}
+
+أرجو تأكيد الطلب والتفاصيل.`;
+
+    const whatsappURL =
+      "https://wa.me/201225655101?text=" +
+      encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
   });
 }
 
-langBtn.addEventListener("click", () => {
-  changeLanguage(currentLang === "ar" ? "en" : "ar");
-});
 
-document.getElementById("year").textContent = new Date().getFullYear();
+/* LANGUAGE SWITCH */
 
-document.getElementById("orderForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+const languageButton = document.getElementById("languageButton");
 
-  const size = document.getElementById("shoeSize").value;
-  const quantity = document.getElementById("quantity").value;
-  const payment = document.getElementById("payment").value;
-  const result = document.getElementById("orderResult");
+let currentLanguage = "ar";
 
-  if (!size || Number(quantity) < 1) return;
+const translations = {
+  "LEATHER COVER R": "LEATHER COVER R",
+  "سجّل طلبك الآن": "Place Your Order",
+  "تابع Leather Cover R": "Follow Leather Cover R",
+  "غيّر اللون وليس الحذاء.": "Change the color, not the shoe."
+};
 
-  if (currentLang === "ar") {
-    result.textContent =
-      "معاينة طلبك:\n" +
-      "الحذاء: أبيض كلاسيكي\n" +
-      "المقاس: " + size + "\n" +
-      "الكمية: " + quantity + "\n" +
-      "الهدية: خمسة كفرات بألوان مختلفة مع كل حذاء\n" +
-      "طريقة الدفع المفضلة: " + payment + "\n\n" +
-      "لم يتم إرسال الطلب بعد. سيتم تفعيل استقبال الطلبات بعد ربط نظام الطلبات.";
-  } else {
-    result.textContent =
-      "Your order preview:\n" +
-      "Shoe: Classic white shoe\n" +
-      "Size: " + size + "\n" +
-      "Quantity: " + quantity + "\n" +
-      "Gift: Five covers in different colors with each shoe\n" +
-      "Preferred payment: " + payment + "\n\n" +
-      "Your order has not been submitted. Order submission will be enabled after connecting an order system.";
-  }
+if (languageButton) {
+  languageButton.addEventListener("click", function() {
+    currentLanguage = currentLanguage === "ar" ? "en" : "ar";
 
-  result.style.display = "block";
-  result.scrollIntoView({behavior:"smooth",block:"nearest"});
-});
+    document.documentElement.lang = currentLanguage;
+    document.documentElement.dir =
+      currentLanguage === "ar" ? "rtl" : "ltr";
+
+    languageButton.textContent =
+      currentLanguage === "ar" ? "EN" : "عربي";
+
+    document.querySelectorAll("[data-ar][data-en]").forEach(function(element) {
+      element.textContent =
+        currentLanguage === "ar"
+          ? element.dataset.ar
+          : element.dataset.en;
+    });
+  });
+}
 </script>
 
 </body>
