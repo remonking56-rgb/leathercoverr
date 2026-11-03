@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head><link rel="icon" type="image/png" href="./logo.png">
-<link rel="icon" type="image/png" href="./logo.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,8 +16,6 @@
   --gold:#c5a477;
   --white:#f5f3ef;
   --muted:#aaa;
-  --green:#168b55;
-  --green-hover:#20a565;
 }
 
 * { box-sizing:border-box; }
@@ -128,18 +125,6 @@ h1 {
 
 .btn-primary:hover { background:#e0c39a; }
 
-/* أزرار الشراء والإرسال باللون الأخضر */
-.product-buy,
-.form-submit {
-  background:var(--green) !important;
-  color:#fff !important;
-}
-
-.product-buy:hover,
-.form-submit:hover {
-  background:var(--green-hover) !important;
-}
-
 .product-area {
   width:min(560px,100%);
   margin:38px auto 0;
@@ -168,9 +153,8 @@ h1 {
 
 .color-grid {
   display:grid;
-  
   grid-template-columns:repeat(6,minmax(0,1fr));
-  gap:10px;
+  gap:8px;
   max-width:650px;
   margin:10px auto 0;
 }
@@ -331,7 +315,6 @@ h1 {
   padding:65px 0;
   border-top:1px solid #211e19;
   text-align:center;
-  scroll-margin-top:95px;
 }
 
 .style-section h2 {
@@ -357,10 +340,7 @@ h1 {
   margin:18px 0;
 }
 
-#order,
-#howItWorks {
-  scroll-margin-top:95px;
-}
+#order { scroll-margin-top:95px; }
 
 .order-layout {
   display:grid;
@@ -543,7 +523,7 @@ h1 {
 
     <nav>
       <a href="#home">الرئيسية</a>
-      <a href="#displayColors">الألوان</a>
+      <a href="#colors">الألوان</a>
       <a href="#idea">الفكرة</a>
       <a href="#order">اطلب الآن</a>
     </nav>
@@ -576,9 +556,7 @@ h1 {
         >
       </div>
 
-      <div class="color-grid" id="displayColors">
-        <div id="colorGrid"></div>
-      </div>
+      <div class="color-grid" id="colorGrid"></div>
 
       <div class="custom-color-note">
         لم تجد اللون الذي تبحث عنه؟ اختر لونك الخاص!
@@ -621,7 +599,7 @@ h1 {
   </div>
 </section>
 
-<section class="style-section" id="idea">
+<section class="style-section">
   <div class="wrap">
 
     <div class="eyebrow">COMPLETE YOUR STYLE</div>
@@ -651,14 +629,14 @@ h1 {
       حذاء واحد + خمسة كفرات هدية
     </div>
 
-    <a href="#displayColors" class="btn btn-primary">
+    <a href="#colors" class="btn btn-primary">
       اكتشف الألوان
     </a>
 
   </div>
 </section>
 
-<section class="section" id="howItWorks">
+<section class="section" id="idea">
   <div class="wrap">
 
     <div class="section-title">
