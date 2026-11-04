@@ -627,18 +627,28 @@ nav a {
 
 .hero-media-layout {
   display: grid !important;
-  grid-template-columns: 280px minmax(300px, 1fr) 280px !important;
+  grid-template-columns: minmax(0, 0.55fr) minmax(0, 1.9fr) minmax(0, 0.55fr) !important;
   align-items: center !important;
-  gap: 15px !important;
+  gap: 3px !important;
   width: 100% !important;
-  max-width: 1200px !important;
-  margin: 25px auto !important;
+  max-width: 100% !important;
+  margin: 15px auto !important;
   direction: ltr !important;
 }
 
 .hero-media-layout .product-area {
-  width: 100% !important;
   min-width: 0 !important;
+  width: 100% !important;
+}
+
+.hero-media-layout .hero-video {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 145px !important;
+  max-height: 145px !important;
+  object-fit: contain !important;
+  justify-self: center !important;
+}
 }
 
 /* الكمبيوتر فقط */
