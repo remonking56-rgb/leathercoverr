@@ -984,6 +984,79 @@ nav a {
     max-height: 380px;
   }
 }
+ 
+
+.walking-feature {
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 35px 25px;
+  text-align: center;
+  background: #090909;
+  border: 1px solid rgba(197,164,119,.3);
+  border-radius: 16px;
+  color: #fff;
+}
+
+.walking-tag {
+  color: #c5a477;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.walking-feature h2 {
+  color: #c5a477;
+  font-size: 30px;
+  margin: 18px 0;
+}
+
+.walking-feature p {
+  color: #ccc;
+  line-height: 2;
+  font-size: 16px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.walking-points {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.walking-points div {
+  color: #eee;
+  font-size: 14px;
+}
+
+.walking-points span {
+  color: #c5a477;
+  margin-left: 6px;
+}
+
+.walking-slogan {
+  margin-top: 25px;
+  color: #c5a477;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .walking-feature {
+    margin: 25px 12px;
+    padding: 25px 15px;
+  }
+
+  .walking-feature h2 {
+    font-size: 25px;
+  }
+
+  .walking-points {
+    flex-direction: column;
+    align-items: center;
+  }
+}
  </style>  </head>   <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
@@ -1069,6 +1142,30 @@ document.querySelectorAll('.hero-video').forEach(video => {
 </a>
 
 </div>
+<section class="walking-feature" dir="rtl">
+
+  <span class="walking-tag">DESIGNED FOR EVERY STEP</span>
+
+  <h2>ثبات مع كل خطوة</h2>
+
+  <p>
+    صُممت كفرات Leather Cover R لتوفير تثبيت محكم
+    أثناء الحركة والاستخدام اليومي، مع الحفاظ على
+    إمكانية تغيير مظهر حذائك بسهولة.
+  </p>
+
+  <div class="walking-points">
+    <div><span>✓</span> تصميم مناسب للحركة اليومية</div>
+    <div><span>✓</span> تثبيت مصمم للحفاظ على ثبات الكفر</div>
+    <div><span>✓</span> سهولة الفك والتركيب وتغيير الألوان</div>
+  </div>
+
+  <div class="walking-slogan">
+    امشِ براحتك... لونك معاك في كل خطوة.
+  </div>
+
+</section>
+
 
 </div>
 
