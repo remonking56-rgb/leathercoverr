@@ -675,13 +675,13 @@ nav a {
 }
 
 /* تنسيقات الموبايل */
+/* تنسيقات الموبايل */
 @media (max-width: 700px) {
 
-  /* الفيديوهات وصورة الحذاء */
   .hero-media-layout {
     display: grid !important;
     grid-template-columns: minmax(0, 0.42fr) minmax(0, 2fr) minmax(0, 0.42fr) !important;
-    align-items: center !important;
+    align-items: stretch !important;
     gap: 3px !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -695,16 +695,17 @@ nav a {
   }
 
   .hero-media-layout .hero-video {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 350px !important;
-  min-height: 350px !important;
-  max-height: none !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  justify-self: center !important;
-  border-radius: 8px !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
+    aspect-ratio: auto !important;
+    object-fit: cover !important;
+    justify-self: stretch !important;
+    border-radius: 8px !important;
+  }
 }
 
   /* مساحة صورة الحذاء */
