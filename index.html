@@ -659,20 +659,32 @@ nav a {
 /* الكمبيوتر فقط */
 @media (min-width: 701px) {
   .hero-media-layout {
-    grid-template-columns: 350px minmax(300px, 1fr) 350px !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 1.4fr) minmax(0, 1fr) !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
     max-width: 1400px !important;
-    gap: 15px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
 
   .hero-media-layout .hero-video {
     display: block !important;
-    width: 350px !important;
-    max-width: 350px !important;
-    height: auto !important;
-    max-height: 350px !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    height: 300px !important;
+    max-height: 300px !important;
     object-fit: contain !important;
     justify-self: center !important;
-    border-radius: 8px;
+    border-radius: 8px !important;
+  }
+
+  .hero-media-layout #productImage {
+    width: 100% !important;
+    max-width: 440px !important;
+    height: auto !important;
+    justify-self: center !important;
   }
 }
 
