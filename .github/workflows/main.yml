@@ -1,0 +1,29 @@
+name: Leather Cover R Backup
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download website files
+        uses: actions/checkout@v4
+
+      - name: Create backup
+        run: |
+          zip -r Leather-Cover-R-Backup.zip . \
+            -x ".git/*"
+
+      - name: Save backup
+        uses: actions/upload-artifact@v4
+        with:
+          name: Leather-Cover-R-Backup
+          path: Leather-Cover-R-Backup.zip
+          retention-days: 90
