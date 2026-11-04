@@ -642,13 +642,16 @@ nav a {
 }
 
 .hero-media-layout .hero-video {
+  display: block !important;
   width: 100% !important;
   max-width: 100% !important;
   height: 300px !important;
-  max-height: 300px !important;
+  max-height: none !important;
+  min-height: 300px !important;
+  aspect-ratio: auto !important;
   object-fit: contain !important;
   justify-self: center !important;
-}
+  border-radius: 8px !important;
 }
 
 /* الكمبيوتر فقط */
