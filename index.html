@@ -836,6 +836,58 @@ nav a {
   min-width: 16px !important;
   margin: 0 !important;
   transform: scale(0.85);
+} /* DESKTOP - LEATHER COVER R */
+@media screen and (min-width: 701px) {
+
+  .hero-media-layout {
+    display: grid !important;
+    grid-template-columns: 200px 400px 200px !important;
+    grid-template-rows: auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 25px auto !important;
+    direction: ltr !important;
+  }
+
+  .hero-media-layout > video.hero-video:first-child {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 200px !important;
+    height: 180px !important;
+    min-height: 0 !important;
+    max-height: 180px !important;
+    object-fit: contain !important;
+    justify-self: center !important;
+  }
+
+  .hero-media-layout > .product-area {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 400px !important;
+    min-width: 0 !important;
+  }
+
+  .hero-media-layout #productImage {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .hero-media-layout > video.hero-video:last-of-type {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    width: 200px !important;
+    height: 180px !important;
+    min-height: 0 !important;
+    max-height: 180px !important;
+    object-fit: contain !important;
+    justify-self: center !important;
+  }
+
 } </style>  </head>   <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
