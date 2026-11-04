@@ -789,7 +789,7 @@ nav a {
   opacity: 0.85;
   pointer-events: none;
   text-shadow: 1px 1px 4px #000;
-} </style>  </head>  <body>  <header>  
+} </style>  </head>   <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
       <img class="logo-img" src="./logo.png" alt="Leather Cover R">  
@@ -1603,5 +1603,18 @@ ${t("confirm")}`;
   
   window.open(whatsappUrl,"_blank");  
 });  
-</script>×</section> </body>  
+</script> <!-- حماية الصور والفيديوهات -->
+<script>
+document.addEventListener("contextmenu", function(e) {
+  if (e.target.closest("img, video")) {
+    e.preventDefault();
+  }
+});
+
+document.addEventListener("dragstart", function(e) {
+  if (e.target.closest("img, video")) {
+    e.preventDefault();
+  }
+});
+</script> </section> </body>  
 </html>
