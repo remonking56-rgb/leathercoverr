@@ -771,7 +771,25 @@ nav a {
 
 }
 
-</style>  </head>  <body>  <header>  
+/* Leather Cover R - Image Protection */
+.product-stage {
+  position: relative !important;
+}
+
+.product-stage::after {
+  content: "LEATHER COVER R";
+  position: absolute;
+  bottom: 15px;
+  left: 12px;
+  z-index: 10;
+  color: #c5a477;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.85;
+  pointer-events: none;
+  text-shadow: 1px 1px 4px #000;
+} </style>  </head>  <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
       <img class="logo-img" src="./logo.png" alt="Leather Cover R">  
