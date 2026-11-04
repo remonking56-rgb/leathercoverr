@@ -888,7 +888,103 @@ nav a {
     justify-self: center !important;
   }
 
-} </style>  </head>   <body>  <header>  
+} 
+/* WALKING FEATURE */
+.walking-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+  max-width: 1200px;
+  margin: 65px auto;
+  padding: 35px 25px;
+  background: #090909;
+  border: 1px solid rgba(197,164,119,.25);
+  border-radius: 18px;
+  color: #fff;
+}
+
+.walking-tag {
+  color: #c5a477;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.walking-content h2 {
+  color: #c5a477;
+  font-size: 32px;
+  margin: 18px 0;
+}
+
+.walking-content p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.walking-points {
+  display: grid;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.walking-points div {
+  color: #eee;
+  font-size: 15px;
+}
+
+.walking-points span {
+  color: #c5a477;
+  margin-left: 9px;
+}
+
+.walking-slogan {
+  margin-top: 25px;
+  color: #c5a477;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.walking-video {
+  width: 100%;
+  text-align: center;
+}
+
+.walking-video video {
+  width: 100%;
+  max-height: 420px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #c5a477;
+  background: #111;
+}
+
+.walking-video span {
+  display: block;
+  color: #c5a477;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .walking-feature {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 35px 12px;
+    padding: 22px 16px;
+  }
+
+  .walking-content h2 {
+    font-size: 25px;
+  }
+
+  .walking-video video {
+    max-height: 380px;
+  }
+}
+ </style>  </head>   <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
       <img class="logo-img" src="./logo.png" alt="Leather Cover R">  
@@ -1731,5 +1827,48 @@ document.addEventListener("dragstart", function(e) {
     e.preventDefault();
   }
 });
-</script> </section> </body>  
+</script> </section> 
+<section class="walking-feature" dir="rtl">
+  <div class="walking-content">
+
+    <span class="walking-tag">DESIGNED FOR EVERY STEP</span>
+
+    <h2>ثبات مع كل خطوة</h2>
+
+    <p>
+      صُممت كفرات Leather Cover R لتوفير تثبيت محكم
+      أثناء الحركة والاستخدام اليومي، مع إمكانية تغيير
+      مظهر حذائك بسهولة.
+    </p>
+
+    <div class="walking-points">
+      <div>
+        <span>✓</span>
+        ثبات مصمم للحركة اليومية
+      </div>
+      <div>
+        <span>✓</span>
+        مرونة أثناء المشي
+      </div>
+      <div>
+        <span>✓</span>
+        فك وتركيب بسهولة
+      </div>
+    </div>
+
+    <div class="walking-slogan">
+      امشِ براحتك... لونك معاك في كل خطوة.
+    </div>
+
+  </div>
+
+  <div class="walking-video">
+    <video autoplay muted loop playsinline controls
+           preload="metadata">
+      <source src="images/walking.mp4" type="video/mp4">
+    </video>
+    <span>EVERYDAY COMFORT & STYLE</span>
+  </div>
+</section>
+ </body>  
 </html>
