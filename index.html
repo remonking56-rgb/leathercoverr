@@ -627,60 +627,41 @@ nav a {
 
 /* ترتيب الفيديوهات وصورة الحذاء */
 
-.hero-media-layout {
-  display: grid !important;
-  grid-template-columns: minmax(0, 0.55fr) minmax(0, 1.9fr) minmax(0, 0.55fr) !important;
-  align-items: center !important;
-  gap: 3px !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 15px auto !important;
-  direction: ltr !important;
-}
-
-.hero-media-layout .product-area {
-  min-width: 0 !important;
-  width: 100% !important;
-}
-
-.hero-media-layout .hero-video {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 300px !important;
-  max-height: none !important;
-  min-height: 300px !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  justify-self: center !important;
-  border-radius: 8px !important;
-}
-
-/* الكمبيوتر فقط */
+/* ترتيب الصور والفيديوهات - الكمبيوتر */
 @media (min-width: 701px) {
+
   .hero-media-layout {
     display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(300px, 1.4fr) minmax(0, 1fr) !important;
+    grid-template-columns: 220px minmax(300px, 440px) 220px !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 20px !important;
-    max-width: 1400px !important;
+    gap: 15px !important;
     width: 100% !important;
-    margin: 0 auto !important;
+    max-width: 1000px !important;
+    margin: 20px auto !important;
+    direction: ltr !important;
+  }
+
+  .hero-media-layout .product-area {
+    min-width: 0 !important;
+    width: 100% !important;
   }
 
   .hero-media-layout .hero-video {
     display: block !important;
     width: 100% !important;
-    max-width: 300px !important;
-    height: 300px !important;
-    max-height: 300px !important;
+    max-width: 220px !important;
+    height: 190px !important;
+    min-height: 0 !important;
+    max-height: 190px !important;
+    aspect-ratio: auto !important;
     object-fit: contain !important;
     justify-self: center !important;
     border-radius: 8px !important;
   }
 
   .hero-media-layout #productImage {
+    display: block !important;
     width: 100% !important;
     max-width: 440px !important;
     height: auto !important;
