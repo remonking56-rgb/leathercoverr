@@ -820,6 +820,23 @@ nav a {
 
 #orderForm .field.full {
   grid-column: 1 / -1 !important;
+} /* جعل طرق الدفع وبيانات العميل فوق بعض */
+.order-layout {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 25px !important;
+}
+
+.order-note,
+.order-form {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#orderForm .form-grid {
+  width: 100% !important;
 } </style>  </head>   <body>  <header>  
   <div class="wrap header-inner">  
     <a href="#home" aria-label="Leather Cover R">  
