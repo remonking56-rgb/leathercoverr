@@ -765,17 +765,20 @@ nav a {
   }
 
 }
- /* زيادة طول الفيديوهات فقط */
-.hero-media-layout .video-wrapper {
-  height: 320px !important;
+/* تكبير طول الفيديوهات مع الحفاظ على العرض */
+.video-wrapper {
+  height: 330px !important;
+  min-height: 330px !important;
+  max-height: none !important;
   width: 100% !important;
 }
 
-.hero-media-layout .video-wrapper .hero-video {
-  width: 100% !important;
-  height: 100% !important;
+.video-wrapper .hero-video {
+  height: 330px !important;
+  min-height: 330px !important;
   max-height: none !important;
-  object-fit: fill !important;
+  width: 100% !important;
+  object-fit: contain !important;
 }
 </style>  </head>  <body>  <header>  
   <div class="wrap header-inner">  
